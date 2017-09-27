@@ -10,11 +10,30 @@
 
     <style type="text/css">
       html {
-        font-size: 16px;
-        font-family: "Abril Fatface", serif;
+        font-family: "Times New Roman", "Times", serif;
+        font-size: 14px;
+        background-color: #ffc501; /* Spain flag: yellow */
       }
 
-      .main-character, .examples {
+      @media (min-width: 480px) {
+        html {
+          font-size: 16px;
+        }
+      }
+
+      body {
+        margin: 1em;
+      }
+
+      @media (min-width: 640px) {
+        .container {
+          width: 560px;
+          margin: 0 auto;
+        }
+      }
+
+      .main-character, .example__original {
+        font-family: "Abril Fatface", serif;
         font-weight: normal;
         margin: 0;
       }
@@ -23,17 +42,57 @@
         font-size: 12em;
       }
 
-      .examples {
+      .example {
+        margin-bottom: 2em;
+      }
+
+      .example__original {
         font-size: 4em;
+        margin-bottom: .25em;
+      }
+
+      .example__character {
+        font-weight: normal;
+        color: #c70218; /* Spain flag: red */
+      }
+
+      .example__translation {
+        font-size: 1.5em;
+        font-style: italic;
       }
     </style>
   </head>
   <body>
-    <h1 class="main-character">ñ</h1>
+    <div class="container">
+      <h1 class="main-character">ñ</h1>
 
-    <h2 class="examples">mañana</h2>
-    <h2 class="examples">sueño</h2>
-    <h2 class="examples">antaño</h2>
+      <section class="example">
+        <h2 class="example__original">oto<b class="example__character">ñ</b>o</h2>
+        <span class="example__translation">Noun: autumn.</span>
+      </section>
+
+      <section class="example">
+        <h2 class="example__original">ma<b class="example__character">ñ</b>ana</h2>
+        <span class="example__translation">Noun: tomorrow. Noun: morning.</span>
+      </section>
+
+      <section class="example">
+        <h2 class="example__original">pi<b class="example__character">ñ</b>ata</h2>
+        <span class="example__translation">Noun: figure made of cardboard or clay filled with candy, fruit
+          and/or toys that gets hit with a stick during certain celebrations until the contents fall out.
+          It's complicated.</span>
+      </section>
+
+      <section class="example">
+        <h2 class="example__original">espa<b class="example__character">ñ</b>ol</h2>
+        <span class="example__translation">Noun: the Spanish language. Adjective: of Spanish origin.</span>
+      </section>
+
+      <section class="example">
+        <h2 class="example__original"><b class="example__character">ñ</b>á<b class="example__character">ñ</b>aras</h2>
+        <span class="example__translation">Noun: discomfort caused by an unpleasant situation.</span>
+      </section>
+    </div>
   </body>
 </html>
 
