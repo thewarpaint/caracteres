@@ -61,11 +61,32 @@
         font-size: 1.5em;
         font-style: italic;
       }
+
+      .code-list {
+        margin: 0 0 2em;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .code {
+        font-size: 1.5em;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: .25em;
+        padding: .125em .25em;
+        margin: .125em;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <h1 class="main-character">ñ</h1>
+
+      <ul class="code-list">
+        <li class="code"><code>&amp;ntilde;</code></li>
+        <li class="code"><code>&amp;#241;</code></li>
+        <li class="code"><code>U+00F1</code></li>
+      </ul>
 
       <section class="example">
         <h2 class="example__original">oto<b class="example__character">ñ</b>o</h2>
