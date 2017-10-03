@@ -81,6 +81,29 @@
         padding: .125em .25em;
         margin: .125em;
       }
+
+      .alphabet {
+        font-family: "Abril Fatface", serif;
+        font-size: 1.25em;
+        text-align: center;
+        margin: .5em 0 2em;
+      }
+
+      .alphabet__character {
+        color: #c70218; /* Spain flag: red */
+      }
+
+      @media (min-width: 641px) {
+        .alphabet {
+          letter-spacing: .25em;
+        }
+      }
+
+      @media (min-width: 960px) {
+        .alphabet {
+          letter-spacing: .5em;
+        }
+      }
     </style>
   </head>
   <body>
@@ -132,6 +155,10 @@
         <span class="example__translation">Noun: discomfort caused by an unpleasant situation.</span>
       </section>
     </div>
+
+    <p class="alphabet">
+      a b c d e f g h i j k l m n <b class="alphabet__character">ñ</b> o p q r s t u v w x y z
+    </p>
   </body>
 </html>
 
