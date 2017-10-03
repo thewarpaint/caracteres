@@ -75,13 +75,16 @@
         list-style: none;
       }
 
-      .code {
-        font-size: 1.25em;
+      .code, .keyboard__key {
         display: inline-block;
         border: 1px solid black;
         border-radius: .25em;
-        padding: .125em .25em;
         margin: .125em;
+      }
+
+      .code {
+        font-size: 1.25em;
+        padding: .125em .25em;
       }
 
       .alphabet {
@@ -106,6 +109,34 @@
         .alphabet {
           letter-spacing: .5em;
         }
+      }
+
+      .keyboard {
+        margin-bottom: 2em;
+      }
+
+      .keyboard__row--two {
+        padding-left: .375em;
+      }
+
+      .keyboard__row--three {
+        padding-left: 1.125em;
+      }
+
+      .keyboard__key {
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+        text-align: center;
+        width: 1em;
+        height: 1em;
+        padding: .375em;
+        line-height: 1em;
+      }
+
+      .keyboard__character {
+        background-color: black;
+        color: #ffc501; /* Spain flag: yellow */
       }
     </style>
   </head>
@@ -156,6 +187,20 @@
       <section class="example">
         <h2 class="example__original"><b class="example__character">ñ</b>á<b class="example__character">ñ</b>aras</h2>
         <span class="example__translation">Noun: discomfort caused by an unpleasant situation.</span>
+      </section>
+
+      <section class="keyboard">
+        <div class="keyboard__row keyboard__row--one">
+          <span class="keyboard__key">q</span><span class="keyboard__key">w</span><span class="keyboard__key">e</span><span class="keyboard__key">r</span><span class="keyboard__key">t</span><span class="keyboard__key">y</span><span class="keyboard__key">u</span><span class="keyboard__key">i</span><span class="keyboard__key">o</span><span class="keyboard__key">p</span>
+        </div>
+
+        <div class="keyboard__row keyboard__row--two">
+          <span class="keyboard__key">a</span><span class="keyboard__key">s</span><span class="keyboard__key">d</span><span class="keyboard__key">f</span><span class="keyboard__key">g</span><span class="keyboard__key">h</span><span class="keyboard__key">j</span><span class="keyboard__key">k</span><span class="keyboard__key">l</span><span class="keyboard__key keyboard__character">ñ</span>
+        </div>
+
+        <div class="keyboard__row keyboard__row--three">
+          <span class="keyboard__key">z</span><span class="keyboard__key">x</span><span class="keyboard__key">c</span><span class="keyboard__key">v</span><span class="keyboard__key">b</span><span class="keyboard__key">n</span><span class="keyboard__key">m</span>
+        </div>
       </section>
     </div>
 
