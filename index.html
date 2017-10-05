@@ -94,9 +94,23 @@
       }
 
       .alphabet {
+        list-style: none;
+        padding-left: 0;
         font-size: 1.25em;
+        margin: .5em 0 4em;
+      }
+
+      .alphabet__entry {
+        display: inline-block;
+        width: 2.25vw;
+        min-width: 0.75em;
         text-align: center;
-        margin: .5em 0 2em;
+      }
+
+      @media (min-width: 641px) {
+        .alphabet__entry {
+          width: .6875em;
+        }
       }
 
       .alphabet__character {
@@ -104,16 +118,11 @@
         color: #c70218; /* Spain flag: red */
       }
 
-      @media (min-width: 641px) {
-        .alphabet {
-          letter-spacing: .25em;
-        }
-      }
-
-      @media (min-width: 960px) {
-        .alphabet {
-          letter-spacing: .5em;
-        }
+      /* balloon tooltip */
+      .alphabet__character:after {
+        color: #ffc501; /* Spain flag: yellow */
+        font-family: "Helvetica Neue", "Helvetica", sans-serif !important;
+        font-size: .75em !important;
       }
 
       .keyboard {
@@ -223,11 +232,37 @@
           <span class="keyboard__key">z</span><span class="keyboard__key">x</span><span class="keyboard__key">c</span><span class="keyboard__key">v</span><span class="keyboard__key">b</span><span class="keyboard__key">n</span><span class="keyboard__key">m</span>
         </div>
       </section>
-    </div>
 
-    <p class="alphabet">
-      a b c d e f g h i j k l m n <b class="alphabet__character">ñ</b> o p q r s t u v w x y z
-    </p>
+      <ul class="alphabet">
+        <li class="alphabet__entry">a</li>
+        <li class="alphabet__entry">b</li>
+        <li class="alphabet__entry">c</li>
+        <li class="alphabet__entry">d</li>
+        <li class="alphabet__entry">e</li>
+        <li class="alphabet__entry">f</li>
+        <li class="alphabet__entry">g</li>
+        <li class="alphabet__entry">h</li>
+        <li class="alphabet__entry">i</li>
+        <li class="alphabet__entry">j</li>
+        <li class="alphabet__entry">k</li>
+        <li class="alphabet__entry">l</li>
+        <li class="alphabet__entry">m</li>
+        <li class="alphabet__entry">n</li>
+        <li class="alphabet__entry"><b class="alphabet__character" data-balloon="#15" data-balloon-visible data-balloon-pos="down">ñ</b></li>
+        <li class="alphabet__entry">o</li>
+        <li class="alphabet__entry">p</li>
+        <li class="alphabet__entry">q</li>
+        <li class="alphabet__entry">r</li>
+        <li class="alphabet__entry">s</li>
+        <li class="alphabet__entry">t</li>
+        <li class="alphabet__entry">u</li>
+        <li class="alphabet__entry">v</li>
+        <li class="alphabet__entry">w</li>
+        <li class="alphabet__entry">x</li>
+        <li class="alphabet__entry">y</li>
+        <li class="alphabet__entry">z</li>
+      </ul>
+    </div>
   </body>
 </html>
 
