@@ -1,14 +1,18 @@
+---
+permalink: /
+---
+{% assign char = site.data.enye %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="title" content="ñ • Caracteres">
-    <meta name="description" content="The eñe is a letter of the Spanish alphabet.">
+    <meta name="title" content="{{ char.character }} • Caracteres">
+    <meta name="description" content="{{ char.description }}">
     <meta name="theme-color" content="#ffc501">
     <link rel="manifest" href="manifest.json">
 
-    <title>ñ • Caracteres</title>
+    <title>{{ char.character }} • Caracteres</title>
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="assets/balloon-2841f2f.css" rel="stylesheet">
@@ -17,7 +21,7 @@
       html {
         font-family: "Times New Roman", "Times", serif;
         font-size: 12px;
-        background-color: #ffc501; /* Spain flag: yellow */
+        background-color: {{ char.theme.yellow }};
       }
 
       @media (min-width: 641px) {
@@ -58,7 +62,7 @@
 
       .example__character {
         font-weight: normal;
-        color: #c70218; /* Spain flag: red */
+        color: {{ char.theme.red }};
       }
 
       .explanation, .example__translation {
@@ -78,7 +82,7 @@
 
       .code, .keyboard__key {
         display: inline-block;
-        border: 1px solid black;
+        border: 1px solid {{ char.theme.black }};
         border-radius: .25em;
         margin: .125em;
       }
@@ -115,12 +119,12 @@
 
       .alphabet__character {
         font-weight: normal;
-        color: #c70218; /* Spain flag: red */
+        color: {{ char.theme.red }};
       }
 
       /* balloon tooltip */
       .alphabet__character:after {
-        color: #ffc501; /* Spain flag: yellow */
+        color: {{ char.theme.yellow }};
         font-family: "Helvetica Neue", "Helvetica", sans-serif !important;
         font-size: .75em !important;
       }
@@ -129,11 +133,11 @@
         margin-bottom: 2em;
       }
 
-      .keyboard__row--two {
+      .keyboard__row--2 {
         padding-left: .375em;
       }
 
-      .keyboard__row--three {
+      .keyboard__row--3 {
         padding-left: 1.125em;
       }
 
@@ -163,104 +167,62 @@
       }
 
       .keyboard__character {
-        background-color: #c70218; /* Spain flag: red */
-        border-color: #c70218; /* Spain flag: red */
-        color: #ffc501; /* Spain flag: yellow */
+        background-color: {{ char.theme.red }};
+        border-color: {{ char.theme.red }};
+        color: {{ char.theme.yellow }};
         font-weight: normal;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1 class="main-character">ñ</h1>
+      <h1 class="main-character">{{ char.character }}</h1>
 
       <ul class="code-list">
-        <li class="code"><code>&amp;ntilde;</code></li>
-        <li class="code"><code>&amp;#241;</code></li>
-        <li class="code"><code>U+00F1</code></li>
+        {% for code in char.codes %}
+        <li class="code"><code>{{ code }}</code></li>
+        {% endfor %}
       </ul>
 
       <section class="intro">
-        <p class="explanation">The <b>eñe</b> (IPA: /ˈeɲe/) is a letter of the Spanish alphabet.</p>
-
-        <p class="explanation">The symbol on top is called <b>"tilde"</b> or <b>"virgulilla"</b>.</p>
-
-        <p class="explanation">It originated as a ligature of <b>nn</b>, the tilde being a shorthand for a
-          smaller n on top of the first one.</p>
-
-        <p class="explanation">The sound is present in other Romance languages with a different spelling.
-          For example, <b>gn</b> in Italian or French, <b>nh</b> in Portuguese, and <b>ny</b> in Catalan.</p>
+        {% for explanation in char.explanationItems %}
+        <p class="explanation">{{ explanation }}</p>
+        {% endfor %}
       </section>
 
+      {% assign exampleCharacterTemplate = '<b class="example__character">__CHAR__</b>' %}
+      {% assign exampleCharacter = exampleCharacterTemplate | replace:'__CHAR__',char.character %}
+      {% for example in char.examples %}
       <section class="example">
-        <h2 class="example__original">oto<b class="example__character">ñ</b>o</h2>
-        <span class="example__translation">Noun: autumn.</span>
+        <h2 class="example__original">{{ example.word | replace:char.character,exampleCharacter }}</h2>
+        <span class="example__translation">{{ example.translation }}</span>
       </section>
-
-      <section class="example">
-        <h2 class="example__original">ma<b class="example__character">ñ</b>ana</h2>
-        <span class="example__translation">Noun: tomorrow. Noun: morning.</span>
-      </section>
-
-      <section class="example">
-        <h2 class="example__original">pi<b class="example__character">ñ</b>ata</h2>
-        <span class="example__translation">Noun: figure made of cardboard or clay filled with candy, fruit
-          and/or toys that gets hit with a stick during certain celebrations until the contents fall out.
-          It's complicated.</span>
-      </section>
-
-      <section class="example">
-        <h2 class="example__original">espa<b class="example__character">ñ</b>ol</h2>
-        <span class="example__translation">Noun: the Spanish language. Adjective: of Spanish origin.</span>
-      </section>
-
-      <section class="example">
-        <h2 class="example__original"><b class="example__character">ñ</b>á<b class="example__character">ñ</b>aras</h2>
-        <span class="example__translation">Noun: discomfort caused by an unpleasant situation.</span>
-      </section>
+      {% endfor %}
 
       <section class="keyboard">
-        <div class="keyboard__row keyboard__row--one">
-          <span class="keyboard__key">q</span><span class="keyboard__key">w</span><span class="keyboard__key">e</span><span class="keyboard__key">r</span><span class="keyboard__key">t</span><span class="keyboard__key">y</span><span class="keyboard__key">u</span><span class="keyboard__key">i</span><span class="keyboard__key">o</span><span class="keyboard__key">p</span>
+        {% for rawRow in char.keyboard %}
+        {% assign row = rawRow | split:" " %}
+        <div class="keyboard__row keyboard__row--{{ forloop.index }}">
+          {%- for charEntry in row -%}
+          <span class="keyboard__key {% if charEntry == char.character %}keyboard__character{% endif %}">{{ charEntry }}</span>
+          {%- endfor -%}
         </div>
-
-        <div class="keyboard__row keyboard__row--two">
-          <span class="keyboard__key">a</span><span class="keyboard__key">s</span><span class="keyboard__key">d</span><span class="keyboard__key">f</span><span class="keyboard__key">g</span><span class="keyboard__key">h</span><span class="keyboard__key">j</span><span class="keyboard__key">k</span><span class="keyboard__key">l</span><span class="keyboard__key keyboard__character">ñ</span>
-        </div>
-
-        <div class="keyboard__row keyboard__row--three">
-          <span class="keyboard__key">z</span><span class="keyboard__key">x</span><span class="keyboard__key">c</span><span class="keyboard__key">v</span><span class="keyboard__key">b</span><span class="keyboard__key">n</span><span class="keyboard__key">m</span>
-        </div>
+        {% endfor %}
       </section>
 
       <ul class="alphabet">
-        <li class="alphabet__entry">a</li>
-        <li class="alphabet__entry">b</li>
-        <li class="alphabet__entry">c</li>
-        <li class="alphabet__entry">d</li>
-        <li class="alphabet__entry">e</li>
-        <li class="alphabet__entry">f</li>
-        <li class="alphabet__entry">g</li>
-        <li class="alphabet__entry">h</li>
-        <li class="alphabet__entry">i</li>
-        <li class="alphabet__entry">j</li>
-        <li class="alphabet__entry">k</li>
-        <li class="alphabet__entry">l</li>
-        <li class="alphabet__entry">m</li>
-        <li class="alphabet__entry">n</li>
-        <li class="alphabet__entry"><b class="alphabet__character" data-balloon="#15" data-balloon-visible data-balloon-pos="down">ñ</b></li>
-        <li class="alphabet__entry">o</li>
-        <li class="alphabet__entry">p</li>
-        <li class="alphabet__entry">q</li>
-        <li class="alphabet__entry">r</li>
-        <li class="alphabet__entry">s</li>
-        <li class="alphabet__entry">t</li>
-        <li class="alphabet__entry">u</li>
-        <li class="alphabet__entry">v</li>
-        <li class="alphabet__entry">w</li>
-        <li class="alphabet__entry">x</li>
-        <li class="alphabet__entry">y</li>
-        <li class="alphabet__entry">z</li>
+        {% assign alphabet = char.alphabet.entries | split:" " %}
+        {% for charEntry in alphabet %}
+        <li class="alphabet__entry">
+          {%- if charEntry == char.character -%}
+          <b class="alphabet__character"
+             data-balloon="#{{ char.alphabet.position }}"
+             data-balloon-visible data-balloon-pos="down">{{ charEntry }}</b>
+          {%- else -%}
+          {{ charEntry }}
+          {%- endif -%}
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </body>
