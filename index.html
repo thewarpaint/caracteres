@@ -14,12 +14,13 @@ permalink: /
 
     <title>{{ char.character }} • Caracteres</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700" rel="stylesheet">
     <link href="assets/balloon-2841f2f.css" rel="stylesheet">
 
     <style type="text/css">
       html {
-        font-family: "Times New Roman", "Times", serif;
+        font-family: "Lato", "Times New Roman", "Times", serif;
+        font-weight: 300;
         font-size: 12px;
         background-color: {{ char.theme.yellow }};
       }
@@ -72,6 +73,11 @@ permalink: /
 
       .example__translation {
         font-style: italic;
+      }
+
+      .ipa {
+        font-family: "Helvetica Neue", "Helvetica", sans-serif;
+        font-weight: normal;
       }
 
       .code-list {
