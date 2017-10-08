@@ -92,36 +92,39 @@ permalink: /
         padding: .125em .25em;
       }
 
+      /* balloon tooltip */
+      .alphabet__character:after, .frequencies__bar:after, .frequencies__letter:after {
+        font-family: "Helvetica Neue", "Helvetica", sans-serif !important;
+        font-size: .75em !important;
+        color: {{ char.theme.yellow }};
+      }
+
       .alphabet, .keyboard__key {
         font-family: "Helvetica Neue", "Helvetica", sans-serif;
         font-weight: 200;
       }
 
-      /* balloon tooltip */
-      .alphabet__character:after, .frequencies__bar:after, .frequencies__letter:after {
-        color: {{ char.theme.yellow }};
-        font-family: "Helvetica Neue", "Helvetica", sans-serif !important;
-        font-size: .75em !important;
+      .alphabet, .frequencies {
+        width: 100%;
+        table-layout: fixed;
+      }
+
+      .alphabet, .frequencies__letter {
+        font-size: 1em;
+      }
+
+      @media (min-width: 480px) {
+        .alphabet, .frequencies__letter {
+          font-size: 1.25em;
+        }
       }
 
       .alphabet {
-        list-style: none;
-        padding-left: 0;
-        font-size: 1.25em;
         margin: .5em 0 4em;
       }
 
       .alphabet__entry {
-        display: inline-block;
-        width: 2.25vw;
-        min-width: 0.75em;
         text-align: center;
-      }
-
-      @media (min-width: 641px) {
-        .alphabet__entry {
-          width: .6875em;
-        }
       }
 
       .alphabet__character {
@@ -174,8 +177,6 @@ permalink: /
       }
 
       .frequencies {
-        table-layout: fixed;
-        width: 100%;
         margin-bottom: 4em;
       }
 
@@ -211,14 +212,7 @@ permalink: /
 
       .frequencies__letter {
         font-family: "Helvetica Neue", "Helvetica", sans-serif;
-        font-size: 1em;
         font-weight: 200;
-      }
-
-      @media (min-width: 480px) {
-        .frequencies__letter {
-          font-size: 1.25em;
-        }
       }
 
       .frequencies__letter--character {
@@ -263,20 +257,24 @@ permalink: /
         {% endfor %}
       </section>
 
-      <ul class="alphabet">
-        {% assign alphabet = char.alphabet.entries | split:" " %}
-        {% for charEntry in alphabet %}
-        <li class="alphabet__entry">
-          {%- if charEntry == char.character -%}
-          <b class="alphabet__character"
-             data-balloon="#{{ char.alphabet.position }}"
-             data-balloon-visible data-balloon-pos="down">{{ charEntry }}</b>
-          {%- else -%}
-          {{ charEntry }}
-          {%- endif -%}
-        </li>
-        {% endfor %}
-      </ul>
+      <table class="alphabet">
+        <tbody>
+          <tr>
+            {% assign alphabet = char.alphabet.entries | split:" " %}
+            {% for charEntry in alphabet %}
+            <td class="alphabet__entry">
+              {%- if charEntry == char.character -%}
+              <b class="alphabet__character"
+                 data-balloon="#{{ char.alphabet.position }}"
+                 data-balloon-visible data-balloon-pos="down">{{ charEntry }}</b>
+              {%- else -%}
+              {{ charEntry }}
+              {%- endif -%}
+            </td>
+            {% endfor %}
+          </tr>
+        </tbody>
+      </table>
 
       {% assign sortedFrequency = char.frequency | sort:'percentage' | reverse %}
       <table class="frequencies">
