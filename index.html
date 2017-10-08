@@ -225,12 +225,6 @@ permalink: /
     <div class="container">
       <h1 class="main-character">{{ char.character }}</h1>
 
-      <ul class="code-list">
-        {% for code in char.codes %}
-        <li class="code"><code>{{ code }}</code></li>
-        {% endfor %}
-      </ul>
-
       <section class="intro">
         {% for explanation in char.explanationItems %}
         <p class="explanation">{{ explanation }}</p>
@@ -245,6 +239,12 @@ permalink: /
         <span class="example__translation">{{ example.translation }}</span>
       </section>
       {% endfor %}
+
+      <ul class="code-list">
+        {% for code in char.codes %}
+        <li class="code"><code>{{ code }}</code></li>
+        {% endfor %}
+      </ul>
 
       <section class="keyboard">
         {% for rawRow in char.keyboard %}
