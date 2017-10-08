@@ -97,6 +97,13 @@ permalink: /
         font-weight: 200;
       }
 
+      /* balloon tooltip */
+      .alphabet__character:after, .frequencies__bar:after, .frequencies__letter:after {
+        color: {{ char.theme.yellow }};
+        font-family: "Helvetica Neue", "Helvetica", sans-serif !important;
+        font-size: .75em !important;
+      }
+
       .alphabet {
         list-style: none;
         padding-left: 0;
@@ -120,13 +127,6 @@ permalink: /
       .alphabet__character {
         font-weight: normal;
         color: {{ char.theme.red }};
-      }
-
-      /* balloon tooltip */
-      .alphabet__character:after {
-        color: {{ char.theme.yellow }};
-        font-family: "Helvetica Neue", "Helvetica", sans-serif !important;
-        font-size: .75em !important;
       }
 
       .keyboard {
@@ -167,10 +167,63 @@ permalink: /
       }
 
       .keyboard__character {
+        font-weight: normal;
         background-color: {{ char.theme.red }};
         border-color: {{ char.theme.red }};
         color: {{ char.theme.yellow }};
+      }
+
+      .frequencies {
+        table-layout: fixed;
+        width: 100%;
+        margin-bottom: 4em;
+      }
+
+      .frequencies__bar-container, .frequencies__letter {
+        text-align: center;
+      }
+
+      .frequencies__bar-container {
+        vertical-align: bottom;
+      }
+
+      .frequencies__bar {
+        width: .25em;
+        margin: 0 auto;
+        background: {{ char.theme.black }};
+      }
+
+      @media (min-width: 480px) {
+        .frequencies__bar {
+          width: .375em;
+        }
+      }
+
+      @media (min-width: 641px) {
+        .frequencies__bar {
+          width: .5em;
+        }
+      }
+
+      .frequencies__bar-container--character .frequencies__bar {
+        background-color: {{ char.theme.red }};
+      }
+
+      .frequencies__letter {
+        font-family: "Helvetica Neue", "Helvetica", sans-serif;
+        font-size: 1em;
+        font-weight: 200;
+      }
+
+      @media (min-width: 480px) {
+        .frequencies__letter {
+          font-size: 1.25em;
+        }
+      }
+
+      .frequencies__letter--character {
         font-weight: normal;
+        color: {{ char.theme.red }};
       }
     </style>
   </head>
@@ -224,6 +277,39 @@ permalink: /
         </li>
         {% endfor %}
       </ul>
+
+      {% assign sortedFrequency = char.frequency | sort:'percentage' | reverse %}
+      <table class="frequencies">
+        <tbody>
+          <tr>
+            {% for charEntry in sortedFrequency %}
+            <td class="frequencies__bar-container
+                       {% if charEntry.letter == char.character %}frequencies__bar-container--character{% endif %}">
+              <div class="frequencies__bar"
+                   style="height: {{ charEntry.percentage | times:10 | ceil }}px;"
+                   {% if charEntry.letter != char.character %}
+                   data-balloon="{{ charEntry.percentage }}%"
+                   data-balloon-pos="up"
+                   {% endif %}>
+                &nbsp;
+              </div>
+            </td>
+            {% endfor %}
+          </tr>
+          <tr>
+            {% for charEntry in sortedFrequency %}
+            <td class="frequencies__letter
+                       {% if charEntry.letter == char.character %}frequencies__letter--character{% endif %}"
+                {% if charEntry.letter == char.character %}
+                data-balloon="Frequency: {{ charEntry.percentage }}%"
+                data-balloon-visible data-balloon-pos="down"
+                {% endif %}>
+              {{ charEntry.letter }}
+            </td>
+            {% endfor %}
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>
