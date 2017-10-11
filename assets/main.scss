@@ -1,15 +1,6 @@
-$enye-theme-color-primary: #c70218; // Spanish flag: red
-$enye-theme-color-secondary: #000000;
-$enye-theme-color-tertiary: #ffc501; // Spanish flag: yellow
-$enye-theme-font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
-$enye-theme-font-primary: "Abril Fatface", serif;
-$enye-theme-font-secondary: "Lato", $enye-theme-font-sans-serif;
-
 html {
-  font-family: $enye-theme-font-secondary;
   font-weight: 300;
   font-size: 12px;
-  background-color: $enye-theme-color-tertiary;
 }
 
 @media (min-width: 641px) {
@@ -30,7 +21,6 @@ body {
 }
 
 .main-character, .example__original {
-  font-family: $enye-theme-font-primary;
   font-weight: normal;
   margin: 0;
 }
@@ -50,7 +40,6 @@ body {
 
 .example__character {
   font-weight: normal;
-  color: $enye-theme-color-primary;
 }
 
 .explanation, .example__translation {
@@ -63,7 +52,6 @@ body {
 }
 
 .ipa {
-  font-family: $enye-theme-font-sans-serif;
   font-weight: normal;
 }
 
@@ -74,7 +62,8 @@ body {
 }
 
 .code, .keyboard__key, .key {
-  border: 1px solid $enye-theme-color-secondary;
+  border-width: 1px;
+  border-style: solid;
   border-radius: .25em;
 }
 
@@ -90,13 +79,10 @@ body {
 
 /* balloon tooltip */
 .alphabet__character:after, .frequencies__bar:after, .frequencies__letter:after {
-  font-family: $enye-theme-font-sans-serif !important;
   font-size: .75em !important;
-  color: $enye-theme-color-tertiary;
 }
 
 .alphabet, .keyboard__key {
-  font-family: $enye-theme-font-sans-serif;
   font-weight: 200;
 }
 
@@ -125,7 +111,6 @@ body {
 
 .alphabet__character {
   font-weight: normal;
-  color: $enye-theme-color-primary;
 }
 
 .keyboard {
@@ -167,9 +152,6 @@ body {
 
 .keyboard__character {
   font-weight: normal;
-  background-color: $enye-theme-color-primary;
-  border-color: $enye-theme-color-primary;
-  color: $enye-theme-color-tertiary;
 }
 
 .frequencies {
@@ -187,7 +169,6 @@ body {
 .frequencies__bar {
   width: .25em;
   margin: 0 auto;
-  background: $enye-theme-color-secondary;
 }
 
 @media (min-width: 480px) {
@@ -202,18 +183,12 @@ body {
   }
 }
 
-.frequencies__bar-container--character .frequencies__bar {
-  background-color: $enye-theme-color-primary;
-}
-
 .frequencies__letter {
-  font-family: $enye-theme-font-sans-serif;
   font-weight: 200;
 }
 
 .frequencies__letter--character {
   font-weight: normal;
-  color: $enye-theme-color-primary;
 }
 
 .key-shortcuts {
@@ -221,6 +196,7 @@ body {
 }
 
 .key {
-  font-family: $enye-theme-font-sans-serif;
   margin: 0 .125em;
 }
+
+@import "theme-enye";
