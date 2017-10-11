@@ -1,0 +1,226 @@
+$enye-theme-color-primary: #c70218; // Spanish flag: red
+$enye-theme-color-secondary: #000000;
+$enye-theme-color-tertiary: #ffc501; // Spanish flag: yellow
+$enye-theme-font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
+$enye-theme-font-primary: "Abril Fatface", serif;
+$enye-theme-font-secondary: "Lato", $enye-theme-font-sans-serif;
+
+html {
+  font-family: $enye-theme-font-secondary;
+  font-weight: 300;
+  font-size: 12px;
+  background-color: $enye-theme-color-tertiary;
+}
+
+@media (min-width: 641px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 1em;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: 560px;
+    margin: 0 auto;
+  }
+}
+
+.main-character, .example__original {
+  font-family: $enye-theme-font-primary;
+  font-weight: normal;
+  margin: 0;
+}
+
+.main-character {
+  font-size: 12em;
+}
+
+.intro, .example {
+  margin-bottom: 2em;
+}
+
+.example__original {
+  font-size: 4em;
+  margin-bottom: .25em;
+}
+
+.example__character {
+  font-weight: normal;
+  color: $enye-theme-color-primary;
+}
+
+.explanation, .example__translation {
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+.example__translation {
+  font-style: italic;
+}
+
+.ipa {
+  font-family: $enye-theme-font-sans-serif;
+  font-weight: normal;
+}
+
+.code-list {
+  margin: 0 0 2.5em;
+  padding-left: 0;
+  list-style: none;
+}
+
+.code, .keyboard__key, .key {
+  border: 1px solid $enye-theme-color-secondary;
+  border-radius: .25em;
+}
+
+.code, .keyboard__key {
+  display: inline-block;
+  margin: .125em;
+}
+
+.code, .key {
+  font-size: 1.25em;
+  padding: .125em .375em;
+}
+
+/* balloon tooltip */
+.alphabet__character:after, .frequencies__bar:after, .frequencies__letter:after {
+  font-family: $enye-theme-font-sans-serif !important;
+  font-size: .75em !important;
+  color: $enye-theme-color-tertiary;
+}
+
+.alphabet, .keyboard__key {
+  font-family: $enye-theme-font-sans-serif;
+  font-weight: 200;
+}
+
+.alphabet, .frequencies {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.alphabet, .frequencies__letter {
+  font-size: 1em;
+}
+
+@media (min-width: 480px) {
+  .alphabet, .frequencies__letter {
+    font-size: 1.25em;
+  }
+}
+
+.alphabet {
+  margin: .5em 0 4em;
+}
+
+.alphabet__entry {
+  text-align: center;
+}
+
+.alphabet__character {
+  font-weight: normal;
+  color: $enye-theme-color-primary;
+}
+
+.keyboard {
+  margin-bottom: 3em;
+}
+
+.keyboard__row--2 {
+  padding-left: .375em;
+}
+
+.keyboard__row--3 {
+  padding-left: 1.125em;
+}
+
+.keyboard__key {
+  text-transform: uppercase;
+  text-align: center;
+  width: 1em;
+  height: 1em;
+  padding: .375em;
+  line-height: 1em;
+
+  font-size: 4.25vw;
+  width: 4.25vw;
+  height: 4.25vw;
+  padding: 1.5vw;
+  line-height: 4.25vw;
+}
+
+@media (min-width: 641px) {
+  .keyboard__key {
+    font-size: 1.325em;
+    width: 1.325em;
+    height: 1.325em;
+    padding: .4375em;
+    line-height: 1.325em;
+  }
+}
+
+.keyboard__character {
+  font-weight: normal;
+  background-color: $enye-theme-color-primary;
+  border-color: $enye-theme-color-primary;
+  color: $enye-theme-color-tertiary;
+}
+
+.frequencies {
+  margin-bottom: 4em;
+}
+
+.frequencies__bar-container, .frequencies__letter {
+  text-align: center;
+}
+
+.frequencies__bar-container {
+  vertical-align: bottom;
+}
+
+.frequencies__bar {
+  width: .25em;
+  margin: 0 auto;
+  background: $enye-theme-color-secondary;
+}
+
+@media (min-width: 480px) {
+  .frequencies__bar {
+    width: .375em;
+  }
+}
+
+@media (min-width: 641px) {
+  .frequencies__bar {
+    width: .5em;
+  }
+}
+
+.frequencies__bar-container--character .frequencies__bar {
+  background-color: $enye-theme-color-primary;
+}
+
+.frequencies__letter {
+  font-family: $enye-theme-font-sans-serif;
+  font-weight: 200;
+}
+
+.frequencies__letter--character {
+  font-weight: normal;
+  color: $enye-theme-color-primary;
+}
+
+.key-shortcuts {
+  margin-bottom: 3em;
+}
+
+.key {
+  font-family: $enye-theme-font-sans-serif;
+  margin: 0 .125em;
+}
