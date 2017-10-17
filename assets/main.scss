@@ -33,22 +33,24 @@ body {
   margin-bottom: 2em;
 }
 
-.example__original {
-  font-size: 4em;
-  margin-bottom: .25em;
-}
-
-.example__character {
-  font-weight: normal;
-}
-
 .explanation, .example__translation {
   line-height: 1.5em;
   font-size: 1.5em;
 }
 
-.example__translation {
-  font-style: italic;
+.example {
+  &__original {
+    font-size: 4em;
+    margin-bottom: .25em;
+  }
+
+  &__character {
+    font-weight: normal;
+  }
+
+  &__translation {
+    font-style: italic;
+  }
 }
 
 .ipa {
@@ -103,92 +105,86 @@ body {
 
 .alphabet {
   margin: .5em 0 4em;
-}
 
-.alphabet__entry {
-  text-align: center;
-}
+  &__entry {
+    text-align: center;
+  }
 
-.alphabet__character {
-  font-weight: normal;
+  &__character {
+    font-weight: normal;
+  }
 }
 
 .keyboard {
   margin-bottom: 3em;
-}
 
-.keyboard__row--2 {
-  padding-left: .375em;
-}
-
-.keyboard__row--3 {
-  padding-left: 1.125em;
-}
-
-.keyboard__key {
-  text-transform: uppercase;
-  text-align: center;
-  width: 1em;
-  height: 1em;
-  padding: .375em;
-  line-height: 1em;
-
-  font-size: 4.25vw;
-  width: 4.25vw;
-  height: 4.25vw;
-  padding: 1.5vw;
-  line-height: 4.25vw;
-}
-
-@media (min-width: 641px) {
-  .keyboard__key {
-    font-size: 1.325em;
-    width: 1.325em;
-    height: 1.325em;
-    padding: .4375em;
-    line-height: 1.325em;
+  &__row--2 {
+    padding-left: .375em;
   }
-}
 
-.keyboard__character {
-  font-weight: normal;
+  &__row--3 {
+    padding-left: 1.125em;
+  }
+
+  &__key {
+    text-transform: uppercase;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+    padding: .375em;
+    line-height: 1em;
+
+    font-size: 4.25vw;
+    width: 4.25vw;
+    height: 4.25vw;
+    padding: 1.5vw;
+    line-height: 4.25vw;
+
+    @media (min-width: 641px) {
+      font-size: 1.325em;
+      width: 1.325em;
+      height: 1.325em;
+      padding: .4375em;
+      line-height: 1.325em;
+    }
+  }
+
+  &__character {
+    font-weight: normal;
+  }
 }
 
 .frequencies {
   margin-bottom: 4em;
-}
 
-.frequencies__bar-container, .frequencies__letter {
-  text-align: center;
-}
-
-.frequencies__bar-container {
-  vertical-align: bottom;
-}
-
-.frequencies__bar {
-  width: .25em;
-  margin: 0 auto;
-}
-
-@media (min-width: 480px) {
-  .frequencies__bar {
-    width: .375em;
+  &__bar-container, &__letter {
+    text-align: center;
   }
-}
 
-@media (min-width: 641px) {
-  .frequencies__bar {
-    width: .5em;
+  &__bar-container {
+    vertical-align: bottom;
   }
-}
 
-.frequencies__letter {
-  font-weight: 200;
-}
+  &__bar {
+    width: .25em;
+    margin: 0 auto;
 
-.frequencies__letter--character {
-  font-weight: normal;
+    @media (min-width: 480px) {
+      width: .375em;
+    }
+
+    @media (min-width: 641px) {
+      width: .5em;
+    }
+  }
+
+  &__letter {
+    font-weight: 200;
+  }
+
+  &__letter--character {
+    font-weight: normal;
+  }
 }
 
 .key-shortcuts {
