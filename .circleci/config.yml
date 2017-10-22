@@ -1,0 +1,11 @@
+version: 2
+jobs:
+    build:
+      working_directory: ~/caracteres
+      docker:
+        - image: jbergknoff/sass:latest
+      steps:
+          - checkout
+          - run:
+              name: compile sass
+              command: sass --style compressed assets/main.scss assets/main.min.css
