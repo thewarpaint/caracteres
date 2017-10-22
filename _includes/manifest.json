@@ -1,0 +1,11 @@
+{%- assign char = site.data[include.character] -%}
+{
+  "short_name": "Caracteres",
+  "name": "Caracteres",
+  "icons": [],
+  "start_url": "index.html",
+  "display": "browser",
+  "orientation": "portrait-primary",
+  "background_color": "{{ char.theme.color }}",
+  "theme_color": "{{ char.theme.color }}"
+}
