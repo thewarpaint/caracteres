@@ -9,42 +9,6 @@ $enye-theme-font-primary: "Abril Fatface", serif;
 $enye-theme-font-secondary: "Lato", $enye-theme-font-sans-serif;
 
 .body--enye {
-  font-family: $enye-theme-font-secondary;
-  background-color: $enye-theme-color-tertiary;
-
-  .main-character, .example__original {
-    font-family: $enye-theme-font-primary;
-  }
-
-  .example__character, .alphabet__character, .frequencies__letter--character {
-    color: $enye-theme-color-primary;
-  }
-
-  .ipa, .alphabet, .keyboard__key, .frequencies__letter, .key {
-    font-family: $enye-theme-font-sans-serif;
-  }
-
-  .code, .keyboard__key, .key, .frequencies__bar {
-    border-color: $enye-theme-color-secondary;
-  }
-
-  /* balloon tooltip */
-  .alphabet__character:after, .frequencies__bar:after, .frequencies__letter:after {
-    font-family: $enye-theme-font-sans-serif !important;
-    color: $enye-theme-color-tertiary;
-  }
-
-  .keyboard__character {
-    background-color: $enye-theme-color-primary;
-    border-color: $enye-theme-color-primary;
-    color: $enye-theme-color-tertiary;
-  }
-
-  .frequencies__bar {
-    background-color: $enye-theme-color-secondary;
-  }
-
-  .frequencies__bar-container--character .frequencies__bar {
-    background-color: $enye-theme-color-primary;
-  }
+  @include theme($enye-theme-font-primary, $enye-theme-font-secondary, $enye-theme-font-sans-serif,
+                 $enye-theme-color-primary, $enye-theme-color-secondary, $enye-theme-color-tertiary);
 }

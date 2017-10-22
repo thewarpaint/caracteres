@@ -1,0 +1,14 @@
+/**
+ * Eszett theme
+ */
+$eszett-theme-color-secondary: #0099d5; // Bayern flag: blue
+$eszett-theme-color-primary: darken($eszett-theme-color-secondary, 20%);
+$eszett-theme-color-tertiary: #ffffff; // Bayern flag: blue
+$eszett-theme-font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
+$eszett-theme-font-primary: "Abril Fatface", serif;
+$eszett-theme-font-secondary: "Lato", $eszett-theme-font-sans-serif;
+
+.body--eszett {
+  @include theme($eszett-theme-font-primary, $eszett-theme-font-secondary, $eszett-theme-font-sans-serif,
+                 $eszett-theme-color-primary, $eszett-theme-color-secondary, $eszett-theme-color-tertiary);
+}

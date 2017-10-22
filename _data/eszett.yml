@@ -2,7 +2,7 @@ character: ß
 description: The eszett is a letter of the German language.
 
 theme:
-  class: enye
+  class: eszett
   color: "#ffc501" # Spanish flag: yellow
   fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
 

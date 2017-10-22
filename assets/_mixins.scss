@@ -1,0 +1,41 @@
+@mixin theme($font-primary, $font-secondary, $font-sans-serif, $color-primary, $color-secondary, $color-tertiary) {
+  color: $color-secondary;
+  font-family: $font-secondary;
+  background-color: $color-tertiary;
+
+  .main-character, .example__original {
+    font-family: $font-primary;
+  }
+
+  .example__character, .alphabet__character, .frequencies__letter--character {
+    color: $color-primary;
+  }
+
+  .ipa, .alphabet, .keyboard__key, .frequencies__letter, .key {
+    font-family: $font-sans-serif;
+  }
+
+  .code, .keyboard__key, .key, .frequencies__bar {
+    border-color: $color-secondary;
+  }
+
+  /* balloon tooltip */
+  .alphabet__character:after, .frequencies__bar:after, .frequencies__letter:after {
+    font-family: $font-sans-serif !important;
+    color: $color-tertiary;
+  }
+
+  .keyboard__character {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-tertiary;
+  }
+
+  .frequencies__bar {
+    background-color: $color-secondary;
+  }
+
+  .frequencies__bar-container--character .frequencies__bar {
+    background-color: $color-primary;
+  }
+}
