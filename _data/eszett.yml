@@ -1,0 +1,110 @@
+character: ß
+description: The eszett is a letter of the German language.
+
+theme:
+  class: enye
+  color: "#ffc501" # Spanish flag: yellow
+  fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
+
+codes:
+  - "&amp;szlig;"
+  - "U+00DF"
+
+explanationItems:
+  - >
+    The <b>Eszett</b> (IPA: <span class="ipa">[ɛsˈtsɛt]</span>) is a German letter used to represent the
+    <b>[s]</b> phoneme when used after long vowels and diphthongs.
+  - >
+    Its name comes from the pronunciation of the letters <b>s (es)</b> and <b>z (zett)</b>.
+  - >
+    It originated as a ligature for <b>long s and tailed z</b> <span class="ipa">ſʒ</span> and
+    <b>long s and round s</b> <span class="ipa">ſs</span>.
+  - >
+    It didn't have a formal uppercase form? until recently. It I still commonly replaced with <b>SS</b>.
+
+examples:
+  - word: Große
+    translation: >
+      Adjective: big, large.
+
+  - word: Straße
+    translation: >
+      Noun: street, road.
+
+  - word: Süßkartoffel
+    translation: >
+      Noun: sweet potato.
+
+keyboard:
+  - 1 2 3 4 5 6 7 8 9 0 ß
+  - q w e r t y u i o p
+  - a s d f g h j k l ñ
+  - z x c v b n m
+
+shortcuts:
+  - >
+    Mac: <kbd class="key">option</kbd> + <kbd class="key">s</kbd>
+
+  - >
+    Windows: <kbd class="key">alt</kbd> + <kbd class="key">255</kbd>
+
+alphabet:
+  entries: a b c d e f g h i j k l m n o p q r s ß t u v w x y z
+  position: 20
+
+frequency:
+  - letter: a
+    percentage: 12.53
+  - letter: b
+    percentage: 1.42
+  - letter: c
+    percentage: 4.68
+  - letter: d
+    percentage: 5.86
+  - letter: e
+    percentage: 13.68
+  - letter: f
+    percentage: 0.69
+  - letter: g
+    percentage: 1.01
+  - letter: h
+    percentage: 0.70
+  - letter: i
+    percentage: 6.25
+  - letter: j
+    percentage: 0.44
+  - letter: k
+    percentage: 0.02
+  - letter: l
+    percentage: 4.97
+  - letter: m
+    percentage: 3.15
+  - letter: n
+    percentage: 6.71
+  - letter: ñ
+    percentage: 0.31
+  - letter: o
+    percentage: 8.68
+  - letter: p
+    percentage: 2.51
+  - letter: q
+    percentage: 0.88
+  - letter: r
+    percentage: 6.87
+  - letter: s
+    percentage: 7.98
+  - letter: t
+    percentage: 4.63
+  - letter: u
+    percentage: 3.93
+  - letter: v
+    percentage: 0.90
+  - letter: w
+    percentage: 0.01
+  - letter: x
+    percentage: 0.22
+  - letter: y
+    percentage: 0.90
+  - letter: z
+    percentage: 0.52
+
