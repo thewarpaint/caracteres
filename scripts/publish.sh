@@ -1,4 +1,4 @@
-#!/bin/sh -
+#!/usr/bin/env bash
 
 git add --force _site
 git commit -m "Release `date '+%Y-%m-%d %H:%M'`"

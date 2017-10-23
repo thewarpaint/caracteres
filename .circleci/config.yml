@@ -8,7 +8,7 @@ jobs:
       working_directory: ~/caracteres
 
       docker:
-        - image: jbergknoff/sass:latest
+        - image: circleci/ruby:2.4.1-node-browsers
 
       steps:
           - checkout
