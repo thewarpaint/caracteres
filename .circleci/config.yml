@@ -28,6 +28,11 @@ jobs:
                 ./scripts/build.sh
 
           - run:
+              name: Run HTMLProofer tests
+              command: |
+                bundle exec htmlproofer ./_site --check-html --disable-external
+
+          - run:
               name: Configure git user info
               command: |
                   git config --global user.email "eduardogarcia.xyz+gh@gmail.com"
