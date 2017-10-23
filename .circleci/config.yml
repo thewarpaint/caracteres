@@ -1,44 +1,44 @@
 version: 2
 jobs:
-    build:
-      branches:
-        only:
-          - master
+  build:
+    branches:
+      only:
+        - master
 
-      working_directory: ~/caracteres
+    working_directory: ~/caracteres
 
-      docker:
-        - image: circleci/ruby:2.4.1-node-browsers
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers
 
-      steps:
-          - checkout
+    steps:
+      - checkout
 
-          - add_ssh_keys:
-              fingerprints:
-                - "33:08:48:52:50:74:4c:c7:9e:f2:33:d6:c5:01:6c:91"
+      - add_ssh_keys:
+          fingerprints:
+            - "33:08:48:52:50:74:4c:c7:9e:f2:33:d6:c5:01:6c:91"
 
-          - run:
-              name: Install dependencies
-              command: |
-                bundle install
+      - run:
+          name: Install dependencies
+          command: |
+            bundle install
 
-          - run:
-              name: Build static website
-              command: |
-                ./scripts/build.sh
+      - run:
+          name: Build static website
+          command: |
+            ./scripts/build.sh
 
-          - run:
-              name: Run HTMLProofer tests
-              command: |
-                bundle exec htmlproofer ./_site --check-html --disable-external
+      - run:
+          name: Run HTMLProofer tests
+          command: |
+            bundle exec htmlproofer ./_site --check-html --disable-external
 
-          - run:
-              name: Configure git user info
-              command: |
-                  git config --global user.email "eduardogarcia.xyz+gh@gmail.com"
-                  git config --global user.name "Eduardo Garcia"
+      - run:
+          name: Configure git user info
+          command: |
+            git config --global user.email "eduardogarcia.xyz+gh@gmail.com"
+            git config --global user.name "Eduardo Garcia"
 
-          - run:
-              name: Publish static website
-              command: |
-                  ./scripts/publish.sh
+      - run:
+          name: Publish static website
+          command: |
+            ./scripts/publish.sh
