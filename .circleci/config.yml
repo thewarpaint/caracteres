@@ -47,8 +47,8 @@ jobs:
       - run:
           name: Configure git user info
           command: |
-            git config --global user.email "eduardogarcia.xyz+gh@gmail.com"
-            git config --global user.name "Eduardo Garcia"
+            git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
+            git config --global user.name "$GH_NAME" > /dev/null 2>&1
 
       - run:
           name: Publish static website
