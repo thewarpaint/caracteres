@@ -1,10 +1,6 @@
 version: 2
 jobs:
   build:
-    branches:
-      only:
-        - master
-
     working_directory: ~/caracteres
 
     docker:
@@ -50,7 +46,9 @@ jobs:
             git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
             git config --global user.name "$GH_NAME" > /dev/null 2>&1
 
-      - run:
+      - deploy:
           name: Publish static website
           command: |
-            ./scripts/publish.sh
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ./scripts/publish.sh
+            fi
