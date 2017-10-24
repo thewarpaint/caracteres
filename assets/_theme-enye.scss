@@ -12,3 +12,8 @@ $enye-theme-font-secondary: "Lato", $enye-theme-font-sans-serif;
   @include theme($enye-theme-font-primary, $enye-theme-font-secondary, $enye-theme-font-sans-serif,
                  $enye-theme-color-primary, $enye-theme-color-secondary, $enye-theme-color-tertiary);
 }
+
+.home-nav__item--enye {
+  color: $enye-theme-color-secondary;
+  background-color: $enye-theme-color-tertiary;
+}
