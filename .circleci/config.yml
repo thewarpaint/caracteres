@@ -17,10 +17,22 @@ jobs:
           fingerprints:
             - "33:08:48:52:50:74:4c:c7:9e:f2:33:d6:c5:01:6c:91"
 
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "Gemfile.lock" }}
+            # Fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
       - run:
           name: Install dependencies
           command: |
             bundle install
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
       - run:
           name: Build static website
