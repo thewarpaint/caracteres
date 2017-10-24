@@ -43,7 +43,7 @@
       <section class="keyboard">
         {% for rawRow in char.keyboard %}
         {% assign row = rawRow | split:" " %}
-        <div class="keyboard__row keyboard__row--{{ forloop.index }}">
+        <div class="keyboard__row keyboard__row--{{ forloop.index0 }}">
           {%- for charEntry in row -%}
           <span class="keyboard__key {% if charEntry == char.character %}keyboard__character{% endif %}">{{ charEntry }}</span>
           {%- endfor -%}

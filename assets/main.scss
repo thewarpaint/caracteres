@@ -121,12 +121,16 @@ body {
 .keyboard {
   margin-bottom: 3em;
 
+  &__row--1 {
+    padding-left: 1.375em;
+  }
+
   &__row--2 {
-    padding-left: .375em;
+    padding-left: 2em;
   }
 
   &__row--3 {
-    padding-left: 1.125em;
+    padding-left: 3.375em;
   }
 
   &__key {
@@ -137,18 +141,18 @@ body {
     padding: .375em;
     line-height: 1em;
 
-    font-size: 4.25vw;
-    width: 4.25vw;
-    height: 4.25vw;
+    font-size: 3.25vw;
+    width: 3.25vw;
+    height: 3.25vw;
     padding: 1.5vw;
-    line-height: 4.25vw;
+    line-height: 3.25vw;
 
     @media (min-width: 641px) {
-      font-size: 1.325em;
-      width: 1.325em;
-      height: 1.325em;
+      font-size: 1.1875em;
+      width: 1.1875em;
+      height: 1.1875em;
       padding: .4375em;
-      line-height: 1.325em;
+      line-height: 1.1875em;
     }
   }
 

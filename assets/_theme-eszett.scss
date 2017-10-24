@@ -11,6 +11,11 @@ $eszett-theme-font-secondary: "Lato", $eszett-theme-font-sans-serif;
 .body--eszett {
   @include theme($eszett-theme-font-primary, $eszett-theme-font-secondary, $eszett-theme-font-sans-serif,
                  $eszett-theme-color-primary, $eszett-theme-color-secondary, $eszett-theme-color-tertiary);
+
+  .keyboard__character {
+    // ß is transformed to SS, we need to prevent it.
+    text-transform: none;
+  }
 }
 
 .home-nav__item--eszett {
