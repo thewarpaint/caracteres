@@ -56,57 +56,63 @@ alphabet:
 
 frequency:
   - letter: a
-    percentage: 12.53
+    percentage: 6.51
   - letter: b
-    percentage: 1.42
+    percentage: 1.88
   - letter: c
-    percentage: 4.68
+    percentage: 2.73
   - letter: d
-    percentage: 5.86
+    percentage: 5.07
   - letter: e
-    percentage: 13.68
+    percentage: 16.39
   - letter: f
-    percentage: 0.69
+    percentage: 1.65
   - letter: g
-    percentage: 1.01
+    percentage: 3.00
   - letter: h
-    percentage: 0.70
+    percentage: 4.57
   - letter: i
-    percentage: 6.25
+    percentage: 6.55
   - letter: j
-    percentage: 0.44
+    percentage: 0.26
   - letter: k
-    percentage: 0.02
+    percentage: 1.41
   - letter: l
-    percentage: 4.97
+    percentage: 3.43
   - letter: m
-    percentage: 3.15
+    percentage: 2.53
   - letter: n
-    percentage: 6.71
-  - letter: ñ
-    percentage: 0.31
+    percentage: 9.77
   - letter: o
-    percentage: 8.68
+    percentage: 2.59
   - letter: p
-    percentage: 2.51
+    percentage: 0.67
   - letter: q
-    percentage: 0.88
-  - letter: r
-    percentage: 6.87
-  - letter: s
-    percentage: 7.98
-  - letter: t
-    percentage: 4.63
-  - letter: u
-    percentage: 3.93
-  - letter: v
-    percentage: 0.90
-  - letter: w
     percentage: 0.01
+  - letter: r
+    percentage: 7.00
+  - letter: s
+    percentage: 7.27
+  - letter: t
+    percentage: 6.15
+  - letter: u
+    percentage: 4.16
+  - letter: v
+    percentage: 0.84
+  - letter: w
+    percentage: 1.92
   - letter: x
-    percentage: 0.22
+    percentage: 0.03
   - letter: y
-    percentage: 0.90
+    percentage: 0.03
   - letter: z
-    percentage: 0.52
+    percentage: 1.13
+  - letter: ß
+    percentage: 0.30
+  - letter: ä
+    percentage: 0.57
+  - letter: ö
+    percentage: 0.44
+  - letter: ü
+    percentage: 0.99
 
