@@ -42,7 +42,11 @@ examples:
       Noun: the amount of beer in a regulation mug (1 Lt). Often used as an abbreviation for
       Maßkrug, the handled glass vessel containing that amount of beer, known mainly because
       of the Oktoberfest.
-      
+
+  - word: außerplanmäßig
+    translation: >
+      Adjective: unscheduled, unbudgeted.
+
 keyboard:
   - 1 2 3 4 5 6 7 8 9 0 ß
   - q w e r t y u i o p ü
