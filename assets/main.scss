@@ -20,12 +20,15 @@ html {
 }
 
 body {
-  margin: 1em;
+  margin: 0 0 1em 0;
 }
 
-@media (min-width: 640px) {
-  .container {
-    width: 560px;
+.container {
+  width: 100%;
+  padding: 0 1em;
+
+  @media (min-width: 640px) {
+    width: 600px;
     margin: 0 auto;
   }
 }
