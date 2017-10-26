@@ -1,9 +1,16 @@
 @import "mixins";
 @import "home";
 
+$key-size: 2.125em;
+
 html {
   font-weight: 300;
   font-size: 12px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 @media (min-width: 641px) {
@@ -136,23 +143,14 @@ body {
   &__key {
     text-transform: uppercase;
     text-align: center;
-    width: 1em;
-    height: 1em;
-    padding: .375em;
-    line-height: 1em;
-
+    font-size: 1em;
     font-size: 3.25vw;
-    width: 3.25vw;
-    height: 3.25vw;
-    padding: 1.5vw;
-    line-height: 3.25vw;
+    width: $key-size;
+    height: $key-size;
+    line-height: $key-size;
 
     @media (min-width: 641px) {
-      font-size: 1.1875em;
-      width: 1.1875em;
-      height: 1.1875em;
-      padding: .4375em;
-      line-height: 1.1875em;
+      font-size: 1.125em;
     }
   }
 
