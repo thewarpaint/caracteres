@@ -8,6 +8,7 @@ html {
   font-weight: 300;
   font-size: 12px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -56,6 +57,7 @@ body {
   &__original {
     font-size: 4em;
     margin-bottom: .25em;
+    word-wrap: break-word;
   }
 
   &__character {
