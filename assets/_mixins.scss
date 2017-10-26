@@ -3,7 +3,7 @@
   font-family: $font-secondary;
   background-color: $color-tertiary;
 
-  .main-character, .example__original {
+  .main-character, .example__original, .tabs {
     font-family: $font-primary;
   }
 
@@ -37,5 +37,14 @@
 
   .frequencies__bar-container--character .frequencies__bar {
     background-color: $color-primary;
+  }
+
+  .tabs-wrapper, .tabs {
+    background-color: $color-secondary;
+  }
+
+  .tabs__link {
+    color: $color-tertiary;
+    background-color: $color-secondary;
   }
 }

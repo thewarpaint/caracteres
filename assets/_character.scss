@@ -1,0 +1,16 @@
+.tabs {
+  padding-top: .5em;
+  display: table;
+  table-layout: fixed;
+
+  &__link {
+    display: table-cell;
+    text-align: center;
+    font-size: 2em;
+    padding: .125em 0;
+
+    &, &:hover {
+      text-decoration: none;
+    }
+  }
+}
