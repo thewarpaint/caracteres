@@ -105,7 +105,7 @@ body {
 }
 
 .alphabet, .keyboard__key {
-  font-weight: 200;
+  font-weight: normal;
 }
 
 .alphabet, .frequencies {
@@ -163,14 +163,11 @@ body {
       font-size: 1.125em;
     }
   }
-
-  &__character {
-    font-weight: normal;
-  }
 }
 
 .frequencies {
   margin-bottom: 4em;
+  font-weight: normal;
 
   &__bar-container, &__letter {
     text-align: center;
@@ -191,14 +188,6 @@ body {
     @media (min-width: 641px) {
       width: .5em;
     }
-  }
-
-  &__letter {
-    font-weight: 200;
-  }
-
-  &__letter--character {
-    font-weight: normal;
   }
 }
 
