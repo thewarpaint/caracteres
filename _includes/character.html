@@ -37,7 +37,7 @@
       {% for example in char.examples %}
       <section class="example">
         <h2 class="example__original">{{ example.word | replace:char.character,exampleCharacter }}</h2>
-        <span class="example__translation">{{ example.translation }}</span>
+        <p class="example__translation">{{ example.translation }}</p>
       </section>
       {% endfor %}
 
