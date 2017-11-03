@@ -3,6 +3,9 @@
 @import "character";
 
 $key-size: 2.125em;
+$threshold-mobile-wide: 480px;
+$threshold-tablet: 640px;
+$threshold-desktop: 960px;
 
 html {
   font-weight: 300;
@@ -15,7 +18,7 @@ html {
   box-sizing: inherit;
 }
 
-@media (min-width: 641px) {
+@media (min-width: $threshold-tablet) {
   html {
     font-size: 16px;
   }
@@ -29,7 +32,7 @@ body {
   width: 100%;
   padding: 0 1em;
 
-  @media (min-width: 640px) {
+  @media (min-width: $threshold-tablet) {
     width: 600px;
     margin: 0 auto;
   }
@@ -118,7 +121,7 @@ body {
   font-size: 1em;
 }
 
-@media (min-width: 480px) {
+@media (min-width: $threshold-mobile-wide) {
   .alphabet, .frequencies__letter {
     font-size: 1.25em;
   }
@@ -160,7 +163,7 @@ body {
     height: $key-size;
     line-height: $key-size;
 
-    @media (min-width: 641px) {
+    @media (min-width: $threshold-tablet) {
       font-size: 1.125em;
     }
   }
@@ -182,11 +185,11 @@ body {
     width: .25em;
     margin: 0 auto;
 
-    @media (min-width: 480px) {
+    @media (min-width: $threshold-mobile-wide) {
       width: .375em;
     }
 
-    @media (min-width: 641px) {
+    @media (min-width: $threshold-tablet) {
       width: .5em;
     }
   }
