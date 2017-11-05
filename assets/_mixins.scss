@@ -46,5 +46,9 @@
   .tabs__link {
     color: $color-tertiary;
     background-color: $color-secondary;
+
+    &--current::before {
+      border-bottom-color: $color-tertiary;
+    }
   }
 }

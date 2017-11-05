@@ -12,11 +12,6 @@ $eszett-theme-font-secondary: "Lato", $eszett-theme-font-sans-serif;
   @include theme($eszett-theme-font-primary, $eszett-theme-font-secondary, $eszett-theme-font-sans-serif,
                  $eszett-theme-color-primary, $eszett-theme-color-secondary, $eszett-theme-color-tertiary);
 
-  .tabs__link--eszett {
-    color: $eszett-theme-color-secondary;
-    background-color: $eszett-theme-color-tertiary;
-  }
-
   .keyboard__character {
     // ß is transformed to SS, we need to prevent it.
     text-transform: none;

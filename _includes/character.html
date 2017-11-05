@@ -18,8 +18,10 @@
   <body class="body--{{ char.theme.class }}">
     <div class="tabs-wrapper">
       <nav class="container tabs">
-        <a class="tabs__link tabs__link--enye" href="eñe.html">ñ</a>
-        <a class="tabs__link tabs__link--eszett" href="eszett.html">ß</a>
+        <a class="tabs__link tabs__link--enye {% if char.character == 'ñ' %}tabs__link--current{% endif %}"
+           href="eñe.html">ñ</a>
+        <a class="tabs__link tabs__link--eszett {% if char.character == 'ß' %}tabs__link--current{% endif %}"
+           href="eszett.html">ß</a>
       </nav>
     </div>
 

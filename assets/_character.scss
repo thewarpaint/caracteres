@@ -7,10 +7,26 @@
     display: table-cell;
     text-align: center;
     font-size: 2em;
-    padding: .125em 0;
+    padding: .25em 0;
+    position: relative;
 
     &, &:hover {
       text-decoration: none;
+    }
+
+    &--current::before {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -1px;
+      transform: translate(-50%, 0);
+      z-index: 10;
+      border-width: .3125em;
+      border-top-width: 0;
+      border-style: solid;
+      border-color: transparent;
+      border-bottom-color: white;
     }
   }
 }
