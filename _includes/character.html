@@ -130,10 +130,11 @@
 
       document.addEventListener('DOMContentLoaded', function (event) {
         if (window.speechSynthesis) {
-          speechSynthesis.onvoiceschanged = () => {
-            for (let i = 0; i < languages.length; i++) {
-              languageVoice =
-                speechSynthesis.getVoices().find((voice) => voice.lang.indexOf(languages[i]) !== -1);
+          speechSynthesis.onvoiceschanged = function () {
+            for (var i = 0; i < languages.length; i++) {
+              languageVoice = speechSynthesis.getVoices().find(function (voice) {
+                return voice.lang.indexOf(languages[i]) !== -1;
+              });
 
               if (languageVoice) {
                 break;
@@ -142,7 +143,7 @@
           };
 
           utter = function (word) {
-            let utterance = new SpeechSynthesisUtterance(word);
+            var utterance = new SpeechSynthesisUtterance(word);
             utterance.voice = languageVoice;
             speechSynthesis.speak(utterance);
           };
