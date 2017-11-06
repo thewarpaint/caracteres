@@ -1,5 +1,9 @@
 character: ß
 description: The eszett is a letter of the German language.
+speechSynthesis:
+  languages:
+    - de-DE
+    - de
 
 theme:
   class: eszett

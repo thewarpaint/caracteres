@@ -38,7 +38,9 @@
       {% assign exampleCharacter = exampleCharacterTemplate | replace:'__CHAR__',char.character %}
       {% for example in char.examples %}
       <section class="example">
-        <h2 class="example__original">{{ example.word | replace:char.character,exampleCharacter }}</h2>
+        <h2 class="example__original" onclick="utter('{{ example.word }}');">
+          {{ example.word | replace:char.character,exampleCharacter }}
+        </h2>
         <p class="example__translation">{{ example.translation }}</p>
       </section>
       {% endfor %}
@@ -118,5 +120,34 @@
         </tbody>
       </table>
     </div>
+
+    <script>
+      var languages = {{ char.speechSynthesis.languages | jsonify }};
+      var languageVoice;
+      var utter = function () {
+        alert('Your browser is old, sorry :(((');
+      };
+
+      document.addEventListener('DOMContentLoaded', function (event) {
+        if (window.speechSynthesis) {
+          speechSynthesis.onvoiceschanged = () => {
+            for (let i = 0; i < languages.length; i++) {
+              languageVoice =
+                speechSynthesis.getVoices().find((voice) => voice.lang.indexOf(languages[i]) !== -1);
+
+              if (languageVoice) {
+                break;
+              }
+            }
+          };
+
+          utter = function (word) {
+            let utterance = new SpeechSynthesisUtterance(word);
+            utterance.voice = languageVoice;
+            speechSynthesis.speak(utterance);
+          };
+        }
+      });
+    </script>
   </body>
 </html>
