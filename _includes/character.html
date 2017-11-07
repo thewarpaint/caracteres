@@ -145,6 +145,7 @@
           utter = function (word) {
             var utterance = new SpeechSynthesisUtterance(word);
             utterance.voice = languageVoice;
+            utterance.lang = languages[0];
             speechSynthesis.speak(utterance);
           };
         }
