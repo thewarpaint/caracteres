@@ -11,11 +11,11 @@
     color: $color-primary;
   }
 
-  .ipa, .alphabet, .keyboard__key, .frequencies__letter, .key {
+  .ipa, .alphabet, .keyboard__key, .frequencies__letter, .key, .example__action {
     font-family: $font-sans-serif;
   }
 
-  .code, .keyboard__key, .key, .frequencies__bar {
+  .code, .keyboard__key, .key, .frequencies__bar, .example__action {
     border-color: $color-secondary;
   }
 

@@ -38,9 +38,10 @@
       {% assign exampleCharacter = exampleCharacterTemplate | replace:'__CHAR__',char.character %}
       {% for example in char.examples %}
       <section class="example">
-        <h2 class="example__original" onclick="utter('{{ example.word }}');">
+        <h2 class="example__original">
           {{ example.word | replace:char.character,exampleCharacter }}
         </h2>
+        <button class="example__action" onclick="utter('{{ example.word }}');">Listen</button>
         <p class="example__translation">{{ example.translation }}</p>
       </section>
       {% endfor %}
