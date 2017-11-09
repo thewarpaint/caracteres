@@ -125,12 +125,13 @@
     <script>
       var languages = {{ char.speechSynthesis.languages | jsonify }};
       var languageVoice;
-      var utter = function () {
-        alert('Your browser is old, sorry :(((');
-      };
+      var utter = function () {};
 
       document.addEventListener('DOMContentLoaded', function (event) {
         if (window.speechSynthesis) {
+          // Early version of feature detection.
+          document.body.className += ' body--has-speech-synthesis';
+
           speechSynthesis.onvoiceschanged = function () {
             for (var i = 0; i < languages.length; i++) {
               languageVoice = speechSynthesis.getVoices().find(function (voice) {

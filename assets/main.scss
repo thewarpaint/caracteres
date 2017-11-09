@@ -77,12 +77,17 @@ body {
   }
 
   &__action {
+    display: none;
     font-size: 1em;
     font-weight: 300;
     background-color: transparent;
     margin-bottom: .5em;
     cursor: pointer;
   }
+}
+
+.body--has-speech-synthesis .example__action {
+  display: initial;
 }
 
 .ipa {
