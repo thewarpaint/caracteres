@@ -81,6 +81,7 @@ body {
     font-weight: 300;
     background-color: transparent;
     margin-bottom: .5em;
+    cursor: pointer;
   }
 }
 
@@ -105,7 +106,7 @@ body {
   margin: .125em;
 }
 
-.code, .key {
+.code, .key, .example__action {
   font-size: 1.25em;
   padding: .125em .375em;
 }
