@@ -102,12 +102,9 @@
             {% for charEntry in sortedFrequency %}
             <td class="frequencies__bar-container
                        {% if charEntry.letter == char.character %}frequencies__bar-container--character{% endif %}">
+              <div class="frequencies__bar-legend">{{ charEntry.percentage }}%</div>
               <div class="frequencies__bar"
-                   style="height: {{ charEntry.percentage | times:10 | ceil }}px;"
-                   {% if charEntry.letter != char.character %}
-                   data-balloon="{{ charEntry.percentage }}%"
-                   data-balloon-pos="up"
-                   {% endif %}>
+                   style="height: {{ charEntry.percentage | times:10 | ceil }}px;">
                 &nbsp;
               </div>
             </td>

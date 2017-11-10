@@ -35,8 +35,15 @@
     background-color: $color-secondary;
   }
 
-  .frequencies__bar-container--character .frequencies__bar {
-    background-color: $color-primary;
+  .frequencies__bar-container--character {
+    .frequencies__bar {
+      background-color: $color-primary;
+    }
+
+    .frequencies__bar-legend {
+      color: $color-primary;
+      font-weight: bold;
+    }
   }
 
   .tabs-wrapper, .tabs {

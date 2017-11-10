@@ -207,6 +207,19 @@ body {
       width: .5em;
     }
   }
+
+  &__bar-legend {
+    font-size: .625em;
+    transform: rotate(-45deg);
+    margin-left: .5em;
+    margin-bottom: .5em;
+
+    @media (min-width: $threshold-mobile-wide) {
+      font-size: .75em;
+      margin-left: .375em;
+      margin-bottom: .375em;
+    }
+  }
 }
 
 .key-shortcuts {
