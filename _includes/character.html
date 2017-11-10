@@ -14,6 +14,11 @@
     <link href="{{ char.theme.fontsUrl }}" rel="stylesheet">
     <link href="assets/balloon-2841f2f.css" rel="stylesheet">
     <link href="assets/main.css" rel="stylesheet">
+
+    <script>
+      var languages = {{ char.speechSynthesis.languages | jsonify }};
+    </script>
+    <script src="assets/main.js"></script>
   </head>
   <body class="body--{{ char.theme.class }}">
     <div class="tabs-wrapper">
@@ -121,37 +126,5 @@
         </tbody>
       </table>
     </div>
-
-    <script>
-      var languages = {{ char.speechSynthesis.languages | jsonify }};
-      var languageVoice;
-      var utter = function () {};
-
-      document.addEventListener('DOMContentLoaded', function (event) {
-        if (window.speechSynthesis) {
-          // Early version of feature detection.
-          document.body.className += ' body--has-speech-synthesis';
-
-          speechSynthesis.onvoiceschanged = function () {
-            for (var i = 0; i < languages.length; i++) {
-              languageVoice = speechSynthesis.getVoices().find(function (voice) {
-                return voice.lang.indexOf(languages[i]) !== -1;
-              });
-
-              if (languageVoice) {
-                break;
-              }
-            }
-          };
-
-          utter = function (word) {
-            var utterance = new SpeechSynthesisUtterance(word);
-            utterance.voice = languageVoice;
-            utterance.lang = languages[0];
-            speechSynthesis.speak(utterance);
-          };
-        }
-      });
-    </script>
   </body>
 </html>
