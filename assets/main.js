@@ -2,10 +2,9 @@ var languageVoice;
 var utter = function () {};
 
 document.addEventListener('DOMContentLoaded', function (event) {
-  if (window.speechSynthesis) {
-    // Early version of feature detection.
-    document.body.className += ' body--has-speech-synthesis';
+  FeatureDetection.init();
 
+  if (FeatureDetection.hasSpeechSynthesis()) {
     speechSynthesis.onvoiceschanged = function () {
       for (var i = 0; i < languages.length; i++) {
         languageVoice = speechSynthesis.getVoices().find(function (voice) {
@@ -26,3 +25,29 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
   }
 });
+
+var FeatureDetection = (function () {
+  function FeatureDetection() {}
+
+  FeatureDetection.prototype.hasSpeechSynthesis = function () {
+    return 'speechSynthesis' in window;
+  };
+
+  FeatureDetection.prototype.init = function () {
+    var features = [
+      { detector: this.hasSpeechSynthesis, aClass: 'body--has-speech-synthesis' }
+    ];
+
+    var bodyClasses = [];
+
+    for(var i = 0; i < features.length; i++) {
+      if (features[i].detector()) {
+        bodyClasses.push(features[i].aClass);
+      }
+    }
+
+    document.body.className += ' ' + bodyClasses.join(' ');
+  };
+
+  return new FeatureDetection();
+})();
