@@ -78,8 +78,9 @@ body {
 
   &__action {
     display: none;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 300;
+    padding: .25em .5em;
     background-color: transparent;
     margin-bottom: .5em;
     cursor: pointer;
@@ -111,7 +112,7 @@ body {
   margin: .125em;
 }
 
-.code, .key, .example__action {
+.code, .key {
   font-size: 1.25em;
   padding: .125em .375em;
 }
