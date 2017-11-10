@@ -1,5 +1,3 @@
-var speak = function () {};
-
 document.addEventListener('DOMContentLoaded', function (event) {
   FeatureDetection.init();
   Caracteres.init();
@@ -55,9 +53,21 @@ var Caracteres = (function () {
     speechSynthesis.speak(utterance);
   };
 
+  Caracteres.prototype.onSpeakButtonClick = function () {
+    window.Caracteres.speak(this.getAttribute('data-speak'));
+  };
+
+  Caracteres.prototype.addSpeakButtonClickListeners = function () {
+    Array.prototype.slice.apply(document.querySelectorAll('[data-speak]'))
+      .forEach(function (button) {
+        button.addEventListener('click', window.Caracteres.onSpeakButtonClick);
+      });
+  };
+
   Caracteres.prototype.init = function () {
     if (FeatureDetection.hasSpeechSynthesis()) {
       speechSynthesis.onvoiceschanged = this.onVoicesChanged;
+      this.addSpeakButtonClickListeners();
     }
   };
 
