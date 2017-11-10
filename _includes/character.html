@@ -16,7 +16,9 @@
     <link href="assets/main.css" rel="stylesheet">
 
     <script>
-      var languages = {{ char.speechSynthesis.languages | jsonify }};
+      var Globals = {
+        languages: {{ char.speechSynthesis.languages | jsonify }}
+      };
     </script>
     <script src="assets/main.js"></script>
   </head>
@@ -46,7 +48,7 @@
         <h2 class="example__original">
           {{ example.word | replace:char.character,exampleCharacter }}
         </h2>
-        <button class="example__action" onclick="utter('{{ example.word }}');">Listen</button>
+        <button class="example__action" onclick="Caracteres.speak('{{ example.word }}');">Listen</button>
         <p class="example__translation">{{ example.translation }}</p>
       </section>
       {% endfor %}

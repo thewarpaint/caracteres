@@ -1,29 +1,8 @@
-var languageVoice;
-var utter = function () {};
+var speak = function () {};
 
 document.addEventListener('DOMContentLoaded', function (event) {
   FeatureDetection.init();
-
-  if (FeatureDetection.hasSpeechSynthesis()) {
-    speechSynthesis.onvoiceschanged = function () {
-      for (var i = 0; i < languages.length; i++) {
-        languageVoice = speechSynthesis.getVoices().find(function (voice) {
-          return voice.lang.indexOf(languages[i]) !== -1;
-        });
-
-        if (languageVoice) {
-          break;
-        }
-      }
-    };
-
-    utter = function (word) {
-      var utterance = new SpeechSynthesisUtterance(word);
-      utterance.voice = languageVoice;
-      utterance.lang = languages[0];
-      speechSynthesis.speak(utterance);
-    };
-  }
+  Caracteres.init();
 });
 
 var FeatureDetection = (function () {
@@ -50,4 +29,37 @@ var FeatureDetection = (function () {
   };
 
   return new FeatureDetection();
+})();
+
+var Caracteres = (function () {
+  function Caracteres() {
+    this.languageVoice = null;
+  }
+
+  Caracteres.prototype.onVoicesChanged = function () {
+    for (var i = 0; i < Globals.languages.length; i++) {
+      this.languageVoice = speechSynthesis.getVoices().find(function (voice) {
+        return voice.lang.indexOf(Globals.languages[i]) !== -1;
+      });
+
+      if (this.languageVoice) {
+        break;
+      }
+    }
+  };
+
+  Caracteres.prototype.speak = function (word) {
+    var utterance = new SpeechSynthesisUtterance(word);
+    utterance.voice = this.languageVoice;
+    utterance.lang = Globals.languages[0];
+    speechSynthesis.speak(utterance);
+  };
+
+  Caracteres.prototype.init = function () {
+    if (FeatureDetection.hasSpeechSynthesis()) {
+      speechSynthesis.onvoiceschanged = this.onVoicesChanged;
+    }
+  };
+
+  return new Caracteres();
 })();
