@@ -5,4 +5,5 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gem "html-proofer"
 gem "jekyll"
+gem "jekyll-polyglot"
 gem "sass"
