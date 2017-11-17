@@ -1,2 +1,8 @@
 # General
 exclude: [README.md, scripts]
+
+# i18n
+languages: ["en", "es"]
+default_lang: "en"
+exclude_from_localization: ["assets"]
+parallel_localization: true
