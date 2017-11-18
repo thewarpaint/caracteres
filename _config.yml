@@ -2,6 +2,9 @@
 exclude: [README.md, scripts]
 url: "https://thewarpaint.github.io/caracteres"
 
+plugins:
+  - jekyll-polyglot
+
 # i18n
 languages: ["en", "es"]
 default_lang: "en"
