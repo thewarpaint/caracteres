@@ -1,5 +1,6 @@
 # General
 exclude: [README.md, scripts]
+url: "https://thewarpaint.github.io/caracteres"
 
 # i18n
 languages: ["en", "es"]

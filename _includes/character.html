@@ -7,20 +7,20 @@
     <meta name="title" content="{{ char.character }} • Caracteres">
     <meta name="description" content="{{ char.description }}">
     <meta name="theme-color" content="{{ char.theme.color }}">
-    <link rel="manifest" href="manifest-{{ include.character }}.json">
+    <link rel="manifest" href="{{ site.url }}/manifest-{{ include.character }}.json">
 
     <title>{{ char.character }} • Caracteres</title>
 
     <link href="{{ char.theme.fontsUrl }}" rel="stylesheet">
-    <link href="assets/balloon-2841f2f.css" rel="stylesheet">
-    <link href="assets/main.css" rel="stylesheet">
+    <link href="{{ site.url }}/assets/balloon-2841f2f.css" rel="stylesheet">
+    <link href="{{ site.url }}/assets/main.css" rel="stylesheet">
 
     <script>
       var Globals = {
         languages: {{ char.speechSynthesis.languages | jsonify }}
       };
     </script>
-    <script src="assets/main.js"></script>
+    <script src="{{ site.url }}/assets/main.js"></script>
   </head>
   <body class="body--{{ char.theme.class }}">
     <div class="tabs-wrapper">
