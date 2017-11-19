@@ -1,0 +1,5 @@
+examples:
+  listen: Escuchar
+
+frequencies:
+  frequency: "Frecuencia:"

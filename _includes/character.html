@@ -1,3 +1,4 @@
+{%- assign i18n = site.data.i18n -%}
 {%- assign char = site.data[include.character] -%}
 <!DOCTYPE html>
 <html>
@@ -48,7 +49,7 @@
         <h2 class="example__original">
           {{ example.word | replace:char.character,exampleCharacter }}
         </h2>
-        <button class="example__action" data-speak="{{ example.word }}">Listen</button>
+        <button class="example__action" data-speak="{{ example.word }}">{{ i18n.examples.listen }}</button>
         <p class="example__translation">{{ example.translation }}</p>
       </section>
       {% endfor %}
@@ -115,7 +116,7 @@
             <td class="frequencies__letter
                        {% if charEntry.letter == char.character %}frequencies__letter--character{% endif %}"
                 {% if charEntry.letter == char.character %}
-                data-balloon="Frequency: {{ charEntry.percentage }}%"
+                data-balloon="{{ i18n.frequencies.frequency }} {{ charEntry.percentage }}%"
                 data-balloon-visible data-balloon-pos="down"
                 {% endif %}>
               {{ charEntry.letter }}
