@@ -49,7 +49,7 @@
         <h2 class="example__original">
           {{ example.word | replace:char.character,exampleCharacter }}
         </h2>
-        <button class="example__action" data-speak="{{ example.word }}">{{ i18n.examples.listen }}</button>
+        <button class="example__action btn" data-speak="{{ example.word }}">{{ i18n.examples.listen }}</button>
         <p class="example__translation">{{ example.translation }}</p>
       </section>
       {% endfor %}

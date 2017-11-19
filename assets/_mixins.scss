@@ -15,7 +15,7 @@
     font-family: $font-sans-serif;
   }
 
-  .code, .keyboard__key, .key, .frequencies__bar, .example__action {
+  .code, .keyboard__key, .key, .frequencies__bar {
     border-color: $color-secondary;
   }
 
@@ -61,5 +61,10 @@
 
   .example__action {
     color: $color-secondary;
+  }
+
+  .btn {
+    color: $color-secondary;
+    border-color: $color-secondary;
   }
 }
