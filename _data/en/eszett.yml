@@ -1,0 +1,35 @@
+explanationItems:
+  - >
+    The <b>Eszett</b> (IPA: <span class="ipa">[ɛsˈtsɛt]</span>) is a German letter used to represent the
+    <b>[s]</b> phoneme when used after long vowels and diphthongs.
+  - >
+    Its name comes from the pronunciation of the letters <b>s (es)</b> and <b>z (zett)</b>.
+  - >
+    It originated as a ligature for <b>long s and tailed z</b> <span class="ipa">ſʒ</span> and
+    <b>long s and round s</b> <span class="ipa">ſs</span>.
+  - >
+    The <b>uppercase form ẞ</b> introduced by type designers during the early 20th century only gained
+    official recognition until 2017. The Eszett is still commonly replaced with <b>SS</b> when capital
+    letters are used.
+
+examples:
+  - word: groß
+    translation: >
+      Adjective: big, large.
+
+  - word: Straße
+    translation: >
+      Noun: street, road.
+
+  - word: Süßkartoffel
+    translation: >
+      Noun: sweet potato.
+
+  - word: Maß
+    translation: >
+      Noun: the amount of beer in a regulation mug (1 Lt). Often used as an abbreviation for <b>Maßkrug</b>,
+      the handled glass vessel containing that amount of beer, known mainly because of the Oktoberfest.
+
+  - word: außerplanmäßig
+    translation: >
+      Adjective: unscheduled, unbudgeted.

@@ -1,0 +1,36 @@
+explanationItems:
+  - >
+    La <b>Eszett</b> (IPA: <span class="ipa">[ɛsˈtsɛt]</span>) es una letra del alfabeto Alemán usada para
+    representar el sonido del fonema <b>[s]</b> cuando se usa después de vocales largas y diptongos.
+  - >
+    Su nombre proviene de la pronunciación de las letras <b>s (es)</b> y <b>z (zett)</b>.
+  - >
+    Se originó como una ligatura para la <b>s larga y ezh</b> (<span class="ipa">ſʒ</span>) y para la
+    <b>s larga y s redonda</b> (<span class="ipa">ſs</span>).
+  - >
+    La <b>forma mayúscula ẞ</b> propuesta por los diseñadores de fuentes tipográficas a principios del siglo
+    XX sólo obtuvo reconocimiento oficial hasta 2017. Aún es común que la eszett sea reemplazada por <b>SS</b>
+    cuando se utilizan letras mayúsculas.
+
+examples:
+  - word: groß
+    translation: >
+      Adjetivo: grande.
+
+  - word: Straße
+    translation: >
+      Sustantivo: calle, camino.
+
+  - word: Süßkartoffel
+    translation: >
+      Sustantivo: camote, papa dulce.
+
+  - word: Maß
+    translation: >
+      Sustantivo: la cantidad de cerveza en un tarro regulatorio (1 Lt). Frecuentemente se usa como
+      abreviación de <b>Maßkrug</b>, el recipiente de vidrio que contiene tal cantidad de cerveza, conocido
+      principalmente debido al Oktoberfest.
+
+  - word: außerplanmäßig
+    translation: >
+      Adjetivo: no agendado, no presupuestado.
