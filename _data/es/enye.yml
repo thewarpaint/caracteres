@@ -1,0 +1,41 @@
+explanationItems:
+  - >
+    La <b>eñe</b> (IPA: <span class="ipa">/ˈeɲe/</span>) es una letra del alfabeto Español.
+  - >
+    El símbolo encontrado arriba (~) se llama <b>tilde</b> o <b>virgulilla</b>.
+  - >
+    Se originó como una ligatura de <b>nn</b>, donde la tilde era un atajo para representar una pequeña n
+    encima de la primera.
+  - >
+    El sonido está presente en otras lenguas Romances con una escritura diferente. Por ejemplo, <b>gn</b>
+    en Italiano o Francés, <b>nh</b> en Portugués, y <b>ny</b> en Catalán.
+
+examples:
+  - word: otoño
+    translation: >
+      Sustantivo: la estación del año que sucede al verano y antecede al invierno.
+
+  - word: mañana
+    translation: >
+      Sustantivo: el día posterior al de hoy. Sustantivo: el inicio del día, desde la salida del sol hasta
+      el mediodía.
+
+  - word: piñata
+    translation: >
+      Sustantivo: figura hecha de cartón o arcilla rellena con dulces, fruta y/o juguetes que se golpea con
+      un palo durante ciertas celebraciones hasta que se rompe y el contenido cae. Es complicado.
+
+  - word: español
+    translation: >
+      Sustantivo: el idioma hablado principalmente en España y Latinoamérica. Adjetivo: proveniente de España.
+
+  - word: ñáñaras
+    translation: >
+      Sustantivo: sensación en el estómago al experimentar angustia, miedo, inseguridad o desagrado.
+
+shortcuts:
+  - >
+    Mac: <kbd class="key">option</kbd> + <kbd class="key">n</kbd>, luego <kbd class="key">n</kbd>
+
+  - >
+    Windows: <kbd class="key">ctrl</kbd> + <kbd class="key">~</kbd>, luego <kbd class="key">n</kbd>

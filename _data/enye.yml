@@ -15,52 +15,11 @@ codes:
   - "&amp;#241;"
   - "U+00F1"
 
-explanationItems:
-  - >
-    The <b>eñe</b> (IPA: <span class="ipa">/ˈeɲe/</span>) is a letter of the Spanish alphabet.
-  - >
-    The symbol on top is called <b>"tilde"</b> or <b>"virgulilla"</b>.
-  - >
-    It originated as a ligature of <b>nn</b>, the tilde being a shorthand for a smaller n on top of the
-    first one.
-  - >
-    The sound is present in other Romance languages with a different spelling. For example, <b>gn</b> in
-    Italian or French, <b>nh</b> in Portuguese, and <b>ny</b> in Catalan.
-
-examples:
-  - word: otoño
-    translation: >
-      Noun: autumn.
-
-  - word: mañana
-    translation: >
-      Noun: tomorrow. Noun: morning.
-
-  - word: piñata
-    translation: >
-      Noun: figure made of cardboard or clay filled with candy, fruit and/or toys that gets hit with a stick
-      during certain celebrations until the contents fall out. It's complicated.
-
-  - word: español
-    translation: >
-      Noun: the Spanish language. Adjective: of Spanish origin.
-
-  - word: ñáñaras
-    translation: >
-      Noun: discomfort caused by an unpleasant situation.
-
 keyboard:
   - 1 2 3 4 5 6 7 8 9 0 ´
   - q w e r t y u i o p
   - a s d f g h j k l ñ
   - z x c v b n m
-
-shortcuts:
-  - >
-    Mac: <kbd class="key">option</kbd> + <kbd class="key">n</kbd>, then <kbd class="key">n</kbd>
-
-  - >
-    Windows: <kbd class="key">ctrl</kbd> + <kbd class="key">~</kbd>, then <kbd class="key">n</kbd>
 
 alphabet:
   entries: a b c d e f g h i j k l m n ñ o p q r s t u v w x y z
