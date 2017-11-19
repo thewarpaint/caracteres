@@ -38,7 +38,8 @@
         {%- for lang in site.languages -%}
         {%- if lang != site.active_lang -%}
         {%- if lang == site.default_lang -%}
-        <a href="{{ site.url }}/../{{ include.permalink }}" class="btn">{{ i18n.languages[lang] }}</a>
+        <!-- The space at the beginning of href is needed for the proper link to be rendered. -->
+        <a href=" {{ site.url }}/{{ include.permalink }}" class="btn">{{ i18n.languages[lang] }}</a>
         {%- else -%}
         <a href="{{ site.url }}/{{ lang }}/{{ include.permalink }}" class="btn">{{ i18n.languages[lang] }}</a>
         {%- endif -%}
