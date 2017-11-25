@@ -1,6 +1,9 @@
 /**
  * Balloon.css
  * https://kazzkiq.github.io/balloon.css/
+ *
+ * This is actually a plain CSS file, just renamed to .scss so it can be imported by SASS.
+ * https://stackoverflow.com/questions/7111610/import-regular-css-file-in-scss-file
  */
 button[data-balloon] {
   overflow: visible; }
