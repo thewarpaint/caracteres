@@ -1,4 +1,4 @@
-{%- assign char = site.data[include.character] -%}
+{%- assign char = site.data.chars[include.character] -%}
 {
   "short_name": "Caracteres",
   "name": "Caracteres",
