@@ -1,19 +1,35 @@
 ---
 permalink: /
 ---
+{%- assign i18n = site.data.i18n -%}
 <!DOCTYPE html>
 <html lang="{{ site.active_lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="title" content="ñ, ß, l·l • Caracteres">
-    <meta name="description"
-          content="What is that Spanish n with a curvy thing on top? What is that weird German beta? Let's find out!">
+    <meta name="title" content="{{ i18n.index.title }}">
+    <meta name="description" content="{{ i18n.index.description }}">
     <meta name="theme-color" content="#ffc501">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/images/favicon.png">
     <link rel="manifest" href="{{ site.url }}/manifest-enye.json">
 
-    <title>Home • Caracteres</title>
+    <!-- Twitter meta tags, missing: `twitter:site` -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ i18n.index.title }}">
+    <meta name="twitter:description" content="{{ i18n.index.description }}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/enye-thumbnail.png">
+
+    <!-- Open Graph (Facebook) meta tags -->
+    <meta property="og:title" content="{{ i18n.index.title }}">
+    <meta property="og:type" content="article">
+    {%- if site.active_lang == site.default_lang -%}
+    <meta property="og:url" content="{{ site.url }}/">
+    {%- else -%}
+    <meta property="og:url" content="{{ site.url }}/{{ site.active_lang }}/">
+    {%- endif -%}
+    <meta property="og:image" content="{{ site.url }}/assets/images/enye-thumbnail.png">
+
+    <title>{{ i18n.index.title }}</title>
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700" rel="stylesheet">
     <link href="{{ site.url }}/assets/main.css" rel="stylesheet">
