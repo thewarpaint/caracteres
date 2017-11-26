@@ -1,5 +1,4 @@
 character: ñ
-description: The eñe is a letter of the Spanish alphabet.
 speechSynthesis:
   languages:
     - es-MX

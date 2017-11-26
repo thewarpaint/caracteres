@@ -1,5 +1,4 @@
 character: l·l
-description: La ela geminada es un grupo de letras modificado del idioma catalán.
 speechSynthesis:
   languages:
     - ca
