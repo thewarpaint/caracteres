@@ -3,3 +3,6 @@ examples:
 
 frequencies:
   frequency: "Frecuencia:"
+
+madeWithLove:
+  Hecho con <span class="footer__heart">❤</span> en Hamburgo.

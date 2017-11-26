@@ -7,7 +7,7 @@
     font-family: $font-primary;
   }
 
-  .example__character, .alphabet__character, .frequencies__letter--character {
+  .example__character, .alphabet__character, .frequencies__letter--character, .footer__heart {
     color: $color-primary;
   }
 
@@ -59,7 +59,7 @@
     }
   }
 
-  .example__action {
+  .example__action, .footer__link {
     color: $color-secondary;
   }
 
