@@ -1,0 +1,15 @@
+character: œ
+speechSynthesis:
+  languages:
+    - fr-FR
+    - fr
+
+theme:
+  class: coming-soon
+  color: "#ffffff"
+  fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
+
+description: Œ
+
+explanationItems:
+  - Coming soon!
