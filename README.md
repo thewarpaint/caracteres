@@ -26,8 +26,15 @@ sass --scss --style compressed --watch assets:assets
 
 https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 
+### Ela geminada
+
+- https://es.wikipedia.org/wiki/L%C2%B7l
+- http://www.cursdecatala.com/es/ele-geminada-l%C2%B7l-en-catalan/
+- https://en.wikipedia.org/wiki/Interpunct#Catalan
+
 
 ## Color schemes inspiration
 
 - Spanish flag for Eñe
 - [Bavaria flag for Eszett (lozengy variant)](http://vignette1.wikia.nocookie.net/althistory/images/d/d6/800px-Flag_of_Bavaria_%28lozengy%29Emblem.png/revision/latest)
+- [Estelada flag for Ela geminada](https://es.wikipedia.org/wiki/Estelada)
