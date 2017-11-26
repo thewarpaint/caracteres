@@ -11,6 +11,22 @@
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/favicon.png">
     <link rel="manifest" href="{{ site.url }}/manifest-{{ include.character }}.json">
 
+    <!-- Twitter meta tags, missing: `twitter:site` -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ char.character }} • Caracteres">
+    <meta name="twitter:description" content="{{ char.description }}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/{{ char.theme.class }}-thumbnail.png">
+
+    <!-- Open Graph (Facebook) meta tags -->
+    <meta property="og:title" content="{{ char.character }} • Caracteres">
+    <meta property="og:type" content="article">
+    {%- if site.active_lang == site.default_lang -%}
+    <meta property="og:url" content="{{ site.url }}/{{ include.permalink }}">
+    {%- else -%}
+    <meta property="og:url" content="{{ site.url }}/{{ site.active_lang }}/{{ include.permalink }}">
+    {%- endif -%}
+    <meta property="og:image" content="{{ site.url }}/assets/images/{{ char.theme.class }}-thumbnail.png">
+
     <title>{{ char.character }} • Caracteres</title>
 
     <link href="{{ char.theme.fontsUrl }}" rel="stylesheet">
