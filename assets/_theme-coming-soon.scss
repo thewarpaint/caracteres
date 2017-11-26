@@ -1,0 +1,19 @@
+/**
+ * Coming soon theme
+ */
+$coming-soon-theme-color-primary: #aaaaaa;
+$coming-soon-theme-color-secondary: #000000;
+$coming-soon-theme-color-tertiary: #ffffff;
+$coming-soon-theme-font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
+$coming-soon-theme-font-primary: "Abril Fatface", serif;
+$coming-soon-theme-font-secondary: "Lato", $coming-soon-theme-font-sans-serif;
+
+.body--coming-soon {
+  @include theme($coming-soon-theme-font-primary, $coming-soon-theme-font-secondary, $coming-soon-theme-font-sans-serif,
+                 $coming-soon-theme-color-primary, $coming-soon-theme-color-secondary, $coming-soon-theme-color-tertiary);
+}
+
+.home-nav__item--coming-soon {
+  color: $coming-soon-theme-color-secondary;
+  background-color: $coming-soon-theme-color-tertiary;
+}
