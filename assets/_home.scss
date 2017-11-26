@@ -8,19 +8,19 @@
   &__item {
     display: block;
     text-align: center;
-    font-size: 60vh;
+    font-size: 40vh;
     font-family: "Abril Fatface", serif;
-    height: 50vh;
+    height: 33.333vh;
     overflow: hidden;
   }
 
   &__character {
     position: relative;
-    top: 0;
+    top: 2.5vh;
     transition: top .5s ease;
   }
 
   &__item:hover &__character {
-    top: -10vh;
+    top: -7.5vh;
   }
 }

@@ -1,0 +1,30 @@
+explanationItems:
+  - >
+    La <b>ela geminada</b> (L geminada) es un "grupo de letras modificado" del idioma catalán.
+  - >
+    Representa el <b>sonido de una ele doble o prolongada</b>, pronunciado en dos sílabas diferentes.
+    Siempre es usada entre dos vocales.
+  - >
+    El <b>punto medio</b> o <b>punto alzado</b>, colocado entre las dos eles, fue introducido a principios
+    del siglo XX para diferenciar a este grupo de letras del dígrafo <span class="ipa">⟨ll⟩</span>.
+  - >
+    La ele geminada se aplica principalmente a palabras de <b>origen latín y griego con doble ele</b>;
+    palabras que comienzan con <b>al·l</b>, <b>il·l</b>, y <b>col·l</b>;
+    y a la mayoría de las palabras que acaban en <b>el·la</b> o <b>il·la</b>.
+
+examples:
+  - word: novel·la
+    translation: >
+      Sustantivo: novela.
+
+  - word: ombrel·la
+    translation: >
+      Sustantivo: sombrilla, paraguas.
+
+  - word: mil·lenari
+    translation: >
+      Adjetivo: milenario.
+
+  - word: pel·lícula
+    translation: >
+      Sustantivo: película.

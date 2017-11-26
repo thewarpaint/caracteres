@@ -1,0 +1,19 @@
+/**
+ * Ela geminada theme
+ */
+$ela-geminada-theme-color-primary: #ce0001; // Estelada flag: red
+$ela-geminada-theme-color-secondary: #0745b1; // Estelada flag: blue
+$ela-geminada-theme-color-tertiary: #ffffff; // Estelada flag: white
+$ela-geminada-theme-font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
+$ela-geminada-theme-font-primary: "Abril Fatface", serif;
+$ela-geminada-theme-font-secondary: "Lato", $ela-geminada-theme-font-sans-serif;
+
+.body--ela-geminada {
+  @include theme($ela-geminada-theme-font-primary, $ela-geminada-theme-font-secondary, $ela-geminada-theme-font-sans-serif,
+                 $ela-geminada-theme-color-primary, $ela-geminada-theme-color-secondary, $ela-geminada-theme-color-tertiary);
+}
+
+.home-nav__item--ela-geminada {
+  color: $ela-geminada-theme-color-secondary;
+  background-color: $ela-geminada-theme-color-tertiary;
+}
