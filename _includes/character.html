@@ -67,12 +67,15 @@
       </section>
       {% endfor %}
 
+      {%- if char.codes -%}
       <ul class="code-list">
         {% for code in char.codes %}
         <li class="code"><code>{{ code }}</code></li>
         {% endfor %}
       </ul>
+      {%- endif -%}
 
+      {%- if char.keyboard -%}
       <section class="keyboard">
         {% for rawRow in char.keyboard %}
         {% assign row = rawRow | split:" " %}
@@ -83,13 +86,17 @@
         </div>
         {% endfor %}
       </section>
+      {%- endif -%}
 
+      {%- if char.shortcuts -%}
       <section class="key-shortcuts">
         {% for shortcut in char.shortcuts %}
         <p>{{ shortcut }}</p>
         {% endfor %}
       </section>
+      {%- endif -%}
 
+      {%- if char.alphabet -%}
       <table class="alphabet">
         <tbody>
           <tr>
@@ -108,8 +115,10 @@
           </tr>
         </tbody>
       </table>
+      {%- endif -%}
 
-      {% assign sortedFrequency = char.frequency | sort:'percentage' | reverse %}
+      {%- if char.frequency -%}
+      {%- assign sortedFrequency = char.frequency | sort:'percentage' | reverse -%}
       <table class="frequencies">
         <tbody>
           <tr>
@@ -138,6 +147,7 @@
           </tr>
         </tbody>
       </table>
+      {%- endif -%}
     </div>
   </body>
 </html>
