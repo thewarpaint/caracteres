@@ -27,14 +27,14 @@ sass --scss --style compressed --watch assets:assets
 https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 
 
-### Ela geminada
+### l·l: ela geminada
 
 - https://es.wikipedia.org/wiki/L%C2%B7l
 - http://www.cursdecatala.com/es/ele-geminada-l%C2%B7l-en-catalan/
 - https://en.wikipedia.org/wiki/Interpunct#Catalan
 
 
-## Cê-cedilha
+### ç: cê-cedilha
 
 - https://kinfolk.com/word-desenrascanco/
 - https://es.wiktionary.org/wiki/desenrascan%C3%A7o
@@ -43,7 +43,7 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 - https://en.wikipedia.org/wiki/%C3%87
 
 
-## E dans l'o
+### œ: e dans l'o
 
 - https://fr.wikipedia.org/wiki/%C5%92
 - https://en.wiktionary.org/wiki/b%C5%93uf
