@@ -5,7 +5,7 @@ speechSynthesis:
     - pt
 
 theme:
-  class: coming-soon
+  class: ce-cedilha
   color: "#ffffff"
   fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
 
