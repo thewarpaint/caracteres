@@ -6,7 +6,7 @@ speechSynthesis:
 
 theme:
   class: e-dans-lo
-  color: "#ffffff"
+  color: "#ee2436"
   fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
 
 description: Œ
