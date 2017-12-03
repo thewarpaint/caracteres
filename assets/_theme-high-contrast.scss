@@ -1,0 +1,13 @@
+$high-contrast-theme-color-primary: #aaaaaa;
+$high-contrast-theme-color-secondary: #000000;
+$high-contrast-theme-color-tertiary: #ffffff;
+
+.body--high-contrast {
+  @include theme($high-contrast-theme-color-primary, $high-contrast-theme-color-secondary,
+                 $high-contrast-theme-color-tertiary);
+}
+
+.home-nav__item--high-contrast {
+  color: $high-contrast-theme-color-secondary;
+  background-color: $high-contrast-theme-color-tertiary;
+}
