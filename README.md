@@ -33,6 +33,14 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 - https://en.wikipedia.org/wiki/Interpunct#Catalan
 
 
+## Cê-cedilha
+
+- https://kinfolk.com/word-desenrascanco/
+- https://es.wiktionary.org/wiki/desenrascan%C3%A7o
+- https://pt.wikipedia.org/wiki/A%C3%A7afr%C3%A3o_(cor)
+- http://funwithbrazilianportuguese.com/the-use-of-the-cedilha/
+
+
 ## Color schemes inspiration
 
 - Spanish flag for Eñe
