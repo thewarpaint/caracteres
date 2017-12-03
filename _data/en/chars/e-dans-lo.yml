@@ -1,0 +1,16 @@
+examples:
+  - word: bœuf
+    translation: >
+      Noun: ox. Noun: beef.
+
+  - word: fœtus
+    translation: >
+      Noun: fetus.
+
+  - word: cœur
+    translation: >
+      Noun: heart.
+
+  - word: manœuvre
+    translation: >
+      Noun: movement, operation, manoeuvre.

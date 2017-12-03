@@ -1,0 +1,16 @@
+examples:
+  - word: bœuf
+    translation: >
+      Sustantivo: res. Sustantivo: carne de res.
+
+  - word: fœtus
+    translation: >
+      Sustantivo: feto.
+
+  - word: cœur
+    translation: >
+      Sustantivo: corazón.
+
+  - word: manœuvre
+    translation: >
+      Sustantivo: movimiento, operación, maniobra.

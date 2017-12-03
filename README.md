@@ -46,6 +46,7 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 ## E dans l'o
 
 - https://fr.wikipedia.org/wiki/%C5%92
+- https://en.wiktionary.org/wiki/b%C5%93uf
 
 
 ## Color schemes inspiration
