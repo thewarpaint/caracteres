@@ -1,0 +1,20 @@
+$e-dans-lo-theme-color-primary: #ffd700; // Kindgom of France banner: yellow
+$e-dans-lo-theme-color-secondary: #ffffff;
+$e-dans-lo-theme-color-tertiary: #ee2436; // French flag: red
+$e-dans-lo-theme-font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
+$e-dans-lo-theme-font-primary: "Abril Fatface", serif;
+$e-dans-lo-theme-font-secondary: "Lato", $e-dans-lo-theme-font-sans-serif;
+
+.body--e-dans-lo {
+  @include theme($e-dans-lo-theme-font-primary, $e-dans-lo-theme-font-secondary, $e-dans-lo-theme-font-sans-serif,
+                 $e-dans-lo-theme-color-primary, $e-dans-lo-theme-color-secondary, $e-dans-lo-theme-color-tertiary);
+
+  .keyboard__character {
+    text-transform: none;
+  }
+}
+
+.home-nav__item--e-dans-lo {
+  color: $e-dans-lo-theme-color-secondary;
+  background-color: $e-dans-lo-theme-color-tertiary;
+}

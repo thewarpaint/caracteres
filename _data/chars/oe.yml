@@ -5,7 +5,7 @@ speechSynthesis:
     - fr
 
 theme:
-  class: coming-soon
+  class: e-dans-lo
   color: "#ffffff"
   fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
 
