@@ -26,6 +26,7 @@ sass --scss --style compressed --watch assets:assets
 
 https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 
+
 ### Ela geminada
 
 - https://es.wikipedia.org/wiki/L%C2%B7l
@@ -43,6 +44,8 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 
 ## Color schemes inspiration
 
-- Spanish flag for Eñe
-- [Bavaria flag for Eszett (lozengy variant)](http://vignette1.wikia.nocookie.net/althistory/images/d/d6/800px-Flag_of_Bavaria_%28lozengy%29Emblem.png/revision/latest)
+- [Spanish flag for Eñe](https://en.wikipedia.org/wiki/Flag_of_Spain)
+- Bavarian [flag](https://en.wikipedia.org/wiki/Flag_of_Bavaria) and
+    [coat of arms](https://en.wikipedia.org/wiki/Coat_of_arms_of_Bavaria) for Eszett
 - [Estelada flag for Ela geminada](https://es.wikipedia.org/wiki/Estelada)
+- [Brazil flag for Cê-cedilha](https://en.wikipedia.org/wiki/Flag_of_Brazil)
