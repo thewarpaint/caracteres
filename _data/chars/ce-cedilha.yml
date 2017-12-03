@@ -6,10 +6,5 @@ speechSynthesis:
 
 theme:
   class: ce-cedilha
-  color: "#ffffff"
+  color: "#009c38"
   fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
-
-description: Cê-cedilha
-
-explanationItems:
-  - Coming soon!
