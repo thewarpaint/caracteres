@@ -1,3 +1,18 @@
+description: La cê-cedilha es una variante de la letra C utilizada en el idioma Portugués.
+
+explanationItems:
+  - >
+    La <b>cê-cedilha</b> es una variante de la letra C utilizada en el idioma Portugués.
+  - >
+    Representa el <b>sonido de S suave</b> (<span class="ipa">/s/</span>) cuando la letra C se encuentra
+    <b>antes de A</b>, <b>O</b> o <b>U</b>.
+  - >
+    Cumple con una función similar en otras lenguas Romances como el <b>Catalán</b>, <b>Francés</b> y
+    <b>Occitano</b>. También está presente en el <b>Inglés</b>, usada en <b>préstamos linguísticos como façade</b>.
+  - >
+    En Portugués moderno <b>nunca se ubica al principio o al final de una palabra</b>, en cuyo caso
+    la letra S toma su lugar.
+
 examples:
   - word: açafrão
     translation: >
