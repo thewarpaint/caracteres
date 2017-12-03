@@ -1,13 +1,9 @@
 $enye-theme-color-primary: #c70218; // Spanish flag: red
 $enye-theme-color-secondary: #000000;
 $enye-theme-color-tertiary: #ffc501; // Spanish flag: yellow
-$enye-theme-font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
-$enye-theme-font-primary: "Abril Fatface", serif;
-$enye-theme-font-secondary: "Lato", $enye-theme-font-sans-serif;
 
 .body--enye {
-  @include theme($enye-theme-font-primary, $enye-theme-font-secondary, $enye-theme-font-sans-serif,
-                 $enye-theme-color-primary, $enye-theme-color-secondary, $enye-theme-color-tertiary);
+  @include theme($enye-theme-color-primary, $enye-theme-color-secondary, $enye-theme-color-tertiary);
 }
 
 .home-nav__item--enye {

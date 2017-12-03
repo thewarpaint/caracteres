@@ -1,4 +1,8 @@
-@mixin theme($font-primary, $font-secondary, $font-sans-serif, $color-primary, $color-secondary, $color-tertiary) {
+$font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
+$font-primary: "Abril Fatface", serif;
+$font-secondary: "Lato", $font-sans-serif;
+
+@mixin theme($color-primary, $color-secondary, $color-tertiary) {
   color: $color-secondary;
   font-family: $font-secondary;
   background-color: $color-tertiary;

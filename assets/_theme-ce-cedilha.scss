@@ -1,13 +1,10 @@
 $ce-cedilha-theme-color-primary: #fee000; // Brazil flag: yellow
 $ce-cedilha-theme-color-secondary: #ffffff;
 $ce-cedilha-theme-color-tertiary: #009c38; // Brazil flag: green
-$ce-cedilha-theme-font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
-$ce-cedilha-theme-font-primary: "Abril Fatface", serif;
-$ce-cedilha-theme-font-secondary: "Lato", $ce-cedilha-theme-font-sans-serif;
 
 .body--ce-cedilha {
-  @include theme($ce-cedilha-theme-font-primary, $ce-cedilha-theme-font-secondary, $ce-cedilha-theme-font-sans-serif,
-                 $ce-cedilha-theme-color-primary, $ce-cedilha-theme-color-secondary, $ce-cedilha-theme-color-tertiary);
+  @include theme($ce-cedilha-theme-color-primary, $ce-cedilha-theme-color-secondary,
+                 $ce-cedilha-theme-color-tertiary);
 }
 
 .home-nav__item--ce-cedilha {

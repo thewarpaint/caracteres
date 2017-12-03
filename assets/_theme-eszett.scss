@@ -1,13 +1,9 @@
 $eszett-theme-color-primary: #fedb00; // Bayern flag: yellow
 $eszett-theme-color-secondary: #ffffff;
 $eszett-theme-color-tertiary: #0097d4; // Bayern flag: blue
-$eszett-theme-font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
-$eszett-theme-font-primary: "Abril Fatface", serif;
-$eszett-theme-font-secondary: "Lato", $eszett-theme-font-sans-serif;
 
 .body--eszett {
-  @include theme($eszett-theme-font-primary, $eszett-theme-font-secondary, $eszett-theme-font-sans-serif,
-                 $eszett-theme-color-primary, $eszett-theme-color-secondary, $eszett-theme-color-tertiary);
+  @include theme($eszett-theme-color-primary, $eszett-theme-color-secondary, $eszett-theme-color-tertiary);
 
   .keyboard__character {
     // ß is transformed to SS, we need to prevent it.
