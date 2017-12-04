@@ -1,3 +1,9 @@
+description: La e dans l'o (E en la O) es una ligatura linguística del idioma Francés.
+
+explanationItems:
+  - >
+    La <b>e dans l'o</b> (E en la O) es una ligatura linguística del idioma Francés.
+
 examples:
   - word: bœuf
     translation: >
