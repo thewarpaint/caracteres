@@ -1,6 +1,6 @@
-$e-dans-lo-theme-color-primary: #ffd700; // Kindgom of France banner: yellow
-$e-dans-lo-theme-color-secondary: #ffffff;
-$e-dans-lo-theme-color-tertiary: #ee2436; // French flag: red
+$e-dans-lo-theme-color-primary: #ee2436; // French flag: red
+$e-dans-lo-theme-color-secondary: #001e96; // French flag: blue
+$e-dans-lo-theme-color-tertiary: #ffffff;
 
 .body--e-dans-lo {
   @include theme($e-dans-lo-theme-color-primary, $e-dans-lo-theme-color-secondary,

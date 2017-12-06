@@ -56,6 +56,4 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
     [coat of arms](https://en.wikipedia.org/wiki/Coat_of_arms_of_Bavaria) for Eszett
 - [Estelada flag for Ela geminada](https://es.wikipedia.org/wiki/Estelada)
 - [Brazil flag for Cê-cedilha](https://en.wikipedia.org/wiki/Flag_of_Brazil)
-- [France flag](https://en.wikipedia.org/wiki/Flag_of_France) and
-    [Kingdom of France banner](https://en.wikipedia.org/wiki/File:Flag_of_France_(XII-XIII).svg)
-    for E dans l'o
+- [France flag](https://en.wikipedia.org/wiki/Flag_of_France) for E dans l'o
