@@ -3,6 +3,12 @@ description: La e dans l'o (E en la O) es una ligatura linguística del idioma F
 explanationItems:
   - >
     La <b>e dans l'o</b> (E en la O) es una ligatura linguística del idioma Francés.
+  - >
+    Se utiliza en préstamos directos del Latín (cœliaque) y Griego (œsophage).
+  - >
+    En los nombres de lugares donde históricamente se habla alemán, pero que se encuentran hoy en día en
+    territorio francés, la œ reemplaza la ö alemana (O-umlaut), por ejemplo: Schœneck (Schöneck),
+    Kœtzingue (Kötzingen), and Hœrdt (Hördt).
 
 examples:
   - word: bœuf

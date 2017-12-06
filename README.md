@@ -47,6 +47,9 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 
 - https://fr.wikipedia.org/wiki/%C5%92
 - https://en.wiktionary.org/wiki/b%C5%93uf
+- http://frenchyourway.com.au/oe-the-french-ligature
+- https://en.wiktionary.org/wiki/Category:French_terms_derived_from_Latin
+- https://en.wiktionary.org/wiki/Category:French_terms_derived_from_Ancient_Greek
 
 
 ## Color schemes inspiration
