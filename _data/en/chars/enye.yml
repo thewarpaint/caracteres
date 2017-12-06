@@ -18,8 +18,11 @@ examples:
       Noun: autumn.
 
   - word: mañana
-    translation: >
-      Noun: tomorrow. Noun: morning.
+    translations:
+      - >
+        Noun: tomorrow.
+      - >
+        Noun: morning.
 
   - word: piñata
     translation: >
@@ -27,8 +30,11 @@ examples:
       during certain celebrations until the contents fall out. It's complicated.
 
   - word: español
-    translation: >
-      Noun: the Spanish language. Adjective: of Spanish origin.
+    translations:
+      - >
+        Noun: the Spanish language.
+      - >
+        Adjective: of Spanish origin.
 
   - word: ñáñaras
     translation: >

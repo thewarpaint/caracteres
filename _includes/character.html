@@ -86,7 +86,15 @@
           {{ example.word | replace:char.character,exampleCharacter }}
         </h2>
         <button class="example__action btn" data-speak="{{ example.word }}">{{ i18n.examples.listen }}</button>
+        {%- if example.translation -%}
         <p class="example__translation">{{ example.translation }}</p>
+        {%- else if example.translations -%}
+        <ul class="example__translation-list">
+          {% for translation in example.translations %}
+          <li class="example__translation">{{ translation }}</li>
+          {%- endfor -%}
+        </ul>
+        {%- endif -%}
       </section>
       {% endfor %}
 

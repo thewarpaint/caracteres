@@ -18,9 +18,12 @@ examples:
       Sustantivo: la estación del año que sucede al verano y antecede al invierno.
 
   - word: mañana
-    translation: >
-      Sustantivo: el día posterior al de hoy. Sustantivo: el inicio del día, desde la salida del sol hasta
-      el mediodía.
+    translations:
+      - >
+        Sustantivo: el día posterior al de hoy.
+      - >
+        Sustantivo: el inicio del día, desde la salida del sol hasta
+        el mediodía.
 
   - word: piñata
     translation: >
@@ -28,8 +31,11 @@ examples:
       un palo durante ciertas celebraciones hasta que se rompe y el contenido cae. Es complicado.
 
   - word: español
-    translation: >
-      Sustantivo: el idioma hablado principalmente en España y Latinoamérica. Adjetivo: proveniente de España.
+    translation:
+      - >
+        Sustantivo: el idioma hablado principalmente en España y Latinoamérica.
+      - >
+        Adjetivo: proveniente de España.
 
   - word: ñáñaras
     translation: >

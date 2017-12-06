@@ -76,6 +76,11 @@ body {
     font-weight: normal;
   }
 
+  &__translation-list {
+    padding-left: 0;
+    list-style: none;
+  }
+
   &__translation {
     margin: 0;
   }
