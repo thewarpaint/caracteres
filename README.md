@@ -42,6 +42,7 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 - https://pt.wikipedia.org/wiki/A%C3%A7afr%C3%A3o_(cor)
 - http://funwithbrazilianportuguese.com/the-use-of-the-cedilha/
 - https://en.wikipedia.org/wiki/%C3%87
+- https://en.wikipedia.org/wiki/Portuguese_keyboard_layout
 
 
 ### œ: e dans l'o
@@ -51,6 +52,7 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 - http://frenchyourway.com.au/oe-the-french-ligature
 - https://en.wiktionary.org/wiki/Category:French_terms_derived_from_Latin
 - https://en.wiktionary.org/wiki/Category:French_terms_derived_from_Ancient_Greek
+- https://en.wikipedia.org/wiki/AZERTY#French
 
 
 ## Color schemes inspiration
