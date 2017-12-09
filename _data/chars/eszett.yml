@@ -7,7 +7,6 @@ speechSynthesis:
 theme:
   class: eszett
   color: "#0099d5" # Bayern flag: blue
-  fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
 
 codes:
   - "&amp;szlig;"

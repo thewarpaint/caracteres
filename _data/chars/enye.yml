@@ -7,7 +7,6 @@ speechSynthesis:
 theme:
   class: enye
   color: "#ffc501" # Spanish flag: yellow
-  fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
 
 codes:
   - "&amp;ntilde;"

@@ -6,7 +6,6 @@ speechSynthesis:
 theme:
   class: ela-geminada
   color: "#ffffff" # Estelada flag: white
-  fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
 
 codes:
   - "&amp;middot;"
