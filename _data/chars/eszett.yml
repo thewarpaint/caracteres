@@ -21,10 +21,9 @@ keyboard:
 
 shortcuts:
   - >
-    Mac: <kbd class="key">option</kbd> + <kbd class="key">s</kbd>
-
+    Mac: <kbd class="key">⌥ option</kbd> + <kbd class="key">s</kbd>
   - >
-    Windows: <kbd class="key">alt</kbd> + <kbd class="key">255</kbd>
+    Windows: <kbd class="key">alt</kbd> + <kbd class="key">2</kbd><kbd class="key">5</kbd><kbd class="key">5</kbd>
 
 alphabet:
   entries: a b c d e f g h i j k l m n o p q r s ß t u v w x y z

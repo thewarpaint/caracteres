@@ -42,7 +42,6 @@ examples:
 
 shortcuts:
   - >
-    Mac: <kbd class="key">option</kbd> + <kbd class="key">n</kbd>, then <kbd class="key">n</kbd>
-
+    Mac: <kbd class="key">⌥ option</kbd> + <kbd class="key">n</kbd>, then <kbd class="key">n</kbd>
   - >
     Windows: <kbd class="key">ctrl</kbd> + <kbd class="key">~</kbd>, then <kbd class="key">n</kbd>
