@@ -6,7 +6,7 @@ speechSynthesis:
 
 theme:
   class: e-dans-lo
-  color: "#ee2436"
+  color: "#001e96" # French flag: blue
 
 codes:
   - "&amp;oelig;"
