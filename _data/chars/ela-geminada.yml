@@ -7,3 +7,14 @@ theme:
   class: ela-geminada
   color: "#ffffff" # Estelada flag: white
   fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
+
+codes:
+  - "&amp;middot;"
+  - "&amp;#183;"
+  - "U+00B7"
+
+shortcuts:
+  - >
+    Mac: <kbd class="key">⌥ option</kbd> + <kbd class="key">⇧ shift</kbd> + <kbd class="key">9</kbd>
+  - >
+    Windows: <kbd class="key">alt</kbd> + <kbd class="key">2</kbd><kbd class="key">5</kbd><kbd class="key">0</kbd>

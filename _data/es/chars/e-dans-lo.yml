@@ -26,3 +26,10 @@ examples:
   - word: manœuvre
     translation: >
       Sustantivo: movimiento, operación, maniobra.
+
+shortcuts:
+  - >
+    Mac: Mantén presionada <kbd class="key">o</kbd>, después selecciona <kbd class="key">œ</kbd> del menú
+  - >
+    Windows: <kbd class="key">alt</kbd> +
+    <kbd class="key">0</kbd><kbd class="key">1</kbd><kbd class="key">5</kbd><kbd class="key">6</kbd>

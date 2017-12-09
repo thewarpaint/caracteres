@@ -9,7 +9,7 @@ theme:
   color: "#ee2436"
   fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
 
-description: Œ
-
-explanationItems:
-  - Coming soon!
+codes:
+  - "&amp;oelig;"
+  - "&amp;#339;"
+  - "U+0153"

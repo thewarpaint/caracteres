@@ -25,3 +25,10 @@ examples:
   - word: manœuvre
     translation: >
       Noun: movement, operation, manoeuvre.
+
+shortcuts:
+  - >
+    Mac: Keep <kbd class="key">o</kbd> pressed, then select <kbd class="key">œ</kbd> from the menu
+  - >
+    Windows: <kbd class="key">alt</kbd> +
+    <kbd class="key">0</kbd><kbd class="key">1</kbd><kbd class="key">5</kbd><kbd class="key">6</kbd>

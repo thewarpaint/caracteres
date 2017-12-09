@@ -8,3 +8,14 @@ theme:
   class: ce-cedilha
   color: "#009c38"
   fontsUrl: "https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700"
+
+codes:
+  - "&amp;ccedil;"
+  - "&amp;#231;"
+  - "U+00E7"
+
+shortcuts:
+  - >
+    Mac: <kbd class="key">⌥ option</kbd> + <kbd class="key">c</kbd>
+  - >
+    Windows: <kbd class="key">alt</kbd> + <kbd class="key">1</kbd><kbd class="key">3</kbd><kbd class="key">5</kbd>

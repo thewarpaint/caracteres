@@ -32,6 +32,7 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 - https://es.wikipedia.org/wiki/L%C2%B7l
 - http://www.cursdecatala.com/es/ele-geminada-l%C2%B7l-en-catalan/
 - https://en.wikipedia.org/wiki/Interpunct#Catalan
+- https://ca.wikipedia.org/wiki/Punt_volat
 
 
 ### ç: cê-cedilha
