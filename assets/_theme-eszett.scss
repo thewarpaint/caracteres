@@ -12,6 +12,8 @@ $eszett-theme-color-tertiary: #0097d4; // Bayern flag: blue
 }
 
 .home-nav__item--eszett {
-  color: $eszett-theme-color-secondary;
-  background-color: $eszett-theme-color-tertiary;
+  &:hover, &:active {
+    color: $eszett-theme-color-secondary;
+    background-color: $eszett-theme-color-tertiary;
+  }
 }

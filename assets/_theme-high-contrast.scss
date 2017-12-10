@@ -8,6 +8,8 @@ $high-contrast-theme-color-tertiary: #ffffff;
 }
 
 .home-nav__item--high-contrast {
-  color: $high-contrast-theme-color-secondary;
-  background-color: $high-contrast-theme-color-tertiary;
+  &:hover, &:active {
+    color: $high-contrast-theme-color-secondary;
+    background-color: $high-contrast-theme-color-tertiary;
+  }
 }

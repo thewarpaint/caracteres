@@ -8,6 +8,8 @@ $ce-cedilha-theme-color-tertiary: #009c38; // Brazil flag: green
 }
 
 .home-nav__item--ce-cedilha {
-  color: $ce-cedilha-theme-color-secondary;
-  background-color: $ce-cedilha-theme-color-tertiary;
+  &:hover, &:active {
+    color: $ce-cedilha-theme-color-secondary;
+    background-color: $ce-cedilha-theme-color-tertiary;
+  }
 }

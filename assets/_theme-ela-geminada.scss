@@ -8,6 +8,8 @@ $ela-geminada-theme-color-tertiary: #ffffff; // Estelada flag: white
 }
 
 .home-nav__item--ela-geminada {
-  color: $ela-geminada-theme-color-secondary;
-  background-color: $ela-geminada-theme-color-tertiary;
+  &:hover, &:active {
+    color: $ela-geminada-theme-color-secondary;
+    background-color: $ela-geminada-theme-color-tertiary;
+  }
 }

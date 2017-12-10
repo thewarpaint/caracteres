@@ -7,6 +7,8 @@ $enye-theme-color-tertiary: #ffc501; // Spanish flag: yellow
 }
 
 .home-nav__item--enye {
-  color: $enye-theme-color-secondary;
-  background-color: $enye-theme-color-tertiary;
+  &:hover, &:active {
+    color: $enye-theme-color-secondary;
+    background-color: $enye-theme-color-tertiary;
+  }
 }

@@ -12,6 +12,8 @@ $e-dans-lo-theme-color-tertiary: #ffffff;
 }
 
 .home-nav__item--e-dans-lo {
-  color: $e-dans-lo-theme-color-secondary;
-  background-color: $e-dans-lo-theme-color-tertiary;
+  &:hover, &:active {
+    color: $e-dans-lo-theme-color-secondary;
+    background-color: $e-dans-lo-theme-color-tertiary;
+  }
 }
