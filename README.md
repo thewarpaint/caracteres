@@ -55,6 +55,12 @@ https://medium.com/@typefacts/the-german-capital-letter-eszett-e0936c1388f8
 - https://en.wikipedia.org/wiki/AZERTY#French
 
 
+## ɫ: eɫ (l with stroke)
+
+- https://en.wikipedia.org/wiki/%C5%81#Polish
+- https://en.wiktionary.org/wiki/%C5%82#Polish
+
+
 ## Color schemes inspiration
 
 - [Spanish flag for Eñe](https://en.wikipedia.org/wiki/Flag_of_Spain)

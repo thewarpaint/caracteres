@@ -1,0 +1,14 @@
+character: ł
+speechSynthesis:
+  languages:
+    - pl
+
+description: ł
+
+explanationItems:
+  - >
+    Coming soon! // ¡Próximamente!
+
+theme:
+  class: high-contrast
+  color: "#000000"
