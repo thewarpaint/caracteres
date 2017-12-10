@@ -5,10 +5,6 @@ $e-dans-lo-theme-color-tertiary: #ffffff;
 .body--e-dans-lo {
   @include theme($e-dans-lo-theme-color-primary, $e-dans-lo-theme-color-secondary,
                  $e-dans-lo-theme-color-tertiary);
-
-  .keyboard__character {
-    text-transform: none;
-  }
 }
 
 .home-nav__item--e-dans-lo {
