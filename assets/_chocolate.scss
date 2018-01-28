@@ -1,0 +1,30 @@
+.chocolate {
+  &__h1, &__h2 {
+    font-family: "Noto Serif";
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__h1 {
+    font-size: 3rem;
+  }
+
+  &__h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+  }
+
+  p, &__language {
+    font-family: "Lato";
+    font-weight: 300;
+  }
+
+  &__language {
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  &__entry {
+    margin-bottom: 2rem;
+  }
+}
