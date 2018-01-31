@@ -1,6 +1,8 @@
 .chocolate {
+  margin-top: 1.5rem;
+
   &__h1, &__h2 {
-    font-family: "Noto Serif";
+    font-family: "Noto Serif", serif;
     font-weight: 700;
     margin: 0;
   }
@@ -14,14 +16,24 @@
     margin-bottom: .5rem;
   }
 
-  p, &__language {
-    font-family: "Lato";
+  &__intro, &__language {
+    font-family: "Lato", sans-serif;
     font-weight: 300;
+    letter-spacing: .03125rem;
+  }
+
+  &__intro {
+    font-size: 1.5rem;
   }
 
   &__language {
+    font-size: 1.25rem;
     text-transform: uppercase;
     margin-top: 0;
+
+    &--large {
+      font-size: 1.875rem;
+    }
   }
 
   &__entry {
