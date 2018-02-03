@@ -16,7 +16,7 @@
     margin-bottom: .5rem;
   }
 
-  &__intro, &__language {
+  &__intro, &__language, &__action {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     letter-spacing: .03125rem;
@@ -30,6 +30,7 @@
     font-size: 1.25rem;
     text-transform: uppercase;
     margin-top: 0;
+    margin-bottom: 1rem;
 
     &--large {
       font-size: 1.875rem;
@@ -38,5 +39,16 @@
 
   &__entry {
     margin-bottom: 2rem;
+  }
+
+  &__action {
+    &, &:hover, &:active, &:visited {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    &.btn {
+      font-size: 1rem;
+    }
   }
 }
