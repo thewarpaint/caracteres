@@ -1,0 +1,69 @@
+title: Xocolātl
+description: From Náhuatl, with love
+htmlTitle: >
+  Xocolātl: from Náhuatl, with love
+language: en
+
+explanationItems:
+  - >
+    Although the exact etymology of the word is debated, it comes originally from Náhuatl,
+    the language of the Aztec culture.
+  - >
+    Some propose it is derived from <i>xicolatl</i>, "beaten drink".
+    Others say it comes from <i>xocóatl</i>, "bitter water".
+  - >
+    What is definitely true is that many languages have adopted the word with small changes
+    in its writing and pronunciation.
+
+entries:
+  - translation: Chocolate
+    language: Spanish
+    languageId: es
+
+  - translation: Chocolate
+    language: English
+    languageId: en
+
+  - translation: Chocolate
+    language: Portuguese
+    languageId: pt
+
+  - translation: Schokolade
+    language: German
+    languageId: de
+
+  - translation: Cioccolato
+    language: Italian
+    languageId: it
+
+  - translation: Chocolat
+    language: French
+    languageId: fr
+
+  - translation: Xocolata
+    language: Catalan
+    languageId: ca
+
+  - translation: Czekolada
+    language: Polish
+    languageId: pl
+
+  - translation: Çikolata
+    language: Turkish
+    languageId: tr
+
+  - translation: Chokolade
+    language: Danish
+    languageId: da
+
+  - translation: Súkkulaði
+    language: Icelandic
+    languageId: is
+
+  - translation: шоколад
+    language: Russian
+    languageId: ru
+
+  - translation: σοκολάτα
+    language: Greek
+    languageId: el

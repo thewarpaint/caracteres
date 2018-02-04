@@ -1,154 +1,38 @@
 ---
 permalink: /chocolate
 ---
+{%- assign page = site.data.chocolate -%}
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="title" content="Xocolātl">
-    <meta name="description" content="From Náhuatl, with love">
-    <title>Xocolātl: from Náhuatl, with love</title>
+    <meta name="title" content="{{ page.title }}">
+    <meta name="description" content="{{ page.description }}">
+    <title>{{ page.htmlTitle }}</title>
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700|Lato:300" rel="stylesheet">
     <link href="{{ site.url }}/assets/main.css" rel="stylesheet">
     </head>
   <body class="chocolate">
     <div class="container">
-      <h1 class="chocolate__h1">Xocolātl</h1>
-      <p class="chocolate__language chocolate__language--large">From Náhuatl, with love</p>
+      <h1 class="chocolate__h1">{{ page.title }}</h1>
+      <p class="chocolate__language chocolate__language--large">{{ page.description }}</p>
 
-      <p class="chocolate__intro">
-        Although the exact etymology of the word is debated, it comes originally from Náhuatl,
-        the language of the Aztec culture.
-      </p>
+      {%- for explanationItem in page.explanationItems -%}
+      <p class="chocolate__intro">{{ explanationItem }}</p>
+      {%- endfor -%}
 
-      <p class="chocolate__intro">
-        Some propose it is derived from <i>xicolatl</i>, "beaten drink".
-        Others say it comes from <i>xocóatl</i>, "bitter water".
-      </p>
-
-      <p class="chocolate__intro">
-        What is definitely true is that many languages have adopted the word with small changes
-        in its writing and pronunciation.
-      </p>
-
+      {%- for entry in page.entries -%}
       <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Chocolate</h2>
-        <p class="chocolate__language">Spanish</p>
-        <a href="https://translate.google.com/#es/en/Chocolate"
+        <h2 class="chocolate__h2">{{ entry.translation }}</h2>
+        <p class="chocolate__language">{{ entry.language }}</p>
+        <a href="https://translate.google.com/#{{ entry.languageId }}/{{ page.language }}/{{ entry.translation }}"
            class="chocolate__action btn"
            target="_blank"
            rel="noopener">Listen</a>
       </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Chocolate</h2>
-        <p class="chocolate__language">English</p>
-        <a href="https://translate.google.com/#en/en/Chocolate"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Chocolate</h2>
-        <p class="chocolate__language">Portuguese</p>
-        <a href="https://translate.google.com/#pt/en/Chocolate"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Schokolade</h2>
-        <p class="chocolate__language">German</p>
-        <a href="https://translate.google.com/#de/en/Schokolade"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Cioccolato</h2>
-        <p class="chocolate__language">Italian</p>
-        <a href="https://translate.google.com/#it/en/Cioccolato"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Chocolat</h2>
-        <p class="chocolate__language">French</p>
-        <a href="https://translate.google.com/#fr/en/Chocolat"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Xocolata</h2>
-        <p class="chocolate__language">Catalan</p>
-        <a href="https://translate.google.com/#ca/en/Xocolata"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Czekolada</h2>
-        <p class="chocolate__language">Polish</p>
-        <a href="https://translate.google.com/#pl/en/Czekolada"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Çikolata</h2>
-        <p class="chocolate__language">Turkish</p>
-        <a href="https://translate.google.com/#tr/en/Çikolata"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Chokolade</h2>
-        <p class="chocolate__language">Danish</p>
-        <a href="https://translate.google.com/#da/en/Chokolade"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">Súkkulaði</h2>
-        <p class="chocolate__language">Icelandic</p>
-        <a href="https://translate.google.com/#is/en/Súkkulaði"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">шоколад</h2>
-        <p class="chocolate__language">Russian</p>
-        <a href="https://translate.google.com/#ru/en/шоколад"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
-
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">σοκολάτα</h2>
-        <p class="chocolate__language">Greek</p>
-        <a href="https://translate.google.com/#el/en/σοκολάτα"
-           class="chocolate__action btn"
-           target="_blank"
-           rel="noopener">Listen</a>
-      </div>
+      {%- endfor -%}
     </div>
   </body>
 </html>
