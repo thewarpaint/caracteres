@@ -16,54 +16,85 @@ explanationItems:
     in its writing and pronunciation.
 
 entries:
+  # The last entry in languageIds should be the language id without localisation,
+  # it is used to build the Google Translate link for Speech synthesys fallback
   - translation: Chocolate
     language: Spanish
-    languageId: es
+    languageIds:
+      - es-MX
+      - es-ES
+      - es
 
   - translation: Chocolate
     language: English
-    languageId: en
+    languageIds:
+      - en-US
+      - en-GB
+      - en
 
   - translation: Chocolate
     language: Portuguese
-    languageId: pt
+    languageIds:
+      - pt-PT
+      - pt-BR
+      - pt
 
   - translation: Schokolade
     language: German
-    languageId: de
+    languageIds:
+      - de-DE
+      - de
 
   - translation: Cioccolato
     language: Italian
-    languageId: it
+    languageIds:
+      - it-IT
+      - it
 
   - translation: Chocolat
     language: French
-    languageId: fr
+    languageIds:
+      - fr-FR
+      - fr
 
   - translation: Xocolata
     language: Catalan
-    languageId: ca
+    languageIds:
+      - ca-ES
+      - ca
 
   - translation: Czekolada
     language: Polish
-    languageId: pl
+    languageIds:
+      - pl-PL
+      - pl
 
   - translation: Çikolata
     language: Turkish
-    languageId: tr
+    languageIds:
+      - tr-TR
+      - tr
 
   - translation: Chokolade
     language: Danish
-    languageId: da
+    languageIds:
+      - da-DK
+      - da
 
   - translation: Súkkulaði
     language: Icelandic
-    languageId: is
+    languageIds:
+      - is-IS
+      - is
 
   - translation: шоколад
     language: Russian
-    languageId: ru
+    languageIds:
+      - ru-RU
+      - ru
 
   - translation: σοκολάτα
     language: Greek
-    languageId: el
+    languageIds:
+      - el-GR
+      - el

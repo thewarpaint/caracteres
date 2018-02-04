@@ -27,12 +27,16 @@ permalink: /chocolate
       <div class="chocolate__entry">
         <h2 class="chocolate__h2">{{ entry.translation }}</h2>
         <p class="chocolate__language">{{ entry.language }}</p>
-        <a href="https://translate.google.com/#{{ entry.languageId }}/{{ page.language }}/{{ entry.translation }}"
+        <a href="https://translate.google.com/#{{ entry.languageIds | last }}/{{ page.language }}/{{ entry.translation }}"
            class="chocolate__action btn"
+           data-word="{{ entry.translation }}"
+           data-language-ids="{{ entry.languageIds | join: ',' }}"
            target="_blank"
            rel="noopener">Listen</a>
       </div>
       {%- endfor -%}
     </div>
+
+    <script src="{{ site.url }}/assets/main.js"></script>
   </body>
 </html>
