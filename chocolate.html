@@ -3,7 +3,7 @@ permalink: /chocolate
 ---
 {%- assign page = site.data.chocolate -%}
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{ site.active_lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -26,7 +26,7 @@ permalink: /chocolate
       {%- for entry in page.entries -%}
       <div class="chocolate__entry">
         <h2 class="chocolate__h2">{{ entry.translation }}</h2>
-        <p class="chocolate__language">{{ entry.language }}</p>
+        <p class="chocolate__language">{{ entry.language[site.active_lang] }}</p>
         <a href="https://translate.google.com/#{{ entry.languageIds | last }}/{{ page.language }}/{{ entry.translation }}"
            class="chocolate__action btn"
            data-word="{{ entry.translation }}"

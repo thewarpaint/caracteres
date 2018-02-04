@@ -1,100 +1,111 @@
 title: Xocolātl
-description: From Náhuatl, with love
-htmlTitle: >
-  Xocolātl: from Náhuatl, with love
-language: en
-
-explanationItems:
-  - >
-    Although the exact etymology of the word is debated, it comes originally from Náhuatl,
-    the language of the Aztec culture.
-  - >
-    Some propose it is derived from <i>xicolatl</i>, "beaten drink".
-    Others say it comes from <i>xocóatl</i>, "bitter water".
-  - >
-    What is definitely true is that many languages have adopted the word with small changes
-    in its writing and pronunciation.
 
 entries:
   # The last entry in languageIds should be the language id without localisation,
   # it is used to build the Google Translate link for Speech synthesys fallback
   - translation: Chocolate
-    language: Spanish
+    language:
+      en: Spanish
+      es: Español
     languageIds:
       - es-MX
       - es-ES
       - es
 
   - translation: Chocolate
-    language: English
+    language:
+      en: English
+      es: Inglés
     languageIds:
       - en-US
       - en-GB
       - en
 
   - translation: Chocolate
-    language: Portuguese
+    language:
+      en: Portuguese
+      es: Portugués
     languageIds:
       - pt-PT
       - pt-BR
       - pt
 
   - translation: Schokolade
-    language: German
+    language:
+      en: German
+      es: Alemán
     languageIds:
       - de-DE
       - de
 
   - translation: Cioccolato
-    language: Italian
+    language:
+      en: Italian
+      es: Italiano
     languageIds:
       - it-IT
       - it
 
   - translation: Chocolat
-    language: French
+    language:
+      en: French
+      es: Francés
     languageIds:
       - fr-FR
       - fr
 
   - translation: Xocolata
-    language: Catalan
+    language:
+      en: Catalan
+      es: Catalán
     languageIds:
       - ca-ES
       - ca
 
   - translation: Czekolada
-    language: Polish
+    language:
+      en: Polish
+      es: Polaco
     languageIds:
       - pl-PL
       - pl
 
   - translation: Çikolata
-    language: Turkish
+    language:
+      en: Turkish
+      es: Turco
     languageIds:
       - tr-TR
       - tr
 
   - translation: Chokolade
-    language: Danish
+    language:
+      en: Danish
+      es: Danés
     languageIds:
       - da-DK
       - da
 
   - translation: Súkkulaði
-    language: Icelandic
+    language:
+      en: Icelandic
+      es: Islandés
     languageIds:
       - is-IS
       - is
 
   - translation: шоколад
-    language: Russian
+    language:
+      en: Russian
+      es: Ruso
     languageIds:
       - ru-RU
       - ru
 
   - translation: σοκολάτα
-    language: Greek
+    language:
+      en: Greek
+      es: Griego
     languageIds:
       - el-GR
       - el
