@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       break;
 
     default:
-      console.warn('Unknown body id "' + document.body.id + '", no init function executed.');
+      Console.log('Unknown body id "' + document.body.id + '", no init function executed.');
       break;
   }
 });
@@ -101,6 +101,7 @@ var Chocolate = (function () {
   Chocolate.prototype.onVoicesChanged = function () {
     speechSynthesis.getVoices().forEach(function (voice) {
       if (!window.Chocolate.voices[voice.lang]) {
+        Console.log('Adding voice for language ' + voice.lang + '.');
         window.Chocolate.voices[voice.lang] = voice;
       }
     });
@@ -119,6 +120,8 @@ var Chocolate = (function () {
 
         for (var i = 0; i < languageIds.length; i++) {
           if (window.Chocolate.voices[languageIds[i]] && !button.getAttribute('data-language-id')) {
+            Console.log('Adding speak button click listener for ' + languageIds[i] + '.');
+
             button.href = 'javascript:void(0);';
             button.target = '';
             button.setAttribute('data-language-id', languageIds[i]);
@@ -131,6 +134,8 @@ var Chocolate = (function () {
   };
 
   Chocolate.prototype.speak = function (word, language) {
+    Console.log('Speaking "' + word + '" in ' + language + '.');
+
     var utterance = new SpeechSynthesisUtterance(word);
     utterance.voice = window.Chocolate.voices[language];
     utterance.lang = language;
