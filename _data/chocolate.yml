@@ -8,8 +8,8 @@ entries:
       en: Spanish
       es: Español
     languageIds:
-      - es-MX
-      - es-ES
+      - es_MX
+      - es_ES
       - es
 
   - translation: Chocolate
@@ -17,8 +17,8 @@ entries:
       en: English
       es: Inglés
     languageIds:
-      - en-US
-      - en-GB
+      - en_US
+      - en_GB
       - en
 
   - translation: Chocolate
@@ -26,8 +26,8 @@ entries:
       en: Portuguese
       es: Portugués
     languageIds:
-      - pt-PT
-      - pt-BR
+      - pt_PT
+      - pt_BR
       - pt
 
   - translation: Schokolade
@@ -35,7 +35,7 @@ entries:
       en: German
       es: Alemán
     languageIds:
-      - de-DE
+      - de_DE
       - de
 
   - translation: Cioccolato
@@ -43,7 +43,7 @@ entries:
       en: Italian
       es: Italiano
     languageIds:
-      - it-IT
+      - it_IT
       - it
 
   - translation: Chocolat
@@ -51,7 +51,7 @@ entries:
       en: French
       es: Francés
     languageIds:
-      - fr-FR
+      - fr_FR
       - fr
 
   - translation: Xocolata
@@ -59,7 +59,7 @@ entries:
       en: Catalan
       es: Catalán
     languageIds:
-      - ca-ES
+      - ca_ES
       - ca
 
   - translation: Czekolada
@@ -67,7 +67,7 @@ entries:
       en: Polish
       es: Polaco
     languageIds:
-      - pl-PL
+      - pl_PL
       - pl
 
   - translation: Çikolata
@@ -75,7 +75,7 @@ entries:
       en: Turkish
       es: Turco
     languageIds:
-      - tr-TR
+      - tr_TR
       - tr
 
   - translation: Chokolade
@@ -83,7 +83,7 @@ entries:
       en: Danish
       es: Danés
     languageIds:
-      - da-DK
+      - da_DK
       - da
 
   - translation: Súkkulaði
@@ -91,7 +91,7 @@ entries:
       en: Icelandic
       es: Islandés
     languageIds:
-      - is-IS
+      - is_IS
       - is
 
   - translation: шоколад
@@ -99,7 +99,7 @@ entries:
       en: Russian
       es: Ruso
     languageIds:
-      - ru-RU
+      - ru_RU
       - ru
 
   - translation: σοκολάτα
@@ -107,5 +107,5 @@ entries:
       en: Greek
       es: Griego
     languageIds:
-      - el-GR
+      - el_GR
       - el
