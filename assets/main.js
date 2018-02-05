@@ -118,7 +118,7 @@ var Chocolate = (function () {
         var languageIds = button.getAttribute('data-language-ids').split(',');
 
         for (var i = 0; i < languageIds.length; i++) {
-          if (window.Chocolate.voices[languageIds[i]]) {
+          if (window.Chocolate.voices[languageIds[i]] && !button.getAttribute('data-language-id')) {
             button.href = 'javascript:void(0);';
             button.target = '';
             button.setAttribute('data-language-id', languageIds[i]);
