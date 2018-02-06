@@ -100,9 +100,11 @@ var Chocolate = (function () {
 
   Chocolate.prototype.onVoicesChanged = function () {
     speechSynthesis.getVoices().forEach(function (voice) {
-      if (!window.Chocolate.voices[voice.lang]) {
-        Console.log('Adding voice for language ' + voice.lang + '.');
-        window.Chocolate.voices[voice.lang] = voice;
+      var normalizedLanguageId = voice.lang.replace('-', '_');
+
+      if (!window.Chocolate.voices[normalizedLanguageId]) {
+        Console.log('Adding voice for language ' + normalizedLanguageId + '.');
+        window.Chocolate.voices[normalizedLanguageId] = voice;
       }
     });
 
@@ -110,7 +112,8 @@ var Chocolate = (function () {
   };
 
   Chocolate.prototype.onSpeakButtonClick = function () {
-    window.Chocolate.speak(this.getAttribute('data-word'), this.getAttribute('data-language-id'));
+    var languageId = this.getAttribute('data-language-id');
+    window.Chocolate.speak(this.getAttribute('data-word'), window.Chocolate.voices[languageId]);
   };
 
   Chocolate.prototype.addSpeakButtonClickListeners = function () {
@@ -133,12 +136,12 @@ var Chocolate = (function () {
       });
   };
 
-  Chocolate.prototype.speak = function (word, language) {
-    Console.log('Speaking "' + word + '" in ' + language + '.');
+  Chocolate.prototype.speak = function (word, voice) {
+    Console.log('Speaking "' + word + '" in ' + voice.lang + '.');
 
     var utterance = new SpeechSynthesisUtterance(word);
-    utterance.voice = window.Chocolate.voices[language];
-    utterance.lang = language;
+    utterance.voice = voice;
+    utterance.lang = voice.lang;
     speechSynthesis.speak(utterance);
   };
 
