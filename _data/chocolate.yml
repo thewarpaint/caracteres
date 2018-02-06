@@ -94,7 +94,8 @@ entries:
       - is_IS
       - is
 
-  - translation: шоколад (shokolad)
+  - translation: шоколад
+    transliteration: shokolad
     language:
       en: Russian
       es: Ruso
@@ -102,7 +103,8 @@ entries:
       - ru_RU
       - ru
 
-  - translation: σοκολάτα (sokoláta)
+  - translation: σοκολάτα
+    transliteration: sokoláta
     language:
       en: Greek
       es: Griego
@@ -110,7 +112,8 @@ entries:
       - el_GR
       - el
 
-  - translation: チョコレート  (chokorēto)
+  - translation: チョコレート
+    transliteration: chokorēto
     language:
       en: Japanese
       es: Japonés
@@ -118,7 +121,8 @@ entries:
       - ja_JP
       - ja
 
-  - translation: 초콜릿 (chokollis)
+  - translation: 초콜릿
+    transliteration: chokollis
     language:
       en: Korean
       es: Coreano
@@ -126,7 +130,8 @@ entries:
       - ko_KR
       - ko
 
-  - translation: 巧克力 (qiǎokèlì)
+  - translation: 巧克力
+    transliteration: qiǎokèlì
     language:
       en: Chinese
       es: Chino
