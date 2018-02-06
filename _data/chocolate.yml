@@ -109,3 +109,11 @@ entries:
     languageIds:
       - el_GR
       - el
+
+  - translation: チョコレート  (chokorēto)
+    language:
+      en: Japanese
+      es: Japonés
+    languageIds:
+      - ja_JP
+      - ja
