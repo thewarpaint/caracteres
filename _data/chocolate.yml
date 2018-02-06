@@ -117,3 +117,20 @@ entries:
     languageIds:
       - ja_JP
       - ja
+
+  - translation: 초콜릿 (chokollis)
+    language:
+      en: Korean
+      es: Coreano
+    languageIds:
+      - ko_KR
+      - ko
+
+  - translation: 巧克力 (qiǎokèlì)
+    language:
+      en: Chinese
+      es: Chino
+    languageIds:
+      - zh_CN_#Hans
+      - zh_CN
+      - zh
