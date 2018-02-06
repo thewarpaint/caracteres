@@ -94,7 +94,7 @@ entries:
       - is_IS
       - is
 
-  - translation: шоколад
+  - translation: шоколад (shokolad)
     language:
       en: Russian
       es: Ruso
@@ -102,7 +102,7 @@ entries:
       - ru_RU
       - ru
 
-  - translation: σοκολάτα
+  - translation: σοκολάτα (sokoláta)
     language:
       en: Greek
       es: Griego
