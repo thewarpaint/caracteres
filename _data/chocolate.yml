@@ -147,3 +147,27 @@ entries:
       es: Árabe
     languageIds:
       - ar
+
+  - translation: txokolatea
+    language:
+      en: Basque
+      es: Vasco
+    languageIds:
+      - eu_ES
+      - eu
+
+  - translation: čokoláda
+    language:
+      en: Czech
+      es: Checo
+    languageIds:
+      - cs_CZ
+      - cs
+
+  - translation: csokoládé
+    language:
+      en: Hungarian
+      es: Húngaro
+    languageIds:
+      - hu_HU
+      - hu
