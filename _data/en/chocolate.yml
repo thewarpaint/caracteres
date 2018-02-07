@@ -13,3 +13,7 @@ explanationItems:
   - >
     What is certainly true is that many languages have adopted the word with small changes
     in its writing and pronunciation.
+
+actions:
+  listen: Listen
+  listenInGoogleTranslate: Listen in Google Translate

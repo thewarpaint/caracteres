@@ -13,6 +13,12 @@ permalink: /chocolate
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Lato:300" rel="stylesheet">
     <link href="{{ site.url }}/assets/main.css" rel="stylesheet">
+
+    <script>
+      var Globals = {
+        actions: {{ page.actions | jsonify }}
+      };
+    </script>
   </head>
   <body class="chocolate" id="chocolate">
     <div class="container">
@@ -36,7 +42,7 @@ permalink: /chocolate
            data-word="{{ entry.translation }}"
            data-language-ids="{{ entry.languageIds | join: ',' }}"
            target="_blank"
-           rel="noopener">Listen</a>
+           rel="noopener">{{ page.actions.listenInGoogleTranslate }}</a>
       </div>
       {%- endfor -%}
     </div>

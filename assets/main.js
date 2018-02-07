@@ -125,6 +125,7 @@ var Chocolate = (function () {
           if (window.Chocolate.voices[languageIds[i]] && !button.getAttribute('data-language-id')) {
             Console.log('Adding speak button click listener for ' + languageIds[i] + '.');
 
+            button.text = window.Globals.actions.listen;
             button.href = 'javascript:void(0);';
             button.target = '';
             button.setAttribute('data-language-id', languageIds[i]);

@@ -13,3 +13,7 @@ explanationItems:
   - >
     Lo que es cierto es que muchos idiomas han adoptado la palabra con pocos cambios
     en su escritura y pronunciación.
+
+actions:
+  listen: Escucha
+  listenInGoogleTranslate: Escucha en Google Translate
