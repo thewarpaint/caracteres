@@ -16,7 +16,7 @@
     margin-bottom: .5rem;
   }
 
-  &__intro, &__language, &__action {
+  &__intro, &__language, &__action, .btn {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     letter-spacing: .03125rem;
@@ -41,7 +41,7 @@
     margin-bottom: 2rem;
   }
 
-  &__action {
+  &__action, .btn {
     &, &:hover, &:active, &:visited {
       color: #000000;
       text-decoration: none;
@@ -51,5 +51,9 @@
   &__transliteration {
     font-size: 1.75rem;
     font-weight: 400;
+  }
+
+  .languages {
+    margin-bottom: 2em;
   }
 }

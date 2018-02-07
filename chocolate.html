@@ -1,6 +1,8 @@
 ---
 permalink: /chocolate
 ---
+{%- assign permalink = "chocolate" -%}
+{%- assign i18n = site.data.i18n -%}
 {%- assign page = site.data.chocolate -%}
 <!DOCTYPE html>
 <html lang="{{ site.active_lang }}">
@@ -24,6 +26,19 @@ permalink: /chocolate
     <div class="container">
       <h1 class="chocolate__h1">{{ page.title }}</h1>
       <p class="chocolate__language chocolate__language--large">{{ page.description }}</p>
+
+      <div class="languages">
+        {%- for lang in site.languages -%}
+        {%- if lang != site.active_lang -%}
+        {%- if lang == site.default_lang -%}
+        <!-- The space at the beginning of href is needed for the proper link to be rendered. -->
+        <a href=" {{ site.url }}/{{ permalink }}" class="btn">{{ i18n.languages[lang] }}</a>
+        {%- else -%}
+        <a href="{{ site.url }}/{{ lang }}/{{ permalink }}" class="btn">{{ i18n.languages[lang] }}</a>
+        {%- endif -%}
+        {%- endif -%}
+        {%- endfor -%}
+      </div>
 
       {%- for explanationItem in page.explanationItems -%}
       <p class="chocolate__intro">{{ explanationItem }}</p>
