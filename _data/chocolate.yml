@@ -171,3 +171,19 @@ entries:
     languageIds:
       - hu_HU
       - hu
+
+  - translation: suklaa
+    language:
+      en: Finnish
+      es: Finlandés
+    languageIds:
+      - fi_FI
+      - fi
+
+  - translation: ciocolată
+    language:
+      en: Romanian
+      es: Rumano
+    languageIds:
+      - ro_RO
+      - ro
