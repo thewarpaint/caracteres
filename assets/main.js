@@ -90,6 +90,7 @@ var Caracteres = (function () {
 var Chocolate = (function () {
   function Chocolate() {
     this.voices = {};
+    this.showNerdStuffBtn = null;
   }
 
   Chocolate.prototype.init = function () {
@@ -98,6 +99,9 @@ var Chocolate = (function () {
     if (FeatureDetection.hasSpeechSynthesis()) {
       speechSynthesis.onvoiceschanged = this.onVoicesChanged;
     }
+
+    this.showNerdStuffBtn = document.getElementById('show-nerd-stuff-btn');
+    this.showNerdStuffBtn.addEventListener('click', window.Chocolate.onShowNerdStuffClick);
   };
 
   Chocolate.prototype.onVoicesChanged = function () {
@@ -146,6 +150,10 @@ var Chocolate = (function () {
     utterance.voice = voice;
     utterance.lang = voice.lang;
     speechSynthesis.speak(utterance);
+  };
+
+  Chocolate.prototype.onShowNerdStuffClick = function () {
+    document.getElementById('console').classList.remove('console--hidden');
   };
 
   return new Chocolate();

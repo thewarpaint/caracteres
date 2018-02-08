@@ -4,4 +4,8 @@
   font-size: .75rem;
   white-space: pre-wrap;
   padding: .5rem;
+
+  &--hidden {
+    display: none;
+  }
 }

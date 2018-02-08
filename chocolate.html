@@ -61,9 +61,11 @@ permalink: /chocolate
            rel="noopener">{{ page.actions.listenInGoogleTranslate }}</a>
       </div>
       {%- endfor -%}
+
+      <button id="show-nerd-stuff-btn" class="btn">Show nerd stuff</button>
     </div>
 
-    <pre class="console">Console (stuff for geeks):</pre>
+    <pre id="console" class="console console--hidden"></pre>
 
     <script src="{{ site.url }}/assets/main.js"></script>
   </body>
