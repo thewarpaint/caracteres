@@ -93,6 +93,8 @@ var Chocolate = (function () {
   }
 
   Chocolate.prototype.init = function () {
+    Console.log('Version: ' + Globals.version);
+
     if (FeatureDetection.hasSpeechSynthesis()) {
       speechSynthesis.onvoiceschanged = this.onVoicesChanged;
     }

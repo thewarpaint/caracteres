@@ -18,7 +18,8 @@ permalink: /chocolate
 
     <script>
       var Globals = {
-        actions: {{ page.actions | jsonify }}
+        actions: {{ page.actions | jsonify }},
+        version: '%CURRENT_SHA%'
       };
     </script>
   </head>
