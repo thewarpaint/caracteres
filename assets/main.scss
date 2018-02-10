@@ -2,15 +2,14 @@
 @import "balloon-2841f2f";
 
 @import "mixins";
+@import "styles/variables";
 @import "home";
 @import "character";
 @import "button";
 @import "footer";
 
 $key-size: 2.125em;
-$threshold-mobile-wide: 480px;
-$threshold-tablet: 640px;
-$threshold-desktop: 960px;
+
 
 html {
   font-weight: 300;
