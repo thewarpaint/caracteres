@@ -1,10 +1,15 @@
 title: >
-  Xocolātl: from Náhuatl, with love
+  Xocolātl
 description: >
-  The word borrowed from the Aztec's native tongue is present in many languages,
-  sometimes with minimal changes in its writing and pronunciation.
-htmlTitle: >
-  Xocolātl: from Náhuatl, with love
+  From Náhuatl, with love
+
+seo:
+  title: >
+    Xocolātl: from Náhuatl, with love
+  description: >
+    The word borrowed from the Aztec's native tongue is present in many languages,
+    sometimes with minimal changes in its writing and pronunciation.
+
 language: en
 
 explanationItems:

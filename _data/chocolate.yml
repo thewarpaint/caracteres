@@ -1,5 +1,3 @@
-title: Xocolātl
-
 entries:
   # The last entry in languageIds should be the language id without localisation,
   # it is used to build the Google Translate link for Speech synthesys fallback
