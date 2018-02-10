@@ -44,7 +44,24 @@ permalink: /chocolate
       {%- for explanationItem in page.explanationItems -%}
       <p class="chocolate__intro">{{ explanationItem }}</p>
       {%- endfor -%}
+    </div>
 
+    <div class="teaser">
+      <div class="container group">
+        <img src="{{ site.url }}/assets/images/t-shirt.jpg" class="teaser__image">
+
+        <div class="teaser__text">
+          <h2 class="teaser__h1">{{ page.teaser.h1 }}</h2>
+          <h3 class="teaser__h2">{{ page.teaser.h2 }}</h3>
+          <a class="btn teaser__cta"
+             href="https://www.threadless.com/"
+             target="_blank"
+             rel="noopener">{{ page.teaser.cta }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
       {%- for entry in page.entries -%}
       <div class="chocolate__entry">
         <h2 class="chocolate__h2">{{ entry.translation }}

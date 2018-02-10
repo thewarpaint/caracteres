@@ -26,3 +26,8 @@ explanationItems:
 actions:
   listen: Escucha
   listenInGoogleTranslate: Escucha en Google Translate
+
+teaser:
+  h1: Danos dinero,
+  h2: obtén una playera de vuelta
+  cta: No veo por qué no
