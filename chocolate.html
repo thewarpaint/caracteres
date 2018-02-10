@@ -26,7 +26,7 @@ permalink: /chocolate
   <body class="chocolate" id="chocolate">
     <div class="container">
       <h1 class="chocolate__h1">{{ page.title }}</h1>
-      <p class="chocolate__language chocolate__language--large">{{ page.description }}</p>
+      <h2 class="chocolate__language chocolate__language--large">{{ page.description }}</h2>
 
       <div class="languages">
         {%- for lang in site.languages -%}
@@ -48,7 +48,9 @@ permalink: /chocolate
 
     <div class="teaser">
       <div class="container group">
-        <img src="{{ site.url }}/assets/images/t-shirt.jpg" class="teaser__image">
+        <img src="{{ site.url }}/assets/images/t-shirt.jpg"
+             class="teaser__image"
+             alt="T-shirt">
 
         <div class="teaser__text">
           <h2 class="teaser__h1">{{ page.teaser.h1 }}</h2>
