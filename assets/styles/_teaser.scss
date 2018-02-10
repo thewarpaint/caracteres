@@ -1,32 +1,52 @@
+@import "variables";
+
+$teaser-color-fg: #ffffff;
+$teaser-color-bg: #000000;
+
 .teaser {
-  color: #ffffff;
-  background-color: #000000;
   margin: 2rem 0;
   padding: 2rem 0;
+  color: $teaser-color-fg;
+  background-color: $teaser-color-bg;
+  background-image: url('../assets/images/t-shirt.jpg');
+  background-position: -3rem center;
+  background-repeat: no-repeat;
+  background-size: auto 12rem;
+
+  @media (min-width: $threshold-tablet) {
+    background: $teaser-color-bg;
+  }
 
   &__h1, &__h2 {
     margin: 0;
+    display: inline;
+    font-size: 2.5rem;
+
+    @media (min-width: $threshold-tablet) {
+      display: block;
+    }
   }
 
   &__h1 {
     font-family: "Noto Serif", serif;
     font-weight: 700;
-    font-size: 2.5rem;
   }
 
   &__h2 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 2rem;
-  }
-
-  &__image {
-    width: 9rem;
-    float: left;
   }
 
   &__text {
-    padding-left: 11rem;
+    padding-left: 10rem;
+
+    @media (min-width: $threshold-tablet) {
+      background-image: url('../assets/images/t-shirt.jpg');
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: auto 9rem;
+      padding-left: 11rem;
+    }
   }
 
   &__cta {
@@ -38,7 +58,7 @@
     text-transform: uppercase;
 
     &, &:hover, &:active, &:visited {
-      color: #ffffff;
+      color: $teaser-color-fg;
     }
   }
 }
