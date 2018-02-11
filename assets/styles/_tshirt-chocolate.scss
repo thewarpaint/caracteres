@@ -11,7 +11,7 @@
     .word {
       font-size: .5rem;
       position: absolute;
-      color: #cccccc;
+      color: #dddddd;
 
       &__translation, &__transliteration, &__language {
         margin: 0;
@@ -24,35 +24,35 @@
       &__translation {
         font-size: 1em;
         font-weight: 700;
+        line-height: 1.125em;
       }
 
       &__transliteration {
         font-size: .75em;
         font-weight: 300;
+        line-height: 1.5em;
       }
 
       &__language {
         font-family: "Lato", sans-serif;
         font-weight: 400;
         font-size: .5em;
-        color: #cccccc;
         text-transform: uppercase;
 
         &--emphasis {
           font-weight: 400;
-          color: #000000;
         }
       }
 
       &--main {
         font-size: 1rem;
-        top: 4rem;
+        top: 4.375rem;
         left: 1.75rem;
         text-align: center;
         color: #000000;
 
-        .word__language {
-          color: #999999;
+        .word__translation {
+          line-height: 1em;
         }
       }
 
