@@ -1,0 +1,32 @@
+---
+permalink: /t-shirt/chocolate
+---
+{%- assign page = site.data.chocolate -%}
+<!DOCTYPE html>
+<html lang="{{ site.active_lang }}" class="tshirt tshirt--chocolate">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Lato:400,700" rel="stylesheet">
+    <link href="{{ site.url }}/assets/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="tshirt__container">
+      <div class="word word--main">
+        <h1 class="word__translation">Xocolātl</h1>
+        <h2 class="word__language">From <b class="word__language--emphasis">Nahuatl</b>, with love</h2>
+      </div>
+
+      {%- for entry in page.entries -%}
+      <div class="word word--{{ entry.languageIds | last }}">
+        <h1 class="word__translation">{{ entry.translation }}</h1>
+        {% if entry.transliteration %}
+        <h1 class="word__transliteration">({{ entry.transliteration }})</h2>
+        {% endif %}
+        <h2 class="word__language">{{ entry.language[site.active_lang] }}</h2>
+      </div>
+      {%- endfor -%}
+    </div>
+  </body>
+</html>
