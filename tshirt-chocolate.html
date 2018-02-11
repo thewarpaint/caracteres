@@ -22,7 +22,7 @@ permalink: /t-shirt/chocolate
       <div class="word word--{{ entry.languageIds | last }}">
         <h1 class="word__translation">{{ entry.translation }}</h1>
         {% if entry.transliteration %}
-        <h1 class="word__transliteration">({{ entry.transliteration }})</h2>
+        <h2 class="word__transliteration">({{ entry.transliteration }})</h2>
         {% endif %}
         <h2 class="word__language">{{ entry.language[site.active_lang] }}</h2>
       </div>
