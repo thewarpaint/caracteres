@@ -194,3 +194,11 @@ entries:
     languageIds:
       - th_TH
       - th
+
+  - translation: sô cô la
+    language:
+      en: Vietnamese
+      es: Vietnamita
+    languageIds:
+      - vi_VN
+      - vi
