@@ -185,3 +185,12 @@ entries:
     languageIds:
       - ro_RO
       - ro
+
+  - translation: ช็อคโกแลต
+    transliteration: ch̆xkh ko læt
+    language:
+      en: Thai
+      es: Tailandés
+    languageIds:
+      - th_TH
+      - th
