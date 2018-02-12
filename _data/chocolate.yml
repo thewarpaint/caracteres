@@ -202,3 +202,28 @@ entries:
     languageIds:
       - vi_VN
       - vi
+
+  - translation: seacláid
+    language:
+      en: Irish
+      es: Irlandés
+    languageIds:
+      - ga_IE
+      - ga
+
+  - translation: чоколада
+    transliteration: čokolada
+    language:
+      en: Serbian
+      es: Serbio
+    languageIds:
+      - sr_RS
+      - sr
+
+  - translation: siocled
+    language:
+      en: Welsh
+      es: Galés
+    languageIds:
+      - cy
+
