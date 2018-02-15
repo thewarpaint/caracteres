@@ -2,6 +2,19 @@
 
 [![CircleCI](https://circleci.com/gh/thewarpaint/caracteres/tree/master.svg?style=svg)](https://circleci.com/gh/thewarpaint/caracteres/tree/master)
 
+Caracteres is a collection of pages about interesting letters, symbols, ligatures, 
+etc. present in languages that share the Roman alphabet.
+
+The name "caracteres" comes from the Spanish translation of "characters".
+According to the 
+[Merriam-Webster Dictionary](https://www.merriam-webster.com/dictionary/character), "character" means:
+
+- one of the attributes or features that make up and distinguish an individual
+- a graphic symbol used in writing or printing
+
+We love the idea that letters and symbols contribute to the personality of a language
+and influence their speakers.
+
 
 ## Development
 
