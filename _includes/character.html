@@ -1,5 +1,6 @@
 {%- assign i18n = site.data.i18n -%}
 {%- assign char = site.data.chars[include.character] -%}
+{%- assign teaser = site.data.teaser -%}
 <!DOCTYPE html>
 <html lang="{{ site.active_lang }}">
   <head>
@@ -81,7 +82,27 @@
         <p class="explanation">{{ explanation }}</p>
         {% endfor %}
       </section>
+    {%- if include.character == "enye" -%}
+    </div>
 
+    <div class="teaser">
+      <div class="container group">
+        <div class="teaser__text">
+          <div>
+            <h2 class="teaser__h1">{{ teaser.h1 }} </h2>
+            <h3 class="teaser__h2">{{ teaser.h2 }}</h3>
+          </div>
+
+          <a class="btn teaser__cta"
+             href="https://www.threadless.com/"
+             target="_blank"
+             rel="noopener">{{ teaser.cta }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    {%- endif -%}
       {% assign exampleCharacterTemplate = '<b class="example__character">__CHAR__</b>' %}
       {% assign exampleCharacter = exampleCharacterTemplate | replace:'__CHAR__',char.character %}
       {% for example in char.examples %}

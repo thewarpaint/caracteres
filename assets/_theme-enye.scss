@@ -1,9 +1,20 @@
+@import "styles/teaser";
+
 $enye-theme-color-primary: #c70218; // Spanish flag: red
 $enye-theme-color-secondary: #000000;
 $enye-theme-color-tertiary: #ffc501; // Spanish flag: yellow
 
+$teaser-color-fg: #ffffff;
+$teaser-color-bg: #000000;
+$teaser-font-primary: "Abril Fatface", serif;
+$teaser-font-secondary: "Lato", sans-serif;
+
 .body--enye {
   @include theme($enye-theme-color-primary, $enye-theme-color-secondary, $enye-theme-color-tertiary);
+
+  .teaser {
+    @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);
+  }
 }
 
 .home-nav__item--enye {
