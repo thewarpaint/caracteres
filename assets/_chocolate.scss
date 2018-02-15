@@ -1,3 +1,10 @@
+@import "styles/teaser";
+
+$teaser-color-fg: #ffffff;
+$teaser-color-bg: #000000;
+$teaser-font-primary: "Noto Serif", serif;
+$teaser-font-secondary: "Lato", sans-serif;
+
 .chocolate {
   margin-top: 1.5rem;
 
@@ -55,5 +62,9 @@
 
   .languages {
     margin-bottom: 2em;
+  }
+
+  .teaser {
+    @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);
   }
 }

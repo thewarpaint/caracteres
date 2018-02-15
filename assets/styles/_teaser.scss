@@ -1,9 +1,6 @@
 @import "variables";
 
-$teaser-color-fg: #ffffff;
-$teaser-color-bg: #000000;
-
-.teaser {
+@mixin teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary) {
   margin: 2rem 0;
   padding: 2rem 0;
   color: $teaser-color-fg;
@@ -28,12 +25,12 @@ $teaser-color-bg: #000000;
   }
 
   &__h1 {
-    font-family: "Noto Serif", serif;
+    font-family: $teaser-font-primary;
     font-weight: 700;
   }
 
   &__h2 {
-    font-family: "Lato", sans-serif;
+    font-family: $teaser-font-secondary;
     font-weight: 300;
   }
 
