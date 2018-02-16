@@ -76,7 +76,7 @@
     .word {
       &--es {
         top: 6.25rem;
-        left: 7rem;
+        left: 7.25rem;
       }
 
       &--en {
@@ -90,13 +90,13 @@
         font-size: .4375rem;
         transform: rotate(90deg);
         top: 7.25rem;
-        left: 5rem;
+        left: 5.25rem;
       }
 
       &--it {
-        font-size: .3125rem;
+        font-size: .375rem;
         top: 3.5rem;
-        left: 6.5rem;
+        left: 6.75rem;
       }
 
       &--tr {
@@ -108,7 +108,7 @@
       &--ja {
         font-size: .5625rem;
         top: 6.25rem;
-        left: 1.25rem;
+        left: .25rem;
       }
 
       &--ru {
@@ -133,21 +133,21 @@
 
       &--ko {
         font-size: .4375rem;
-        top: .5rem;
-        left: 4rem;
+        top: .25rem;
+        left: 5rem;
       }
 
       &--da {
         font-size: .25rem;
-        top: 7.75rem;
-        left: 4.25rem;
+        top: 8rem;
+        left: 4.5rem;
       }
 
       &--cs {
         font-size: .3125rem;
         transform: rotate(-90deg);
         top: 7.75rem;
-        left: 8.5rem;
+        left: 8.75rem;
       }
 
       &--fi {
@@ -165,32 +165,33 @@
 
       &--fr {
         font-size: .3125rem;
-        top: 4.75rem;
-        left: .25rem;
+        transform: rotate(-90deg);
+        top: 3.25rem;
+        left: .5rem;
       }
 
       &--ar {
         font-size: .4375rem;
         transform: rotate(90deg);
-        top: 2.5rem;
-        left: 8.25rem;
+        top: 1.75rem;
+        left: 8rem;
       }
 
       &--zh {
         font-size: .5rem;
         top: 8.5rem;
-        left: 7rem;
+        left: 7.25rem;
       }
 
       &--pl {
         font-size: .4375rem;
-        top: 8.25rem;
-        left: .5rem;
+        top: 8rem;
+        left: .75rem;
       }
 
       &--ca {
         font-size: .375rem;
-        top: 2rem;
+        top: 1.75rem;
         left: .5rem;
       }
 
@@ -202,7 +203,7 @@
 
       &--eu {
         font-size: .4375rem;
-        top: .5rem;
+        top: .25rem;
         left: 7.5rem;
       }
 
@@ -210,6 +211,37 @@
         font-size: .375rem;
         top: 2rem;
         left: 4.75rem;
+      }
+
+      &--th {
+        font-size: .375rem;
+        top: 6.5rem;
+        left: 4rem;
+      }
+
+      &--vi {
+        font-size: .375rem;
+        top: 9rem;
+        left: 1.25rem;
+      }
+
+      &--cy {
+        font-size: .3125rem;
+        top: 4.5rem;
+        left: .25rem;
+      }
+
+      &--ga {
+        font-size: .3125rem;
+        transform: rotate(-90deg);
+        top: 1.5rem;
+        left: 3.5rem;
+      }
+
+      &--sr {
+        font-size: .4375rem;
+        top: .25rem;
+        left: .5rem;
       }
     }
   }
