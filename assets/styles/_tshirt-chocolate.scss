@@ -2,11 +2,15 @@
   font-size: 10vmin;
 
   &__container {
+    position: relative;
     width: 100vmin;
     height: 100vmin;
-    border: 1px dashed #dddddd;
+    margin: 0 auto;
+    border: 1px dashed transparent;
 
     &:hover {
+      border-color: #dddddd;
+
       .word {
         &__translation, &__transliteration, &__language {
           background: rgba(0, 0, 0, .05);
