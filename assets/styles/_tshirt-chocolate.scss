@@ -1,15 +1,27 @@
+$tshirt-bg: #ffffff;
+$tshirt-word-main-fg: #000000;
+$tshirt-word-fg: #cccccc;
+$tshirt-image-size: 135vmin;
+
 .tshirt {
-  font-size: 10vmin;
+  font-size: 5vmin;
+  height: $tshirt-image-size;
+  background-color: $tshirt-bg;
+  background-image: url('../assets/images/t-shirt-transparent.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto $tshirt-image-size;
 
   &__container {
     position: relative;
-    width: 100vmin;
-    height: 100vmin;
+    top: 8.5em;
+    width: 10em;
+    height: 10em;
     margin: 0 auto;
     border: 1px dashed transparent;
 
     &:hover {
-      border-color: #dddddd;
+      border-color: $tshirt-word-fg;
 
       .word {
         &__translation, &__transliteration, &__language {
@@ -21,9 +33,8 @@
 
   &--chocolate {
     .word {
-      font-size: .5rem;
       position: absolute;
-      color: #dddddd;
+      color: $tshirt-word-fg;
 
       &__translation, &__transliteration, &__language {
         margin: 0;
@@ -61,7 +72,7 @@
         top: 4.375rem;
         left: 1.75rem;
         text-align: center;
-        color: #000000;
+        color: $tshirt-word-main-fg;
 
         .word__translation {
           line-height: 1em;
@@ -79,6 +90,7 @@
   &--mixed {
     .word {
       &--es {
+        font-size: .5rem;
         top: 6.25rem;
         left: 7.25rem;
       }
