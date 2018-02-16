@@ -9,4 +9,12 @@
   margin-bottom: .5em;
   cursor: pointer;
   text-decoration: none;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--padded {
+    padding: .5em .75em;
+  }
 }
