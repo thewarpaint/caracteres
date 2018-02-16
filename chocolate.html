@@ -49,21 +49,7 @@ permalink: /chocolate
       {%- endfor -%}
     </div>
 
-    <div class="teaser">
-      <div class="container group">
-        <div class="teaser__text">
-          <div>
-            <h2 class="teaser__h1">{{ teaser.h1 }} </h2>
-            <h3 class="teaser__h2">{{ teaser.h2 }}</h3>
-          </div>
-
-          <a class="btn teaser__cta"
-             href="https://www.threadless.com/"
-             target="_blank"
-             rel="noopener">{{ teaser.cta }}</a>
-        </div>
-      </div>
-    </div>
+    {%- include teaser.html -%}
 
     <div class="container">
       {%- for entry in page.entries -%}
