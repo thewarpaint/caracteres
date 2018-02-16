@@ -14,6 +14,11 @@ $teaser-font-secondary: "Lato", sans-serif;
 
   .teaser {
     @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);
+
+    &__h1 {
+      // Override font weight for Abril Fatface.
+      font-weight: 300;
+    }
   }
 }
 
