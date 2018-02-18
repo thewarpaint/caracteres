@@ -4,7 +4,8 @@ export CURRENT_SHA="$(git log --pretty=format:'%h' -n 1)"
 
 # Add fingerprinting to CSS and JS files
 sed -i -e "s/assets\/main.css/assets\/main-$CURRENT_SHA.css/g" \
-  index.html _includes/character.html chocolate.html tshirt-chocolate.html
+  index.html _includes/character.html chocolate.html \
+  tshirt-chocolate.html tshirt-desenrascanco.html tshirt-ñañaras.html
 sed -i -e "s/assets\/main.js/assets\/main-$CURRENT_SHA.js/g" _includes/character.html
 
 # Add build SHA to templates
