@@ -3,6 +3,8 @@ $tshirt-word-main-fg: #000000;
 $tshirt-word-fg: #cccccc;
 $tshirt-image-size: 135vmin;
 
+$tshirt-desenrascanco-highlight: #ff0000; // Portuguese flag: red
+
 .tshirt {
   font-size: 5vmin;
   height: $tshirt-image-size;
@@ -24,7 +26,7 @@ $tshirt-image-size: 135vmin;
       border-color: $tshirt-word-fg;
 
       .word {
-        &__translation, &__transliteration, &__language {
+        &__translation, &__transliteration, &__language, &__title, &__meaning {
           background: rgba(0, 0, 0, .05);
         }
       }
@@ -258,6 +260,45 @@ $tshirt-image-size: 135vmin;
         font-size: .4375rem;
         top: 0rem;
         left: 1rem;
+      }
+    }
+  }
+
+  &--desenrascanco {
+    .tshirt__container {
+      top: 7em;
+    }
+
+    .word {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+
+      &__title, &__meaning {
+        margin: 0;
+      }
+
+      &__title, &__highlight {
+        font-weight: normal;
+      }
+
+      &__title {
+        font-family: "Abril Fatface";
+        font-size: 1.45rem;
+        text-align: center;
+      }
+
+      &__highlight {
+        color: $tshirt-desenrascanco-highlight;
+      }
+
+      &__meaning {
+        margin-top: .375rem;
+        text-align: justify;
+        font-size: .375rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
       }
     }
   }
