@@ -4,6 +4,7 @@ $tshirt-word-fg: #cccccc;
 $tshirt-image-size: 135vmin;
 
 $tshirt-desenrascanco-highlight: #ff0000; // Portuguese flag: red
+$tshirt-enye-highlight: #c70218; // Spanish flag: red
 
 .tshirt {
   font-size: 5vmin;
@@ -305,6 +306,19 @@ $tshirt-desenrascanco-highlight: #ff0000; // Portuguese flag: red
 
       &__highlight {
         color: $tshirt-desenrascanco-highlight;
+      }
+    }
+  }
+
+  &--nanaras {
+    .word {
+      &__title {
+        font-size: 2.6rem;
+        line-height: 2.75rem;
+      }
+
+      &__highlight {
+        color: $tshirt-enye-highlight;
       }
     }
   }
