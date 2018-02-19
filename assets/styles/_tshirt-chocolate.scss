@@ -27,7 +27,7 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
       border-color: $tshirt-word-fg;
 
       .word {
-        &__translation, &__transliteration, &__language, &__title, &__meaning {
+        &__translation, &__transliteration, &__language, &__title, &__meaning, &__footer {
           background: rgba(0, 0, 0, .05);
         }
       }
@@ -288,12 +288,24 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
         text-align: center;
       }
 
-      &__meaning {
-        margin-top: .375rem;
+      &__meaning, &__footer {
         font-size: .375rem;
         font-family: "Lato", sans-serif;
         font-weight: 400;
+      }
+
+      &__meaning {
+        margin-top: .375rem;
         text-transform: uppercase;
+      }
+
+      &__footer {
+        margin-top: 1rem;
+      }
+
+      &__link {
+        float: right;
+        color: $tshirt-word-main-fg;
       }
     }
   }
