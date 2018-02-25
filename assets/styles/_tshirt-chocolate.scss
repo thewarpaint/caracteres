@@ -3,6 +3,7 @@ $tshirt-word-main-fg: #000000;
 $tshirt-word-fg: #cccccc;
 $tshirt-image-size: 135vmin;
 
+$t-shirt-border: .0625rem solid $tshirt-word-main-fg;
 $tshirt-desenrascanco-highlight: #ff0000; // Portuguese flag: red
 $tshirt-enye-highlight: #c70218; // Spanish flag: red
 
@@ -267,13 +268,12 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
 
   &--caracteres {
     .tshirt__container {
-      top: 7em;
+      top: 8em;
     }
 
     .word {
       display: flex;
       flex-flow: column nowrap;
-      justify-content: center;
 
       &__title, &__pronunciation, &__meaning {
         margin: 0;
@@ -286,12 +286,20 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
       &__title {
         font-family: "Abril Fatface";
         text-align: center;
+        border-top: $t-shirt-border;
+        padding-top: .75rem;
+        line-height: .875em;
       }
 
       &__pronunciation {
+        margin-top: .5rem;
         font-family: sans-serif;
-        font-size: .625rem;
+        font-size: .5rem;
         font-weight: 400;
+      }
+
+      &__language {
+        float: right;
       }
 
       &__meaning, &__footer {
@@ -300,8 +308,10 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
         font-weight: 400;
       }
 
-      &__pronunciation, &__meaning {
+      &__meaning {
+        border-bottom: $t-shirt-border;
         margin-top: .375rem;
+        padding-bottom: .75rem;
       }
 
       &__footer {
@@ -331,7 +341,6 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
     .word {
       &__title {
         font-size: 2.6rem;
-        line-height: 2.75rem;
       }
 
       &__highlight {
