@@ -48,6 +48,7 @@ sass --scss --style compressed --watch assets:assets
 - http://www.cursdecatala.com/es/ele-geminada-l%C2%B7l-en-catalan/
 - https://en.wikipedia.org/wiki/Interpunct#Catalan
 - https://ca.wikipedia.org/wiki/Punt_volat
+- http://webcache.googleusercontent.com/search?q=cache:YmQ7KVIrLsIJ:www.xtec.cat/~fmota/primer%2520batx/ortograf/17%2520La%2520ela%2520geminada.doc+&cd=2&hl=en&ct=clnk&gl=de
 
 
 ### ç: cê-cedilha
