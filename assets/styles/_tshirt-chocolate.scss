@@ -3,7 +3,7 @@ $tshirt-word-main-fg: #000000;
 $tshirt-word-fg: #cccccc;
 $tshirt-image-size: 135vmin;
 
-$t-shirt-border: .0625rem solid $tshirt-word-main-fg;
+$t-shirt-border: .09375rem solid $tshirt-word-main-fg;
 $tshirt-desenrascanco-highlight: #ff0000; // Portuguese flag: red
 $tshirt-enye-highlight: #c70218; // Spanish flag: red
 
@@ -307,6 +307,7 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
 
       &__meaning, &__language, &__footer {
         font-family: "Lato", sans-serif;
+        // font-family: "Lora", sans-serif;
         font-weight: 400;
       }
 
