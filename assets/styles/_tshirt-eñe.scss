@@ -1,0 +1,41 @@
+.character {
+  font-family: "Lato", sans-serif;
+
+  &__wrapper {
+    width: 7rem;
+    margin: auto;
+    padding: .375rem;
+    border: .1875rem solid #000000;
+    border-top-left-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+
+  &__header, &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__main {
+    margin: .75rem 0;
+    text-align: center;
+  }
+
+  &__symbol {
+    font-family: "Abril Fatface";
+    font-size: 4.5rem;
+    font-weight: normal;
+    line-height: .875em;
+    margin: 0;
+  }
+
+  &__name {
+    font-size: .875rem;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &__data {
+    font-size: .5rem;
+  }
+}
