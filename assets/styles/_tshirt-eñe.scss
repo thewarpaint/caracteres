@@ -1,11 +1,18 @@
+$character-width: 6rem;
+$character-height: $character-width * 4/3;
+
 .character {
   font-family: "Lato", sans-serif;
 
   &__wrapper {
-    width: 7rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: $character-width;
+    height: $character-height;
     margin: auto;
     padding: .375rem;
-    border: .1875rem solid #000000;
+    border: .125rem solid #000000;
     border-top-left-radius: .75rem;
     border-bottom-right-radius: .75rem;
   }
@@ -13,17 +20,19 @@
   &__header, &__footer {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+  }
+
+  &__header {
+    align-items: start;
   }
 
   &__main {
-    margin: .75rem 0;
     text-align: center;
   }
 
   &__symbol {
     font-family: "Abril Fatface";
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: normal;
     line-height: .875em;
     margin: 0;
@@ -36,6 +45,15 @@
   }
 
   &__data {
+    font-size: .5rem;
+  }
+
+  &__order {
+    font-size: .75rem;
+  }
+
+  &__order-suffix {
+    vertical-align: text-top;
     font-size: .5rem;
   }
 }
