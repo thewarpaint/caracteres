@@ -53,8 +53,9 @@ permalink: /chocolate
 
     <div class="container">
       {%- for entry in page.entries -%}
-      <div class="chocolate__entry">
-        <h2 class="chocolate__h2">{{ entry.translation }}
+      <div class="chocolate__entry chocolate__entry--{{ entry.languageIds | last }}">
+        <h2 class="chocolate__h2">
+          <span class="chocolate__word">{{ entry.translation }}</span>
           {% if entry.transliteration %}
           <span class="chocolate__transliteration">({{ entry.transliteration }})</span>
           {% endif %}

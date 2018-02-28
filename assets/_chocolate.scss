@@ -46,6 +46,13 @@ $teaser-font-secondary: "Lato", sans-serif;
 
   &__entry {
     margin-bottom: 2rem;
+
+    // Override Noto Serif for certain languages
+    &--zh, &--ja, &--ko {
+      .chocolate__word {
+        font-family: sans-serif;
+      }
+    }
   }
 
   &__action, .btn {
