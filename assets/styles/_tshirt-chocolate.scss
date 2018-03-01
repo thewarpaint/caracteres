@@ -324,12 +324,9 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
       }
 
       &__footer {
-        margin-top: 1rem;
-      }
-
-      &__link {
-        float: right;
-        color: $tshirt-word-main-fg;
+        font-size: .5rem;
+        margin-top: .25rem;
+        text-align: right;
       }
     }
   }
