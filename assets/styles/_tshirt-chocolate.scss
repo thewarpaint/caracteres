@@ -28,7 +28,7 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
       border-color: $tshirt-word-fg;
 
       .word {
-        &__translation, &__transliteration, &__language, &__title, &__row-two, &__meaning, &__footer {
+        &__translation, &__transliteration, &__title, &__row-two, &__meaning, &__footer {
           background: rgba(0, 0, 0, .05);
         }
       }
@@ -292,6 +292,9 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
       }
 
       &__row-two {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
         margin-top: .75rem;
         font-size: .5rem;
         font-weight: 400;
