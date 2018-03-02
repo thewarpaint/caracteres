@@ -1,3 +1,5 @@
+@import "variables";
+
 $tshirt-bg: #ffffff;
 $tshirt-word-main-fg: #000000;
 $tshirt-word-fg: #cccccc;
@@ -327,6 +329,7 @@ $tshirt-enye-highlight: #c70218; // Spanish flag: red
         font-size: .5rem;
         margin-top: .25rem;
         text-align: right;
+        color: $blue-grey-200;
       }
     }
   }
