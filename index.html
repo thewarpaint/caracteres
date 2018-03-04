@@ -2,6 +2,7 @@
 permalink: /
 ---
 {%- assign i18n = site.data.i18n -%}
+{%- assign index = site.data.index -%}
 <!DOCTYPE html>
 <html lang="{{ site.active_lang }}">
   <head>
@@ -37,25 +38,47 @@ permalink: /
     {%- include google-analytics.html -%}
   </head>
   <body class="home">
-    <nav class="home-nav">
-      <a href="eñe.html" class="home-nav__item home-nav__item--enye">
-        <span class="home-nav__character">ñ</span>
-      </a>
-      <a href="eszett.html" class="home-nav__item home-nav__item--eszett">
-        <span class="home-nav__character">ß</span>
-      </a>
-      <a href="ela-geminada.html" class="home-nav__item home-nav__item--ela-geminada">
-        <span class="home-nav__character">l·l</span>
-      </a>
-      <a href="e-dans-lo.html" class="home-nav__item home-nav__item--e-dans-lo">
-        <span class="home-nav__character">œ</span>
-      </a>
-      <a href="ce-cedilha.html" class="home-nav__item home-nav__item--ce-cedilha">
-        <span class="home-nav__character">ç</span>
-      </a>
-      <a href="el.html" class="home-nav__item home-nav__item--el home-nav__item--high-contrast">
-        <span class="home-nav__character">ł</span>
-      </a>
-    </nav>
+    <div class="container">
+      <h1>{{ index.main.title }}</h1>
+
+      {%- for lang in site.languages -%}
+      {%- if lang != site.active_lang -%}
+      {%- if lang == site.default_lang -%}
+      <!-- The space at the beginning of href is needed for the proper link to be rendered. -->
+      <a href=" {{ site.url }}/" data-proofer-ignore>
+        {{ i18n.languages[lang] }}</a>
+      {%- else -%}
+      <a href="{{ site.url }}/{{ lang }}/">{{ i18n.languages[lang] }}</a>
+      {%- endif -%}
+      {%- endif -%}
+      {%- endfor -%}
+
+      {{ index.main.introduction | markdownify }}
+
+      <nav>
+        <ul>
+          {%- for navCharId in site.data.sortedChars -%}
+          {%- assign navChar = site.data.chars[navCharId] -%}
+          <li>
+            <h3><a href="{{ navChar.permalink }}">{{ navChar.character }}: {{ navChar.name }}</a></h3>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+
+      <h2>{{ index.bSides.title }}</h2>
+
+      {{ index.bSides.introduction | markdownify }}
+
+      {%- assign chocolate = site.data.chocolate -%}
+      <nav>
+        <ul>
+          <li>
+            <h3><a href="chocolate.html">{{ chocolate.seo.title }}</a></h3>
+            <p>{{ chocolate.seo.description }}</p>
+          </li>
+        </ul>
+      <nav>
+    </div>
   </body>
 </html>
