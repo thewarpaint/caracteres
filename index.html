@@ -53,7 +53,9 @@ permalink: /
       {%- endif -%}
       {%- endfor -%}
 
-      {{ index.main.introduction | markdownify }}
+      <div class="home__paragraph">
+        {{ index.main.introduction | markdownify }}
+      </div>
 
       <nav>
         <ul>
@@ -68,14 +70,16 @@ permalink: /
 
       <h2 class="home__h2">{{ index.bSides.title }}</h2>
 
-      {{ index.bSides.introduction | markdownify }}
+      <div class="home__paragraph">
+        {{ index.bSides.introduction | markdownify }}
+      </div>
 
       {%- assign chocolate = site.data.chocolate -%}
       <nav>
         <ul>
           <li>
             <h3 class="home__h3"><a href="chocolate.html">{{ chocolate.seo.title }}</a></h3>
-            <p>{{ chocolate.seo.description }}</p>
+            <p class="home__paragraph">{{ chocolate.seo.description }}</p>
           </li>
         </ul>
       <nav>
