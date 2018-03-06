@@ -32,14 +32,14 @@ permalink: /
 
     <title>{{ i18n.index.title }}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
     <link href="{{ site.url }}/assets/main.css" rel="stylesheet">
 
     {%- include google-analytics.html -%}
   </head>
   <body class="home">
     <div class="container">
-      <h1>{{ index.main.title }}</h1>
+      <h1 class="home__h1">{{ index.main.title }}</h1>
 
       {%- for lang in site.languages -%}
       {%- if lang != site.active_lang -%}
@@ -60,13 +60,13 @@ permalink: /
           {%- for navCharId in site.data.sortedChars -%}
           {%- assign navChar = site.data.chars[navCharId] -%}
           <li>
-            <h3><a href="{{ navChar.permalink }}">{{ navChar.character }}: {{ navChar.name }}</a></h3>
+            <h3 class="home__h3"><a href="{{ navChar.permalink }}">{{ navChar.character }}: {{ navChar.name }}</a></h3>
           </li>
           {%- endfor -%}
         </ul>
       </nav>
 
-      <h2>{{ index.bSides.title }}</h2>
+      <h2 class="home__h2">{{ index.bSides.title }}</h2>
 
       {{ index.bSides.introduction | markdownify }}
 
@@ -74,7 +74,7 @@ permalink: /
       <nav>
         <ul>
           <li>
-            <h3><a href="chocolate.html">{{ chocolate.seo.title }}</a></h3>
+            <h3 class="home__h3"><a href="chocolate.html">{{ chocolate.seo.title }}</a></h3>
             <p>{{ chocolate.seo.description }}</p>
           </li>
         </ul>
