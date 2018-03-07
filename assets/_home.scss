@@ -6,8 +6,21 @@
     font-weight: normal;
   }
 
+  &__h1 {
+    font-size: 3rem;
+  }
+
+  &__h2 {
+    font-size: 2.5rem;
+  }
+
+  &__h3 {
+    font-size: 2rem;
+  }
+
   &__paragraph {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 133%;
+    font-weight: 300;
   }
 }
