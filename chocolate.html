@@ -64,7 +64,7 @@ permalink: /chocolate
         </h2>
         <p class="chocolate__language">{{ entry.language[site.active_lang] }}</p>
         <a href="https://translate.google.com/#{{ entry.languageIds | last }}/{{ page.language }}/{{ entry.translation }}"
-           class="chocolate__action btn"
+           class="chocolate__action btn btn--uppercase btn--padded"
            data-word="{{ entry.translation }}"
            data-language-ids="{{ entry.languageIds | join: ',' }}"
            target="_blank"
@@ -72,7 +72,8 @@ permalink: /chocolate
       </div>
       {%- endfor -%}
 
-      <button id="show-nerd-stuff-btn" class="btn">Show nerd stuff</button>
+      <button id="show-nerd-stuff-btn"
+              class="btn btn--uppercase btn--padded">Show nerd stuff</button>
     </div>
 
     <pre id="console" class="console console--hidden"></pre>
