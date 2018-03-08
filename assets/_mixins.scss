@@ -2,12 +2,33 @@ $font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
 $font-primary: "Abril Fatface", serif;
 $font-secondary: "Lato", $font-sans-serif;
 
+@mixin tabs($color-primary, $color-secondary, $color-tertiary) {
+  .tabs {
+    font-family: $font-primary;
+  }
+
+  .tabs-wrapper, .tabs {
+    background-color: $color-secondary;
+  }
+
+  .tabs__link {
+    color: $color-tertiary;
+    background-color: $color-secondary;
+
+    &--current::before {
+      border-bottom-color: $color-tertiary;
+    }
+  }
+}
+
 @mixin theme($color-primary, $color-secondary, $color-tertiary) {
+  @include tabs($color-primary, $color-secondary, $color-tertiary);
+
   color: $color-secondary;
   font-family: $font-secondary;
   background-color: $color-tertiary;
 
-  .main-character, .example__original, .tabs {
+  .main-character, .example__original {
     font-family: $font-primary;
   }
 
@@ -47,19 +68,6 @@ $font-secondary: "Lato", $font-sans-serif;
     .frequencies__bar-legend {
       color: $color-primary;
       font-weight: bold;
-    }
-  }
-
-  .tabs-wrapper, .tabs {
-    background-color: $color-secondary;
-  }
-
-  .tabs__link {
-    color: $color-tertiary;
-    background-color: $color-secondary;
-
-    &--current::before {
-      border-bottom-color: $color-tertiary;
     }
   }
 
