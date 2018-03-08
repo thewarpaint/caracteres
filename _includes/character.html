@@ -43,16 +43,7 @@
     {%- include google-analytics.html -%}
   </head>
   <body class="body--{{ char.theme.class }}" id="caracteres">
-    <div class="tabs-wrapper">
-      <nav class="container tabs">
-        {%- for navCharId in site.data.sortedChars -%}
-        {%- assign navChar = site.data.chars[navCharId] -%}
-        <a class="tabs__link
-                  tabs__link--{{ navCharId }} {% if char.character == navChar.character %}tabs__link--current{% endif %}"
-           href="{{ navChar.permalink }}">{{ navChar.character }}</a>
-        {%- endfor -%}
-      </nav>
-    </div>
+    {%- include tabs.html -%}
 
     <div class="container">
       <div class="languages">
