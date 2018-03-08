@@ -62,7 +62,7 @@ permalink: /
       </div>
 
       <nav>
-        <ul>
+        <ul class="list--unstyled">
           {%- for navCharId in site.data.sortedChars -%}
           {%- assign navChar = site.data.chars[navCharId] -%}
           <li>
@@ -80,7 +80,7 @@ permalink: /
 
       {%- assign chocolate = site.data.chocolate -%}
       <nav>
-        <ul>
+        <ul class="list--unstyled">
           <li>
             <h3 class="home__h3"><a href="chocolate.html">{{ chocolate.seo.title }}</a></h3>
             <p class="home__paragraph">{{ chocolate.seo.description }}</p>
