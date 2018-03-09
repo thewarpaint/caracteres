@@ -1,10 +1,12 @@
 $ela-geminada-theme-color-primary: #0745b1; // Estelada flag: blue
 $ela-geminada-theme-color-secondary: #ce0001; // Estelada flag: red
 $ela-geminada-theme-color-tertiary: #ffffff; // Estelada flag: white
+$ela-geminada-fg: #000000;
 
 .body--ela-geminada {
-  @include theme($ela-geminada-theme-color-primary, $ela-geminada-theme-color-secondary,
-                 $ela-geminada-theme-color-tertiary);
+  @include theme($ela-geminada-theme-color-primary, $ela-geminada-fg, $ela-geminada-theme-color-tertiary);
+  @include tabs($ela-geminada-theme-color-tertiary, $ela-geminada-theme-color-secondary,
+                $ela-geminada-theme-color-tertiary);
 }
 
 .home-nav__item--ela-geminada {

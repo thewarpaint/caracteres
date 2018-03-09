@@ -1,10 +1,13 @@
 $e-dans-lo-theme-color-primary: #ee2436; // French flag: red
 $e-dans-lo-theme-color-secondary: #001e96; // French flag: blue
 $e-dans-lo-theme-color-tertiary: #ffffff;
+$e-dans-lo-fg: #000000;
 
 .body--e-dans-lo {
-  @include theme($e-dans-lo-theme-color-primary, $e-dans-lo-theme-color-secondary,
+  @include theme($e-dans-lo-theme-color-primary, $e-dans-lo-fg,
                  $e-dans-lo-theme-color-tertiary);
+  @include tabs($e-dans-lo-theme-color-tertiary, $e-dans-lo-theme-color-secondary,
+                $e-dans-lo-theme-color-tertiary);
 }
 
 .home-nav__item--e-dans-lo {

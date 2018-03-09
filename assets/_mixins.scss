@@ -2,28 +2,26 @@ $font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
 $font-primary: "Abril Fatface", serif;
 $font-secondary: "Lato", $font-sans-serif;
 
-@mixin tabs($color-primary, $color-secondary, $color-tertiary) {
+@mixin tabs($color-fg, $color-bg, $color-external-bg) {
   .tabs {
     font-family: $font-primary;
   }
 
   .tabs-wrapper, .tabs {
-    background-color: $color-secondary;
+    background-color: $color-bg;
   }
 
   .tabs__link {
-    color: $color-tertiary;
-    background-color: $color-secondary;
+    color: $color-fg;
+    background-color: $color-bg;
 
     &--current::before {
-      border-bottom-color: $color-tertiary;
+      border-bottom-color: $color-external-bg;
     }
   }
 }
 
 @mixin theme($color-primary, $color-secondary, $color-tertiary) {
-  @include tabs($color-primary, $color-secondary, $color-tertiary);
-
   color: $color-secondary;
   font-family: $font-secondary;
   background-color: $color-tertiary;

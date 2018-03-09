@@ -5,10 +5,12 @@ $high-contrast-theme-color-tertiary: #ffffff;
 .body--high-contrast {
   @include theme($high-contrast-theme-color-primary, $high-contrast-theme-color-secondary,
                  $high-contrast-theme-color-tertiary);
+  @include tabs($high-contrast-theme-color-tertiary, $high-contrast-theme-color-secondary,
+                 $high-contrast-theme-color-tertiary);
 }
 
 .home {
-  @include tabs($high-contrast-theme-color-primary, $high-contrast-theme-color-secondary,
+  @include tabs($high-contrast-theme-color-tertiary, $high-contrast-theme-color-secondary,
                  $high-contrast-theme-color-tertiary);
 }
 
