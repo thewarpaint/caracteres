@@ -7,7 +7,7 @@ speechSynthesis:
 
 theme:
   class: ela-geminada
-  color: "#ffffff" # Estelada flag: white
+  color: "#ce0001" # Estelada flag: red
 
 codes:
   - "&amp;middot;"
