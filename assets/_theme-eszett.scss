@@ -1,6 +1,6 @@
 $eszett-theme-color-primary: #fedb00; // Bayern flag: yellow
-$eszett-theme-color-secondary: #ffffff;
-$eszett-theme-color-tertiary: #0097d4; // Bayern flag: blue
+$eszett-theme-color-secondary: #0097d4; // Bayern flag: blue
+$eszett-theme-color-tertiary: #ffffff;
 
 .body--eszett {
   @include theme($eszett-theme-color-primary, $eszett-theme-color-secondary, $eszett-theme-color-tertiary);
