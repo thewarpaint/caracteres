@@ -1,6 +1,6 @@
 $ce-cedilha-theme-color-primary: #fee000; // Brazil flag: yellow
-$ce-cedilha-theme-color-secondary: #ffffff;
-$ce-cedilha-theme-color-tertiary: #009c38; // Brazil flag: green
+$ce-cedilha-theme-color-secondary: #009c38; // Brazil flag: green
+$ce-cedilha-theme-color-tertiary: #ffffff;
 
 .body--ce-cedilha {
   @include theme($ce-cedilha-theme-color-primary, $ce-cedilha-theme-color-secondary,
