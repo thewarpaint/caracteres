@@ -12,7 +12,7 @@ $teaser-font-secondary: "Lato", sans-serif;
 
 .body--enye {
   @include theme($enye-theme-color-primary, $enye-theme-color-secondary, $enye-bg);
-  @include tabs($enye-theme-color-secondary, $enye-theme-color-tertiary, $enye-bg);
+  @include tabs($enye-theme-color-tertiary, $enye-theme-color-primary, $enye-bg);
 
   .teaser {
     @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);
