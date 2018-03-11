@@ -11,10 +11,80 @@ explanationItems:
   - >
     Coming soon! // ¡Próximamente!
 
+theme:
+  class: high-contrast
+  color: "#000000"
+
 alphabet:
   entries: a ą b c ć d e ę f g h i j k l ł m n ń o ó p r s ś t u w y z ź ż
   position: 16
 
-theme:
-  class: high-contrast
-  color: "#000000"
+frequency:
+  - letter: a
+    percentage: 10.5
+  - letter: ą
+    percentage: 0.69
+  - letter: b
+    percentage: 1.74
+  - letter: c
+    percentage: 3.89
+  - letter: ć
+    percentage: 0.74
+  - letter: d
+    percentage: 3.72
+  - letter: e
+    percentage: 7.35
+  - letter: ę
+    percentage: 1.03
+  - letter: f
+    percentage: 0.14
+  - letter: g
+    percentage: 1.73
+  - letter: h
+    percentage: 1.01
+  - letter: i
+    percentage: 8.32
+  - letter: j
+    percentage: 1.83
+  - letter: k
+    percentage: 2.75
+  - letter: l
+    percentage: 2.56
+  - letter: ł
+    percentage: 2.1
+  - letter: m
+    percentage: 2.51
+  - letter: n
+    percentage: 6.23
+  - letter: ń
+    percentage: 0.36
+  - letter: o
+    percentage: 6.66
+  - letter: ó
+    percentage: 1.14
+  - letter: p
+    percentage: 2.44
+  - letter: r
+    percentage: 5.24
+  - letter: s
+    percentage: 5.22
+  - letter: ś
+    percentage: 0.81
+  - letter: t
+    percentage: 2.47
+  - letter: u
+    percentage: 2.06
+  - letter: v
+    percentage: 0.01
+  - letter: w
+    percentage: 5.81
+  - letter: x
+    percentage: 0.004
+  - letter: y
+    percentage: 3.2
+  - letter: z
+    percentage: 4.85
+  - letter: ź
+    percentage: 0.07
+  - letter: ż
+    percentage: 0.70

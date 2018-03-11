@@ -75,6 +75,7 @@ sass --scss --style compressed --watch assets:assets
 
 - https://en.wikipedia.org/wiki/%C5%81#Polish
 - https://en.wiktionary.org/wiki/%C5%82#Polish
+- https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_other_languages
 
 
 ## Color schemes inspiration
