@@ -8,7 +8,7 @@ speechSynthesis:
 
 theme:
   class: enye
-  color: "#ffc501" # Spanish flag: yellow
+  color: "#c70218" # Spanish flag: red
 
 codes:
   - "&amp;ntilde;"

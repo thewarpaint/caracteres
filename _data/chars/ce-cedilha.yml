@@ -8,7 +8,7 @@ speechSynthesis:
 
 theme:
   class: ce-cedilha
-  color: "#009c38"
+  color: "#fee000" # Brazil flag: yellow
 
 codes:
   - "&amp;ccedil;"
