@@ -3,6 +3,7 @@ name: eł
 permalink: el.html
 speechSynthesis:
   languages:
+    - pl-PL
     - pl
 
 theme:
