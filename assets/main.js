@@ -42,6 +42,21 @@ var FeatureDetection = (function () {
   return new FeatureDetection();
 })();
 
+var Synth = (function () {
+  function Synth() {}
+
+  Synth.prototype.speak = function (word, voice) {
+    Console.log('Speaking "' + word + '" in ' + voice.lang + '.');
+
+    var utterance = new SpeechSynthesisUtterance(word);
+    utterance.voice = voice;
+    utterance.lang = voice.lang;
+    speechSynthesis.speak(utterance);
+  };
+
+  return new Synth();
+})();
+
 var Caracteres = (function () {
   function Caracteres() {
     this.languageVoice = null;
@@ -119,7 +134,7 @@ var Chocolate = (function () {
 
   Chocolate.prototype.onSpeakButtonClick = function () {
     var languageId = this.getAttribute('data-language-id');
-    window.Chocolate.speak(this.getAttribute('data-word'), window.Chocolate.voices[languageId]);
+    window.Synth.speak(this.getAttribute('data-word'), window.Chocolate.voices[languageId]);
   };
 
   Chocolate.prototype.addSpeakButtonClickListeners = function () {
@@ -141,15 +156,6 @@ var Chocolate = (function () {
           }
         }
       });
-  };
-
-  Chocolate.prototype.speak = function (word, voice) {
-    Console.log('Speaking "' + word + '" in ' + voice.lang + '.');
-
-    var utterance = new SpeechSynthesisUtterance(word);
-    utterance.voice = voice;
-    utterance.lang = voice.lang;
-    speechSynthesis.speak(utterance);
   };
 
   Chocolate.prototype.onShowNerdStuffClick = function () {
