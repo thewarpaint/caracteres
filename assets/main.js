@@ -59,26 +59,28 @@ var Synth = (function () {
 
 var Caracteres = (function () {
   function Caracteres() {
-    this.languageVoice = null;
+    this.voice = null;
   }
 
   Caracteres.prototype.onVoicesChanged = function () {
     for (var i = 0; i < Globals.languages.length; i++) {
-      this.languageVoice = speechSynthesis.getVoices().find(function (voice) {
+      window.Caracteres.voice = speechSynthesis.getVoices().find(function (voice) {
         return voice.lang.indexOf(Globals.languages[i]) !== -1;
       });
 
-      if (this.languageVoice) {
+      if (window.Caracteres.voice) {
+        Console.log('Selecting voice for language ' + window.Caracteres.voice.lang + '.');
         break;
       }
+    }
+
+    if (!window.Caracteres.voice) {
+      Console.log('No voice available for languages: ' + Globals.languages.join(',') + '.');
     }
   };
 
   Caracteres.prototype.speak = function (word) {
-    var utterance = new SpeechSynthesisUtterance(word);
-    utterance.voice = this.languageVoice;
-    utterance.lang = Globals.languages[0];
-    speechSynthesis.speak(utterance);
+    window.Synth.speak(word, this.voice);
   };
 
   Caracteres.prototype.onSpeakButtonClick = function () {
