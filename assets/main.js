@@ -42,6 +42,19 @@ var FeatureDetection = (function () {
   return new FeatureDetection();
 })();
 
+var Console = (function () {
+  function Console() {
+    this.element = document.querySelector('.console');
+  }
+
+  Console.prototype.log = function log(string) {
+    console.log(string);
+    this.element.innerHTML += '\n⇒ ' + string;
+  };
+
+  return new Console();
+})();
+
 var Synth = (function () {
   function Synth() {}
 
@@ -165,17 +178,4 @@ var Chocolate = (function () {
   };
 
   return new Chocolate();
-})();
-
-var Console = (function () {
-  function Console() {
-    this.element = document.querySelector('.console');
-  }
-
-  Console.prototype.log = function log(string) {
-    console.log(string);
-    this.element.innerHTML += '\n⇒ ' + string;
-  };
-
-  return new Console();
 })();
