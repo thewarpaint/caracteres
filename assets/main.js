@@ -73,6 +73,7 @@ var Synth = (function () {
 var Caracteres = (function () {
   function Caracteres() {
     this.voice = null;
+    this.showNerdStuffBtn = null;
   }
 
   Caracteres.prototype.init = function () {
@@ -82,6 +83,9 @@ var Caracteres = (function () {
       speechSynthesis.onvoiceschanged = this.onVoicesChanged;
       this.addSpeakButtonClickListeners();
     }
+
+    this.showNerdStuffBtn = document.getElementById('show-nerd-stuff-btn');
+    this.showNerdStuffBtn.addEventListener('click', window.Chocolate.onShowNerdStuffClick.bind(this));
   };
 
   Caracteres.prototype.onVoicesChanged = function () {
@@ -116,6 +120,11 @@ var Caracteres = (function () {
       });
   };
 
+  Caracteres.prototype.onShowNerdStuffClick = function () {
+    document.getElementById('console').classList.remove('console--hidden');
+    this.showNerdStuffBtn.classList.add('btn--hidden');
+  };
+
   return new Caracteres();
 })();
 
@@ -133,7 +142,7 @@ var Chocolate = (function () {
     }
 
     this.showNerdStuffBtn = document.getElementById('show-nerd-stuff-btn');
-    this.showNerdStuffBtn.addEventListener('click', window.Chocolate.onShowNerdStuffClick);
+    this.showNerdStuffBtn.addEventListener('click', window.Chocolate.onShowNerdStuffClick.bind(this));
   };
 
   Chocolate.prototype.onVoicesChanged = function () {
@@ -177,6 +186,7 @@ var Chocolate = (function () {
 
   Chocolate.prototype.onShowNerdStuffClick = function () {
     document.getElementById('console').classList.remove('console--hidden');
+    this.showNerdStuffBtn.classList.add('btn--hidden');
   };
 
   return new Chocolate();
