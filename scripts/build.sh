@@ -10,8 +10,7 @@ sed -i -e "s/assets\/main.css/assets\/main-$CURRENT_SHA.css/g" \
 sed -i -e "s/assets\/main.js/assets\/main-$CURRENT_SHA.js/g" _includes/character.html
 
 # Add build SHA to templates
-sed -i -e "s/%CURRENT_SHA%/$CURRENT_SHA/g" chocolate.html \
-  ce-cedilha.html e-dans-lo.html el.html ela-geminada.html enye.html eszett.html
+sed -i -e "s/%CURRENT_SHA%/$CURRENT_SHA/g" chocolate.html _includes/character.html
 
 # Build Jekyll site
 git checkout -B tmp
