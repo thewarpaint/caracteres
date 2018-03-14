@@ -4,6 +4,7 @@ permalink: eñe.html
 speechSynthesis:
   languages:
     - es-MX
+    - es-ES
     - es
 
 theme:
