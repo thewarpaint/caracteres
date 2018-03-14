@@ -87,7 +87,7 @@ var Caracteres = (function () {
   Caracteres.prototype.onVoicesChanged = function () {
     for (var i = 0; i < Globals.languages.length; i++) {
       window.Caracteres.voice = speechSynthesis.getVoices().find(function (voice) {
-        return voice.lang.indexOf(Globals.languages[i]) !== -1;
+        return Globals.languages[i] === voice.lang.replace('_', '-');
       });
 
       if (window.Caracteres.voice) {
