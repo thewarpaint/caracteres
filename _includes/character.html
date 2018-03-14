@@ -36,7 +36,8 @@
     <script>
       var Globals = {
         languages: {{ char.speechSynthesis.languages | jsonify }},
-        bodyClass: 'body--{{ char.theme.class }}'
+        bodyClass: 'body--{{ char.theme.class }}',
+        version: '%CURRENT_SHA%'
       };
     </script>
 

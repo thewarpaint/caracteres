@@ -75,6 +75,15 @@ var Caracteres = (function () {
     this.voice = null;
   }
 
+  Caracteres.prototype.init = function () {
+    Console.log('Version: ' + Globals.version);
+
+    if (FeatureDetection.hasSpeechSynthesis()) {
+      speechSynthesis.onvoiceschanged = this.onVoicesChanged;
+      this.addSpeakButtonClickListeners();
+    }
+  };
+
   Caracteres.prototype.onVoicesChanged = function () {
     for (var i = 0; i < Globals.languages.length; i++) {
       window.Caracteres.voice = speechSynthesis.getVoices().find(function (voice) {
@@ -105,13 +114,6 @@ var Caracteres = (function () {
       .forEach(function (button) {
         button.addEventListener('click', window.Caracteres.onSpeakButtonClick);
       });
-  };
-
-  Caracteres.prototype.init = function () {
-    if (FeatureDetection.hasSpeechSynthesis()) {
-      speechSynthesis.onvoiceschanged = this.onVoicesChanged;
-      this.addSpeakButtonClickListeners();
-    }
   };
 
   return new Caracteres();
