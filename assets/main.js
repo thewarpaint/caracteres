@@ -96,6 +96,7 @@ var Caracteres = (function () {
 
       if (window.Caracteres.voice) {
         Console.log('Selecting voice for language ' + window.Caracteres.voice.lang + '.');
+        document.body.className += ' body--has-voice-available';
         break;
       }
     }

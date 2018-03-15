@@ -84,8 +84,12 @@
         <h2 class="example__original">
           {{ example.word | replace:char.character,exampleCharacter }}
         </h2>
-        <button class="example__action btn btn--uppercase btn--padded"
-                data-speak="{{ example.word }}">{{ i18n.examples.listen }}</button>
+        <button class="example__action example__listen btn btn--uppercase btn--padded"
+                data-speak="{{ example.word }}">{{ i18n.actions.listen }}</button>
+        <a href="https://translate.google.com/#{{ char.speechSynthesis.languages | last }}/{{ site.active_lang }}/{{ example.word }}"
+           class="example__action example__listen-external btn btn--uppercase btn--padded"
+           target="_blank"
+           rel="noopener">{{ i18n.actions.listenInGoogleTranslate }}</a>
         {%- if example.translation -%}
         <p class="example__translation">{{ example.translation }}</p>
         {%- else if example.translations -%}

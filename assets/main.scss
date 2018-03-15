@@ -84,14 +84,6 @@ body {
   &__translation {
     margin: 0;
   }
-
-  &__action {
-    display: none;
-  }
-}
-
-.body--has-speech-synthesis .example__action {
-  display: initial;
 }
 
 .ipa {
@@ -231,6 +223,23 @@ body {
 
 .key {
   margin: 0 .125em;
+}
+
+// Actions
+.example__listen {
+  display: none;
+}
+
+.body--has-voice-available {
+  .example {
+    &__listen {
+      display: initial;
+    }
+
+    &__listen-external {
+      display: none;
+    }
+  }
 }
 
 @import "theme-enye";
