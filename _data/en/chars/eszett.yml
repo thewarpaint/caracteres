@@ -31,8 +31,10 @@ examples:
 
   - word: Maß
     translation: >
-      Noun: the amount of beer in a regulation mug (1 Lt). Often used as an abbreviation for <b>Maßkrug</b>,
-      the handled glass vessel containing that amount of beer, known mainly because of the Oktoberfest.
+      Noun: the amount of beer in a regulation mug (1 Lt). Often used as an abbreviation for
+      <a class="link link--listenable">Maßkrug</a>,
+      the handled glass vessel containing that amount of beer, known mainly because of the
+      <a class="link link--listenable">Oktoberfest</a>.
 
   - word: außerplanmäßig
     translation: >
