@@ -28,7 +28,7 @@ examples:
   - word: przyjaciółka
     translation: >
       Sustantivo. Una amiga cercana, alguien a quien conoces desde hace bastante tiempo y que aprecias mucho.
-      Su forma masculina es "przyjaciel".
+      Su forma masculina es <a class="link link--listenable">przyjaciel</a>.
 
 
   - word: załatwić

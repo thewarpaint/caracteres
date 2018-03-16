@@ -1,3 +1,5 @@
+@import "styles/link";
+
 $font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
 $font-primary: "Abril Fatface", serif;
 $font-secondary: "Lato", $font-sans-serif;
@@ -22,6 +24,8 @@ $font-secondary: "Lato", $font-sans-serif;
 }
 
 @mixin theme($color-primary, $color-secondary, $color-tertiary) {
+  @include link($color-primary);
+
   color: $color-secondary;
   font-family: $font-secondary;
   background-color: $color-tertiary;
