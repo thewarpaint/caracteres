@@ -2,12 +2,17 @@ description: The e dans l'o (E in the O) is a true linguistic ligature of the Fr
 
 explanationItems:
   - >
-    The <b>e dans l'o</b> (E in the O) is a true linguistic ligature of the French language.
+    The <a class="link link--listenable">e dans l'o</a> (E in the O)
+    is a true linguistic ligature of the French language.
   - >
-    It is used in <b>direct borrowings from Latin</b> (cœliaque) <b>and Greek</b> (œsophage).
+    It is used in direct borrowings from Latin (<a class="link link--listenable">cœliaque</a>)
+    and Greek (<a class="link link--listenable">œsophage</a>).
   - >
-    In the names of historically German-speaking places that are now on French territory, <b>œ replaces
-    the German ö (O-umlaut)</b>, for example: Schœneck (Schöneck), Kœtzingue (Kötzingen), and Hœrdt (Hördt).
+    In the names of historically German-speaking places that are now on French territory, œ replaces
+    the German ö (O-umlaut), for example:
+    <a class="link link--listenable">Schœneck</a> (Schöneck),
+    <a class="link link--listenable">Kœtzingue</a> (Kötzingen),
+    and <a class="link link--listenable">Hœrdt</a> (Hördt).
 
 examples:
   - word: bœuf
