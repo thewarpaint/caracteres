@@ -3,6 +3,10 @@
     &--listenable {
       cursor: pointer;
       border-bottom: .25rem solid fade-out($color-underline, .5);
+
+      &:hover {
+        border-bottom-color: fade-out($color-underline, 0);
+      }
     }
   }
 }
