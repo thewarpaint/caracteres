@@ -2,15 +2,19 @@ description: The eñe is a letter of the Spanish alphabet.
 
 explanationItems:
   - >
-    The <b>eñe</b> (IPA: <span class="ipa">/ˈeɲe/</span>) is a letter of the Spanish alphabet.
+    The <a class="link link--listenable">eñe</a> (IPA: <span class="ipa">/ˈeɲe/</span>)
+    is a letter of the Spanish alphabet.
   - >
-    The symbol on top (~) is called <b>"tilde"</b> or <b>"virgulilla"</b>.
+    The symbol on top (~) is called tilde, in Spanish also <a class="link link--listenable">virgulilla</a>.
   - >
-    It originated as a ligature of <b>nn</b>, the tilde being a shorthand for a smaller n on top of the
+    It originated as a ligature of "nn", the tilde being a shorthand for a smaller n on top of the
     first one.
   - >
-    The sound is present in other Romance languages with a different spelling. For example, <b>gn</b> in
-    Italian or French, <b>nh</b> in Portuguese, and <b>ny</b> in Catalan.
+    The sound is present in other Romance languages with a different spelling. For example,
+    "gn" in Italian (<a class="link link--listenable" data-lang="it-IT,it">gnocchi</a>)
+    or French (<a class="link link--listenable" data-lang="fr-FR,fr">mignon</a>),
+    "nh" in Portuguese (<a class="link link--listenable" data-lang="pt-PT,pt">amanhã</a>), and
+    "ny" in Catalan (<a class="link link--listenable" data-lang="ca">Catalunya</a>).
 
 examples:
   - word: otoño

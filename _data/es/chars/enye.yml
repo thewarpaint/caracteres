@@ -2,18 +2,19 @@ description: La eñe es una letra del alfabeto español.
 
 explanationItems:
   - >
-    La <b>eñe</b> (IPA: <span class="ipa">/ˈeɲe/</span>) es una letra del alfabeto español.
+    La <a class="link link--listenable">eñe</a> (IPA: <span class="ipa">/ˈeɲe/</span>)
+    es una letra del alfabeto español.
   - >
-    El símbolo encontrado arriba (~) se llama <b>tilde</b> o <b>virgulilla</b>.
+    El símbolo encontrado arriba (~) se llama tilde o virgulilla.
   - >
-    Se originó como una ligatura de <b>nn</b>, donde la tilde era un atajo para representar una pequeña n
+    Se originó como una ligatura de "nn", donde la tilde era un atajo para representar una pequeña n
     encima de la primera.
   - >
     El sonido está presente en otras lenguas romances con una escritura diferente. Por ejemplo,
-    <b>gn</b> en italiano (<a class="link link--listenable">gnocchi</a>)
-    o francés,
-    <b>nh</b> en portugués, y
-    <b>ny</b> en catalán.
+    "gn" en italiano (<a class="link link--listenable" data-lang="it-IT,it">gnocchi</a>)
+    o francés (<a class="link link--listenable" data-lang="fr-FR,fr">mignon</a>),
+    "nh" en portugués (<a class="link link--listenable" data-lang="pt-PT,pt">amanhã</a>), y
+    "ny" en catalán (<a class="link link--listenable" data-lang="ca">Catalunya</a>).
 
 examples:
   - word: otoño
