@@ -34,7 +34,7 @@ $font-secondary: "Lato", $font-sans-serif;
     color: $color-primary;
   }
 
-  .ipa, .alphabet, .keyboard__key, .frequencies__letter, .key, .example__action {
+  .ipa, .alphabet, .keyboard__key, .frequencies__letter, .key {
     font-family: $font-sans-serif;
   }
 
@@ -76,5 +76,6 @@ $font-secondary: "Lato", $font-sans-serif;
   .btn {
     color: $color-secondary;
     border-color: $color-secondary;
+    font-family: $font-secondary;
   }
 }
