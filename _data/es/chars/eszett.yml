@@ -2,19 +2,21 @@ description: La Eszett es una letra del alfabeto alemán.
 
 explanationItems:
   - >
-    La <b>Eszett</b> (IPA: <span class="ipa">[ɛsˈtsɛt]</span>) es una letra del alfabeto alemán usada para
-    representar el sonido del fonema <b>[s]</b> cuando se usa después de vocales largas y diptongos.
+    La <a class="link link--listenable">Eszett</a> (IPA: <span class="ipa">[ɛsˈtsɛt]</span>) es una letra
+    del alfabeto alemán usada para representar el sonido del fonema [s] cuando se usa después
+    de vocales largas y diptongos.
   - >
     Su nombre proviene de la pronunciación de las letras
     S (<a class="link link--listenable">Es</a>) y
     Z (<a class="link link--listenable">Zett</a>).
   - >
-    Se originó como una ligatura para la <b>s larga y ezh</b> (<span class="ipa">ſʒ</span>) y para la
-    <b>s larga y s redonda</b> (<span class="ipa">ſs</span>).
+    Se originó como una ligatura para la s larga y ezh (<span class="ipa">ſʒ</span>) y para la
+    s larga y s redonda (<span class="ipa">ſs</span>).
   - >
-    La <b>forma mayúscula ẞ</b> propuesta por los diseñadores de fuentes tipográficas a principios del siglo
-    XX sólo obtuvo reconocimiento oficial hasta 2017. Aún es común que la eszett sea reemplazada por <b>SS</b>
-    cuando se utilizan letras mayúsculas.
+    La forma mayúscula ẞ propuesta por los diseñadores de fuentes tipográficas a principios del siglo
+    XX sólo obtuvo reconocimiento oficial hasta 2017. Aún es común que la
+    <a class="link link--listenable">Eszett</a> sea reemplazada por "SS" cuando se utilizan
+    letras mayúsculas.
 
 examples:
   - word: groß

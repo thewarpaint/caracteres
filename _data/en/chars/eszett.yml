@@ -2,17 +2,19 @@ description: The Eszett is a letter of the German language.
 
 explanationItems:
   - >
-    The <b>Eszett</b> (IPA: <span class="ipa">[ɛsˈtsɛt]</span>) is a German letter used to represent the
-    <b>[s]</b> phoneme when used after long vowels and diphthongs.
+    The <a class="link link--listenable">Eszett</a> (IPA: <span class="ipa">[ɛsˈtsɛt]</span>) is a
+    German letter used to represent the [s] phoneme when used after long vowels and diphthongs.
   - >
-    Its name comes from the pronunciation of the letters <b>s (es)</b> and <b>z (zett)</b>.
+    Its name comes from the pronunciation of the letters
+    S (<a class="link link--listenable">Es</a>) and
+    Z (<a class="link link--listenable">Zett</a>).
   - >
-    It originated as a ligature for <b>long s and tailed z</b> <span class="ipa">ſʒ</span> and
-    <b>long s and round s</b> <span class="ipa">ſs</span>.
+    It originated as a ligature for long s and tailed z (<span class="ipa">ſʒ</span>) and
+    long s and round s (<span class="ipa">ſs</span>).
   - >
-    The <b>uppercase form ẞ</b> introduced by type designers during the early 20th century only gained
-    official recognition until 2017. The Eszett is still commonly replaced with <b>SS</b> when capital
-    letters are used.
+    The uppercase form ẞ introduced by type designers during the early 20th century only gained
+    official recognition until 2017. The <a class="link link--listenable">Eszett</a> is still commonly
+    replaced with "SS" when capital letters are used.
 
 examples:
   - word: groß
