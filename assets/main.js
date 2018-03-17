@@ -119,7 +119,8 @@ var Synth = (function () {
 
 var Caracteres = (function () {
   function Caracteres() {
-    this.voice = null;
+    this.mainLanguage = null;
+    this.hasMainLanguageVoice = false;
     this.showNerdStuffBtn = null;
   }
 
@@ -138,27 +139,25 @@ var Caracteres = (function () {
 
   Caracteres.prototype.onVoicesChanged = function () {
     for (var i = 0; i < Globals.languages.length; i++) {
-      window.Caracteres.voice = window.Synth.voices[Globals.languages[i]];
+      window.Caracteres.hasMainLanguageVoice =
+        typeof window.Synth.voices[Globals.languages[i]] !== 'undefined';
 
-      if (window.Caracteres.voice) {
-        Console.log('Selecting voice for language ' + window.Caracteres.voice.lang + '.');
+      if (window.Caracteres.hasMainLanguageVoice) {
+        Console.log('Selecting voice for language ' + Globals.languages[i] + '.');
+        window.Caracteres.mainLanguage = Globals.languages[i];
         document.body.classList.add('body--has-voice-available');
+
         break;
       }
     }
 
-    if (!window.Caracteres.voice) {
+    if (!window.Caracteres.hasMainLanguageVoice) {
       Console.log('No voice available for languages: ' + Globals.languages.join(',') + '.');
     }
   };
 
   Caracteres.prototype.speak = function (word) {
-    if (!this.voice) {
-      Console.log('No voice available for languages: ' + Globals.languages.join(',') + '.');
-      return;
-    }
-
-    window.Synth.speak(word, this.voice);
+    window.Synth.speakInLanguageId(word, window.Caracteres.mainLanguage);
   };
 
   Caracteres.prototype.onSpeakButtonClick = function () {
@@ -166,7 +165,12 @@ var Caracteres = (function () {
   };
 
   Caracteres.prototype.onListenableLinkClick = function () {
-    window.Caracteres.speak(this.innerText);
+    if (this.getAttribute('data-lang')) {
+      var languageIds = this.getAttribute('data-lang').split(',');
+      window.Synth.speakInLanguageIds(this.innerText, languageIds);
+    } else {
+      window.Caracteres.speak(this.innerText);
+    }
   };
 
   Caracteres.prototype.addSpeakButtonClickListeners = function () {
