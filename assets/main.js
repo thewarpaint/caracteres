@@ -84,6 +84,27 @@ var Synth = (function () {
     window.Synth.onVoicesChangedCallback();
   };
 
+  Synth.prototype.speakInLanguageIds = function (word, languageIds) {
+    for (var i = 0; i < languageIds.length; i++) {
+      if (window.Synth.voices[languageIds[i]]) {
+        this.speak(word, this.voices[languageIds[i]]);
+
+        return;
+      }
+    }
+
+    Console.log('No voice available for languages: ' + languageIds.join(',') + '.');
+  };
+
+  Synth.prototype.speakInLanguageId = function (word, languageId) {
+    if (!this.voices[languageId]) {
+      Console.log('No voice available for language: ' + languageId + '.');
+      return;
+    }
+
+    this.speak(word, this.voices[languageId]);
+  };
+
   Synth.prototype.speak = function (word, voice) {
     Console.log('Speaking "' + word + '" in ' + voice.lang + '.');
 
