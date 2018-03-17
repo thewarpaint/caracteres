@@ -2,17 +2,24 @@ description: La eł o 'L con barra' es una letra del alfabeto polaco.
 
 explanationItems:
   - >
-    La eł o "L con barra" es una letra del alfabeto polaco.
+    La <a class="link link--listenable">eł</a> o "L con barra" es una letra del alfabeto polaco.
   - >
-    El sonido moderno de la ł es similar a /w/, como "hu" en huevo o "u" en fuego, y a la "w" del inglés
-    en palabras como were, will o wall.
+    El sonido moderno de la ł es similar a /w/, como
+    "hu" en <a class="link link--listenable" data-lang="es-ES,es">huevo</a> o
+    "u" en <a class="link link--listenable" data-lang="es-ES,es">fuego</a>,
+    y a la "w" del inglés en palabras como
+    <a class="link link--listenable" data-lang="en-GB,en">were</a>,
+    <a class="link link--listenable" data-lang="en-GB,en">will</a> o
+    <a class="link link--listenable" data-lang="en-GB,en">wall</a>.
   - >
     Esta pronunciación surgió de la clase trabajadora polaca en el siglo XVI, y era considerada un acento
     inculto por la clase alta. Sin embargo, mediados del siglo XX esta distinción comenzó a
     desaparecer gradualmente.
   - >
-    Su sonido original era parecido al de "ll" en la palabra inglesa pull. Dicha pronunciación aún es
-    comprensible hoy en día, pero se considera teatral o exagerada en muchas regiones.
+    Su sonido original era parecido al de "ll" en la palabra inglesa
+    <a class="link link--listenable" data-lang="en-GB,en">pull</a>.
+    Dicha pronunciación aún es comprensible hoy en día, pero se considera teatral o exagerada
+    en muchas regiones.
 
 examples:
   - word: złoty

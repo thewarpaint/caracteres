@@ -2,15 +2,20 @@ description: The eł or 'L with stroke' is a letter of the Polish alphabet.
 
 explanationItems:
   - >
-    The eł or "L with stroke" is a letter of the Polish alphabet.
+    The <a class="link link--listenable">eł</a> or "L with stroke" is a letter of the Polish alphabet.
   - >
-    The modern pronunciation of ł is similar to the /w/ sound in words like were, will or wall.
+    The modern pronunciation of ł is similar to the /w/ sound in words like
+    <a class="link link--listenable" data-lang="en-GB,en">were</a>,
+    <a class="link link--listenable" data-lang="en-GB,en">will</a> or
+    <a class="link link--listenable" data-lang="en-GB,en">wall</a>.
   - >
     This sound originated in the Polish working class in the 16th century, and it was considered an
     uncultured accent by the higher class. Nonetheless, by the mid 20th century the distinction gradually
     began to fade.
   - >
-    Its original pronunciation was similar to the "ll" sound in the word pull. That pronunciation is still
+    Its original pronunciation was similar to the "ll" sound in the word
+    <a class="link link--listenable" data-lang="en-GB,en">pull</a>.
+    That pronunciation is still
     understood nowadays, but it is considered theatrical in most regions.
 
 examples:
