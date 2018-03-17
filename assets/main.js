@@ -213,7 +213,7 @@ var Chocolate = (function () {
 
   Chocolate.prototype.onSpeakButtonClick = function () {
     var languageId = this.getAttribute('data-language-id');
-    window.Synth.speak(this.getAttribute('data-word'), window.Synth.voices[languageId]);
+    window.Synth.speakInLanguageId(this.getAttribute('data-word'), languageId);
   };
 
   Chocolate.prototype.addSpeakButtonClickListeners = function () {
