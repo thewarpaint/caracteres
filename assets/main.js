@@ -56,7 +56,33 @@ var Console = (function () {
 })();
 
 var Synth = (function () {
-  function Synth() {}
+  function Synth() {
+    this.voices = {};
+    this.onVoicesChangedCallback = function () {}; //noop
+  }
+
+  Synth.prototype.init = function (onVoicesChangedCallback) {
+    if (FeatureDetection.hasSpeechSynthesis()) {
+      speechSynthesis.onvoiceschanged = this.onVoicesChanged;
+
+      if (typeof onVoicesChangedCallback === 'function') {
+        this.onVoicesChangedCallback = onVoicesChangedCallback;
+      }
+    }
+  };
+
+  Synth.prototype.onVoicesChanged = function () {
+    speechSynthesis.getVoices().forEach(function (voice) {
+      var normalizedLanguageId = voice.lang.replace('_', '-');
+
+      if (!window.Synth.voices[normalizedLanguageId]) {
+        Console.log('Adding voice for language ' + normalizedLanguageId + '.');
+        window.Synth.voices[normalizedLanguageId] = voice;
+      }
+    });
+
+    window.Synth.onVoicesChangedCallback();
+  };
 
   Synth.prototype.speak = function (word, voice) {
     Console.log('Speaking "' + word + '" in ' + voice.lang + '.');
@@ -79,8 +105,9 @@ var Caracteres = (function () {
   Caracteres.prototype.init = function () {
     Console.log('Version: ' + Globals.version);
 
+    Synth.init(this.onVoicesChanged);
+
     if (FeatureDetection.hasSpeechSynthesis()) {
-      speechSynthesis.onvoiceschanged = this.onVoicesChanged;
       this.addSpeakButtonClickListeners();
     }
 
@@ -90,13 +117,11 @@ var Caracteres = (function () {
 
   Caracteres.prototype.onVoicesChanged = function () {
     for (var i = 0; i < Globals.languages.length; i++) {
-      window.Caracteres.voice = speechSynthesis.getVoices().find(function (voice) {
-        return Globals.languages[i] === voice.lang.replace('_', '-');
-      });
+      window.Caracteres.voice = window.Synth.voices[Globals.languages[i]];
 
       if (window.Caracteres.voice) {
         Console.log('Selecting voice for language ' + window.Caracteres.voice.lang + '.');
-        document.body.className += ' body--has-voice-available';
+        document.body.classList.add('body--has-voice-available');
         break;
       }
     }
