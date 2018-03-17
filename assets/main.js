@@ -170,37 +170,25 @@ var Caracteres = (function () {
 
 var Chocolate = (function () {
   function Chocolate() {
-    this.voices = {};
     this.showNerdStuffBtn = null;
   }
 
   Chocolate.prototype.init = function () {
     Console.log('Version: ' + Globals.version);
 
-    if (FeatureDetection.hasSpeechSynthesis()) {
-      speechSynthesis.onvoiceschanged = this.onVoicesChanged;
-    }
+    Synth.init(this.onVoicesChanged);
 
     this.showNerdStuffBtn = document.getElementById('show-nerd-stuff-btn');
     this.showNerdStuffBtn.addEventListener('click', window.Chocolate.onShowNerdStuffClick.bind(this));
   };
 
   Chocolate.prototype.onVoicesChanged = function () {
-    speechSynthesis.getVoices().forEach(function (voice) {
-      var normalizedLanguageId = voice.lang.replace('-', '_');
-
-      if (!window.Chocolate.voices[normalizedLanguageId]) {
-        Console.log('Adding voice for language ' + normalizedLanguageId + '.');
-        window.Chocolate.voices[normalizedLanguageId] = voice;
-      }
-    });
-
     window.Chocolate.addSpeakButtonClickListeners();
   };
 
   Chocolate.prototype.onSpeakButtonClick = function () {
     var languageId = this.getAttribute('data-language-id');
-    window.Synth.speak(this.getAttribute('data-word'), window.Chocolate.voices[languageId]);
+    window.Synth.speak(this.getAttribute('data-word'), window.Synth.voices[languageId]);
   };
 
   Chocolate.prototype.addSpeakButtonClickListeners = function () {
@@ -209,7 +197,7 @@ var Chocolate = (function () {
         var languageIds = button.getAttribute('data-language-ids').split(',');
 
         for (var i = 0; i < languageIds.length; i++) {
-          if (window.Chocolate.voices[languageIds[i]] && !button.getAttribute('data-language-id')) {
+          if (window.Synth.voices[languageIds[i]] && !button.getAttribute('data-language-id')) {
             Console.log('Adding speak button click listener for ' + languageIds[i] + '.');
 
             button.text = window.Globals.actions.listen;
