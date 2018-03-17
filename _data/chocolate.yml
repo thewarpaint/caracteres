@@ -6,8 +6,8 @@ entries:
       en: Spanish
       es: Español
     languageIds:
-      - es_MX
-      - es_ES
+      - es-MX
+      - es-ES
       - es
 
   - translation: Chocolate
@@ -15,8 +15,8 @@ entries:
       en: English
       es: Inglés
     languageIds:
-      - en_US
-      - en_GB
+      - en-US
+      - en-GB
       - en
 
   - translation: Chocolate
@@ -24,8 +24,8 @@ entries:
       en: Portuguese
       es: Portugués
     languageIds:
-      - pt_PT
-      - pt_BR
+      - pt-PT
+      - pt-BR
       - pt
 
   - translation: Schokolade
@@ -33,7 +33,7 @@ entries:
       en: German
       es: Alemán
     languageIds:
-      - de_DE
+      - de-DE
       - de
 
   - translation: Cioccolato
@@ -41,7 +41,7 @@ entries:
       en: Italian
       es: Italiano
     languageIds:
-      - it_IT
+      - it-IT
       - it
 
   - translation: Chocolat
@@ -49,7 +49,7 @@ entries:
       en: French
       es: Francés
     languageIds:
-      - fr_FR
+      - fr-FR
       - fr
 
   - translation: Xocolata
@@ -57,7 +57,7 @@ entries:
       en: Catalan
       es: Catalán
     languageIds:
-      - ca_ES
+      - ca-ES
       - ca
 
   - translation: Czekolada
@@ -65,7 +65,7 @@ entries:
       en: Polish
       es: Polaco
     languageIds:
-      - pl_PL
+      - pl-PL
       - pl
 
   - translation: Çikolata
@@ -73,7 +73,7 @@ entries:
       en: Turkish
       es: Turco
     languageIds:
-      - tr_TR
+      - tr-TR
       - tr
 
   - translation: Chokolade
@@ -81,7 +81,7 @@ entries:
       en: Danish
       es: Danés
     languageIds:
-      - da_DK
+      - da-DK
       - da
 
   - translation: Súkkulaði
@@ -89,7 +89,7 @@ entries:
       en: Icelandic
       es: Islandés
     languageIds:
-      - is_IS
+      - is-IS
       - is
 
   - translation: шоколад
@@ -98,7 +98,7 @@ entries:
       en: Russian
       es: Ruso
     languageIds:
-      - ru_RU
+      - ru-RU
       - ru
 
   - translation: σοκολάτα
@@ -107,7 +107,7 @@ entries:
       en: Greek
       es: Griego
     languageIds:
-      - el_GR
+      - el-GR
       - el
 
   - translation: チョコレート
@@ -116,7 +116,7 @@ entries:
       en: Japanese
       es: Japonés
     languageIds:
-      - ja_JP
+      - ja-JP
       - ja
 
   - translation: 초콜릿
@@ -125,7 +125,7 @@ entries:
       en: Korean
       es: Coreano
     languageIds:
-      - ko_KR
+      - ko-KR
       - ko
 
   - translation: 巧克力
@@ -134,8 +134,8 @@ entries:
       en: Chinese
       es: Chino
     languageIds:
-      - zh_CN_#Hans
-      - zh_CN
+      - zh-CN-#Hans
+      - zh-CN
       - zh
 
   - translation: شوكولاتة
@@ -151,7 +151,7 @@ entries:
       en: Basque
       es: Vasco
     languageIds:
-      - eu_ES
+      - eu-ES
       - eu
 
   - translation: čokoláda
@@ -159,7 +159,7 @@ entries:
       en: Czech
       es: Checo
     languageIds:
-      - cs_CZ
+      - cs-CZ
       - cs
 
   - translation: csokoládé
@@ -167,7 +167,7 @@ entries:
       en: Hungarian
       es: Húngaro
     languageIds:
-      - hu_HU
+      - hu-HU
       - hu
 
   - translation: suklaa
@@ -175,7 +175,7 @@ entries:
       en: Finnish
       es: Finlandés
     languageIds:
-      - fi_FI
+      - fi-FI
       - fi
 
   - translation: ciocolată
@@ -183,7 +183,7 @@ entries:
       en: Romanian
       es: Rumano
     languageIds:
-      - ro_RO
+      - ro-RO
       - ro
 
   - translation: ช็อคโกแลต
@@ -192,7 +192,7 @@ entries:
       en: Thai
       es: Tailandés
     languageIds:
-      - th_TH
+      - th-TH
       - th
 
   - translation: sô cô la
@@ -200,7 +200,7 @@ entries:
       en: Vietnamese
       es: Vietnamita
     languageIds:
-      - vi_VN
+      - vi-VN
       - vi
 
   - translation: seacláid
@@ -208,7 +208,7 @@ entries:
       en: Irish
       es: Irlandés
     languageIds:
-      - ga_IE
+      - ga-IE
       - ga
 
   - translation: чоколада
@@ -217,7 +217,7 @@ entries:
       en: Serbian
       es: Serbio
     languageIds:
-      - sr_RS
+      - sr-RS
       - sr
 
   - translation: siocled
