@@ -107,6 +107,11 @@ var Caracteres = (function () {
   };
 
   Caracteres.prototype.speak = function (word) {
+    if (!this.voice) {
+      Console.log('No voice available for languages: ' + Globals.languages.join(',') + '.');
+      return;
+    }
+
     window.Synth.speak(word, this.voice);
   };
 
