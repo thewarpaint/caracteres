@@ -119,10 +119,19 @@ var Caracteres = (function () {
     window.Caracteres.speak(this.getAttribute('data-speak'));
   };
 
+  Caracteres.prototype.onListenableLinkClick = function () {
+    window.Caracteres.speak(this.innerText);
+  };
+
   Caracteres.prototype.addSpeakButtonClickListeners = function () {
     Array.prototype.slice.apply(document.querySelectorAll('[data-speak]'))
       .forEach(function (button) {
         button.addEventListener('click', window.Caracteres.onSpeakButtonClick);
+      });
+
+    Array.prototype.slice.apply(document.querySelectorAll('.link--listenable'))
+      .forEach(function ($link) {
+        $link.addEventListener('click', window.Caracteres.onListenableLinkClick);
       });
   };
 
