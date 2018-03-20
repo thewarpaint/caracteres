@@ -73,7 +73,7 @@ var Synth = (function () {
 
   Synth.prototype.onVoicesChanged = function () {
     speechSynthesis.getVoices().forEach(function (voice) {
-      var normalizedLanguageId = voice.lang.replace('_', '-');
+      var normalizedLanguageId = voice.lang.replace(/_/g, '-');
 
       if (!window.Synth.voices[normalizedLanguageId]) {
         Console.log('Adding voice for language ' + normalizedLanguageId + '.');
