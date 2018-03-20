@@ -1,8 +1,5 @@
 @import "styles/link";
-
-$font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
-$font-primary: "Abril Fatface", serif;
-$font-secondary: "Roboto", $font-sans-serif;
+@import "styles/variables";
 
 @mixin tabs($color-fg, $color-bg, $color-external-bg) {
   .tabs {
