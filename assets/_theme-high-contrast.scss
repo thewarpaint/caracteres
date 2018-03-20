@@ -1,6 +1,4 @@
-$high-contrast-theme-color-primary: #aaaaaa;
-$high-contrast-theme-color-secondary: #000000;
-$high-contrast-theme-color-tertiary: #ffffff;
+@import "styles/variables";
 
 .body--high-contrast {
   @include theme($high-contrast-theme-color-primary, $high-contrast-theme-color-secondary,
