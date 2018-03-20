@@ -3,7 +3,7 @@
 $teaser-color-fg: #ffffff;
 $teaser-color-bg: #000000;
 $teaser-font-primary: "Noto Serif", serif;
-$teaser-font-secondary: "Lato", sans-serif;
+$teaser-font-secondary: "Roboto", sans-serif;
 
 .chocolate {
   margin-top: 1.5rem;
@@ -24,7 +24,7 @@ $teaser-font-secondary: "Lato", sans-serif;
   }
 
   &__intro, &__language, &__action, .btn {
-    font-family: "Lato", sans-serif;
+    font-family: $teaser-font-secondary;
     font-weight: 300;
     letter-spacing: .03125rem;
   }

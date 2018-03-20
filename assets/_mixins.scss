@@ -2,7 +2,7 @@
 
 $font-sans-serif: "Helvetica Neue", "Helvetica", sans-serif;
 $font-primary: "Abril Fatface", serif;
-$font-secondary: "Lato", $font-sans-serif;
+$font-secondary: "Roboto", $font-sans-serif;
 
 @mixin tabs($color-fg, $color-bg, $color-external-bg) {
   .tabs {
