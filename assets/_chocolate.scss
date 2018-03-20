@@ -1,4 +1,5 @@
 @import "styles/teaser";
+@import "styles/variables";
 
 $teaser-color-fg: #ffffff;
 $teaser-color-bg: #000000;
@@ -6,7 +7,8 @@ $teaser-font-primary: "Noto Serif", serif;
 $teaser-font-secondary: "Roboto", sans-serif;
 
 .chocolate {
-  margin-top: 1.5rem;
+  @include tabs($high-contrast-theme-color-tertiary, $high-contrast-theme-color-secondary,
+                 $high-contrast-theme-color-tertiary);
 
   &__h1, &__h2 {
     font-family: "Noto Serif", serif;
@@ -73,5 +75,9 @@ $teaser-font-secondary: "Roboto", sans-serif;
 
   .teaser {
     @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);
+  }
+
+  .tabs-wrapper {
+    margin-bottom: 1.5rem;
   }
 }

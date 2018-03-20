@@ -14,7 +14,7 @@ permalink: /chocolate
     <meta name="description" content="{{ page.seo.description }}">
     <title>{{ page.seo.title }}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Serif:400,700|Roboto:300" rel="stylesheet">
     <link href="{{ site.url }}/assets/main.css" rel="stylesheet">
 
     <script>
@@ -27,6 +27,8 @@ permalink: /chocolate
     {%- include google-analytics.html -%}
   </head>
   <body class="chocolate" id="chocolate">
+    {%- include tabs.html -%}
+
     <div class="container">
       <h1 class="chocolate__h1">{{ page.title }}</h1>
       <h2 class="chocolate__language chocolate__language--large">{{ page.description }}</h2>
