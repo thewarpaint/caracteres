@@ -80,7 +80,8 @@
       {% assign exampleCharacterTemplate = '<b class="example__character">__CHAR__</b>' %}
       {% assign exampleCharacter = exampleCharacterTemplate | replace:'__CHAR__',char.character %}
       {% for example in char.examples %}
-      <section class="example">
+      <section class="example"
+               id="{{ example.word }}">
         <h2 class="example__original">
           {{ example.word | replace:char.character,exampleCharacter }}
         </h2>
