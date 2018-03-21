@@ -23,4 +23,18 @@
     line-height: 133%;
     font-weight: 300;
   }
+
+  &__link {
+    color: #000000;
+  }
+
+  &__character {
+    display: inline-flex !important; // TODO: remove
+    margin: 0 .5em .5em 0 !important; // TODO: remove
+  }
+
+  &__character-main {
+    margin-top: 1.5rem;
+    text-decoration: none;
+  }
 }

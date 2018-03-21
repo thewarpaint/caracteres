@@ -67,8 +67,12 @@ permalink: /
         <ul class="list--unstyled">
           {%- for navCharId in site.data.sortedChars -%}
           {%- assign navChar = site.data.chars[navCharId] -%}
-          <li>
-            <h3 class="home__h3"><a href="{{ navChar.permalink }}">{{ navChar.character }}: {{ navChar.name }}</a></h3>
+          <li class="home__character character__wrapper">
+            <a href="{{ navChar.permalink }}"
+               class="home__link home__character-main character__main">
+              <h3 class="home__h3 character__symbol">{{ navChar.character }}</h3>
+              <h4 class="character__name">{{ navChar.name }}</h4>
+            </a>
           </li>
           {%- endfor -%}
         </ul>
