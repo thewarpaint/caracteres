@@ -31,10 +31,14 @@
   &__character {
     display: inline-flex !important; // TODO: remove
     margin: 0 .5em .5em 0 !important; // TODO: remove
+
+    &--ce-cedilha .character__name {
+      margin-top: 1rem;
+    }
   }
 
   &__character-main {
-    margin-top: 1.5rem;
+    margin-top: 1.375rem;
     text-decoration: none;
   }
 }
