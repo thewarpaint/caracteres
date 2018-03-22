@@ -1,5 +1,15 @@
 <div class="tabs-wrapper">
   <nav class="container tabs">
+    {%- if site.active_lang == site.default_lang -%}
+    <!-- The space at the beginning of href is needed for the proper link to be rendered. -->
+    <a href=" {{ site.url }}/"
+       class="tabs__link tabs__link--back-arrow"
+       data-proofer-ignore>◀</a>
+    {%- else -%}
+    <a href="{{ site.url }}/{{ site.active_lang }}/"
+       class="tabs__link tabs__link--back-arrow">◀</a>
+    {%- endif -%}
+
     {%- for navCharId in site.data.sortedChars -%}
     {%- assign navChar = site.data.chars[navCharId] -%}
     <a class="tabs__link
