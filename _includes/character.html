@@ -9,8 +9,14 @@
     <meta name="title" content="{{ char.character }} • Caracteres">
     <meta name="description" content="{{ char.description }}">
     <meta name="theme-color" content="{{ char.theme.color }}">
+
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/images/favicon.png">
     <link rel="manifest" href="{{ site.url }}/manifest-{{ include.character }}.json">
+    {%- if site.active_lang == site.default_lang -%}
+    <link rel="canonical" href="{{ site.url }}/{{ char.permalink }}">
+    {%- else -%}
+    <link rel="canonical" href="{{ site.url }}/{{ site.active_lang }}/{{ char.permalink }}">
+    {%- endif -%}
 
     <!-- Twitter meta tags, missing: `twitter:site` -->
     <meta name="twitter:card" content="summary">
