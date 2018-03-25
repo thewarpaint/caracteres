@@ -12,7 +12,30 @@ permalink: /chocolate
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="title" content="{{ page.seo.title }}">
     <meta name="description" content="{{ page.seo.description }}">
+    <meta name="theme-color" content="#000000">
     <title>{{ page.seo.title }}</title>
+
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/images/favicon.png">
+    <link rel="manifest" href="{{ site.url }}/manifest-el.json">
+    {%- if site.active_lang == site.default_lang -%}
+    <link rel="canonical" href="{{ site.url }}/{{ permalink }}">
+    {%- else -%}
+    <link rel="canonical" href="{{ site.url }}/{{ site.active_lang }}/{{ permalink }}">
+    {%- endif -%}
+
+    <!-- Twitter meta tags, missing: `twitter:site`, `twitter:image` -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.seo.title }} • Caracteres">
+    <meta name="twitter:description" content="{{ page.seo.description }}">
+
+    <!-- Open Graph (Facebook) meta tags, missing: `og:image` -->
+    <meta property="og:title" content="{{ page.seo.title }} • Caracteres">
+    <meta property="og:type" content="article">
+    {%- if site.active_lang == site.default_lang -%}
+    <meta property="og:url" content="{{ site.url }}/{{ permalink }}">
+    {%- else -%}
+    <meta property="og:url" content="{{ site.url }}/{{ site.active_lang }}/{{ permalink }}">
+    {%- endif -%}
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Serif:400,700|Roboto:300" rel="stylesheet">
     <link href="{{ site.url }}/assets/main.css" rel="stylesheet">
