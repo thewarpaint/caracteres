@@ -1,6 +1,8 @@
 @import "variables";
 
 @mixin teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary) {
+  @include button($teaser-color-fg, $teaser-color-bg, $teaser-color-fg);
+
   margin: 2rem 0;
   padding: 2rem 0;
   color: $teaser-color-fg;
@@ -49,14 +51,6 @@
   &__cta {
     margin-top: 1.5rem;
     display: inline-block;
-  }
-
-  .btn {
-    border-color: $teaser-color-fg;
-
-    &, &:hover, &:active, &:visited {
-      color: $teaser-color-fg;
-    }
   }
 }
 
