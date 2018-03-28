@@ -9,6 +9,8 @@ $teaser-font-secondary: "Roboto", sans-serif;
 .chocolate {
   @include tabs($high-contrast-theme-color-tertiary, $high-contrast-theme-color-secondary,
                  $high-contrast-theme-color-tertiary);
+  @include button($high-contrast-theme-color-primary, $high-contrast-theme-color-tertiary,
+                  $high-contrast-theme-color-secondary);
 
   &__h1, &__h2 {
     font-family: "Noto Serif", serif;
@@ -25,7 +27,7 @@ $teaser-font-secondary: "Roboto", sans-serif;
     margin-bottom: .5rem;
   }
 
-  &__intro, &__language, &__action, .btn {
+  &__intro, &__language, &__action {
     font-family: $teaser-font-secondary;
     font-weight: 300;
     letter-spacing: .03125rem;
@@ -57,7 +59,7 @@ $teaser-font-secondary: "Roboto", sans-serif;
     }
   }
 
-  &__action, .btn {
+  &__action {
     &, &:hover, &:active, &:visited {
       color: #000000;
       text-decoration: none;
