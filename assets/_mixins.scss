@@ -77,13 +77,17 @@
 
 @mixin button($color-primary, $color-secondary, $color-default) {
   .btn {
-    color: $color-default;
     border-color: $color-default;
     background-color: $color-secondary;
+    text-decoration: none;
     transition-property: color, border-color, background-color;
     transition-duration: .333s;
 
-    &:hover {
+    &, &:visited {
+      color: $color-default;
+    }
+
+    &:hover, &:active,  {
       color: $color-secondary;
       border-color: $color-primary;
       background-color: $color-primary;
