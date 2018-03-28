@@ -13,6 +13,7 @@ $teaser-font-secondary: "Roboto", sans-serif;
 .body--enye {
   @include theme($enye-theme-color-primary, $enye-theme-color-secondary, $enye-bg);
   @include tabs($enye-theme-color-tertiary, $enye-theme-color-primary, $enye-bg);
+  @include button($enye-theme-color-primary, $enye-bg, $enye-theme-color-secondary);
 
   .teaser {
     @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);

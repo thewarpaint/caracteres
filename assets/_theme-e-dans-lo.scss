@@ -8,6 +8,7 @@ $e-dans-lo-fg: #000000;
                  $e-dans-lo-theme-color-tertiary);
   @include tabs($e-dans-lo-theme-color-tertiary, $e-dans-lo-theme-color-secondary,
                 $e-dans-lo-theme-color-tertiary);
+  @include button($e-dans-lo-theme-color-primary, $e-dans-lo-theme-color-tertiary, $e-dans-lo-fg);
 }
 
 .home-nav__item--e-dans-lo {

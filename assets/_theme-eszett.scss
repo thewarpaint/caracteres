@@ -6,6 +6,7 @@ $eszett-fg: #000000;
 .body--eszett {
   @include theme($eszett-theme-color-secondary, $eszett-fg, $eszett-theme-color-tertiary);
   @include tabs($eszett-theme-color-primary, $eszett-theme-color-secondary, $eszett-theme-color-tertiary);
+  @include button($eszett-theme-color-secondary, $eszett-theme-color-tertiary, $eszett-fg);
 
   .keyboard__character {
     // ß is transformed to SS, we need to prevent it.

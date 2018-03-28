@@ -73,10 +73,20 @@
   .example__action, .footer__link {
     color: $color-secondary;
   }
+}
 
+@mixin button($color-primary, $color-secondary, $color-default) {
   .btn {
-    color: $color-secondary;
-    border-color: $color-secondary;
-    font-family: $font-secondary;
+    color: $color-default;
+    border-color: $color-default;
+    background-color: $color-secondary;
+    transition-property: color, border-color, background-color;
+    transition-duration: .333s;
+
+    &:hover {
+      color: $color-secondary;
+      border-color: $color-primary;
+      background-color: $color-primary;
+    }
   }
 }

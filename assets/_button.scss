@@ -1,5 +1,8 @@
+@import "styles/variables";
+
 .btn {
   display: inline-block;
+  font-family: $font-secondary;
   font-size: 1.25em;
   font-weight: 300;
   padding: .25em .5em;

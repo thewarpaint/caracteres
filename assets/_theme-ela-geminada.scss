@@ -7,6 +7,7 @@ $ela-geminada-fg: #000000;
   @include theme($ela-geminada-theme-color-primary, $ela-geminada-fg, $ela-geminada-theme-color-tertiary);
   @include tabs($ela-geminada-theme-color-tertiary, $ela-geminada-theme-color-secondary,
                 $ela-geminada-theme-color-tertiary);
+  @include button($ela-geminada-theme-color-primary, $ela-geminada-theme-color-tertiary, $ela-geminada-fg);
 }
 
 .home-nav__item--ela-geminada {
