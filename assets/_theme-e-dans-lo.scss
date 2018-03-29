@@ -1,3 +1,5 @@
+@import "styles/character-mixin";
+
 $e-dans-lo-theme-color-primary: #ee2436; // French flag: red
 $e-dans-lo-theme-color-secondary: #001e96; // French flag: blue
 $e-dans-lo-theme-color-tertiary: #ffffff;
@@ -9,6 +11,10 @@ $e-dans-lo-fg: #000000;
   @include tabs($e-dans-lo-theme-color-tertiary, $e-dans-lo-theme-color-secondary,
                 $e-dans-lo-theme-color-tertiary);
   @include button($e-dans-lo-theme-color-primary, $e-dans-lo-theme-color-tertiary, $e-dans-lo-fg);
+}
+
+.home__character--e-dans-lo:hover {
+  @include character($e-dans-lo-theme-color-tertiary, $e-dans-lo-theme-color-secondary);
 }
 
 .home-nav__item--e-dans-lo {

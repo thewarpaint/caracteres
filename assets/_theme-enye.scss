@@ -1,4 +1,5 @@
 @import "styles/teaser";
+@import "styles/character-mixin";
 
 $enye-theme-color-primary: #c70218; // Spanish flag: red
 $enye-theme-color-secondary: #000000;
@@ -23,6 +24,10 @@ $teaser-font-secondary: "Roboto", sans-serif;
       font-weight: 300;
     }
   }
+}
+
+.home__character--enye:hover {
+  @include character($enye-theme-color-tertiary, $enye-theme-color-primary);
 }
 
 .home-nav__item--enye {

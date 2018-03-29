@@ -66,4 +66,9 @@ $character-height: $character-width * 4/3;
     text-align: right;
     color: $blue-grey-200;
   }
+
+  &__wrapper, &__symbol, &__name {
+    transition-property: color, border-color, background-color;
+    transition-duration: .333s;
+  }
 }

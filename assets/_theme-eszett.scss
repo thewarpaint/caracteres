@@ -1,3 +1,5 @@
+@import "styles/character-mixin";
+
 $eszett-theme-color-primary: #fedb00; // Bayern flag: yellow
 $eszett-theme-color-secondary: #0097d4; // Bayern flag: blue
 $eszett-theme-color-tertiary: #ffffff;
@@ -12,6 +14,10 @@ $eszett-fg: #000000;
     // ß is transformed to SS, we need to prevent it.
     text-transform: none;
   }
+}
+
+.home__character--eszett:hover {
+  @include character($eszett-theme-color-primary, $eszett-theme-color-secondary);
 }
 
 .home-nav__item--eszett {

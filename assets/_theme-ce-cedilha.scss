@@ -1,3 +1,5 @@
+@import "styles/character-mixin";
+
 $ce-cedilha-theme-color-primary: #fee000; // Brazil flag: yellow
 $ce-cedilha-theme-color-secondary: #009c38; // Brazil flag: green
 $ce-cedilha-theme-color-tertiary: #ffffff;
@@ -8,6 +10,10 @@ $ce-cedilha-fg: #000000;
   @include tabs($ce-cedilha-theme-color-secondary, $ce-cedilha-theme-color-primary,
                 $ce-cedilha-theme-color-tertiary);
   @include button($ce-cedilha-theme-color-secondary, $ce-cedilha-theme-color-tertiary, $ce-cedilha-fg);
+}
+
+.home__character--ce-cedilha:hover {
+  @include character($ce-cedilha-theme-color-secondary, $ce-cedilha-theme-color-primary);
 }
 
 .home-nav__item--ce-cedilha {

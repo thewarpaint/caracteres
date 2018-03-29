@@ -1,4 +1,5 @@
 @import "styles/variables";
+@import "styles/character-mixin";
 
 .body--high-contrast {
   @include theme($high-contrast-theme-color-primary, $high-contrast-theme-color-secondary,
@@ -14,6 +15,10 @@
                  $high-contrast-theme-color-tertiary);
   @include button($high-contrast-theme-color-primary, $high-contrast-theme-color-tertiary,
                   $high-contrast-theme-color-secondary);
+}
+
+.home__character--el:hover {
+  @include character($high-contrast-theme-color-tertiary, $high-contrast-theme-color-primary);
 }
 
 .home-nav__item--high-contrast {

@@ -1,0 +1,10 @@
+@mixin character($character-fg-hover, $character-bg-hover) {
+  &.character__wrapper, & .character__symbol, & .character__name {
+    color: $character-fg-hover;
+  }
+
+  &.character__wrapper {
+    border-color: $character-bg-hover;
+    background-color: $character-bg-hover;
+  }
+}
