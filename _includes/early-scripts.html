@@ -1,0 +1,47 @@
+<script>
+  var FeatureDetection = (function () {
+    function FeatureDetection() {}
+
+    FeatureDetection.prototype.hasSpeechSynthesis = function () {
+      return 'speechSynthesis' in window;
+    };
+
+    FeatureDetection.prototype.hasLocalStorage = function () {
+      // From https://github.com/Modernizr/Modernizr/blob/master/feature-detects/storage/localstorage.js#L40
+      var mod = 'modernizr';
+
+      try {
+          localStorage.setItem(mod, mod);
+          localStorage.removeItem(mod);
+          return true;
+      } catch(e) {
+          return false;
+      }
+    };
+
+    FeatureDetection.prototype.init = function () {
+      var features = [
+        {
+          detector: this.hasSpeechSynthesis,
+          aClass: 'body--has-speech-synthesis'
+        },
+        {
+          detector: this.hasLocalStorage,
+          aClass: 'body--has-local-storage'
+        }
+      ];
+
+      var bodyClasses = [];
+
+      for(var i = 0; i < features.length; i++) {
+        if (features[i].detector()) {
+          bodyClasses.push(features[i].aClass);
+        }
+      }
+
+      document.body.className += ' ' + bodyClasses.join(' ');
+    };
+
+    return new FeatureDetection();
+  })();
+</script>

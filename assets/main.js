@@ -16,32 +16,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
 });
 
-var FeatureDetection = (function () {
-  function FeatureDetection() {}
-
-  FeatureDetection.prototype.hasSpeechSynthesis = function () {
-    return 'speechSynthesis' in window;
-  };
-
-  FeatureDetection.prototype.init = function () {
-    var features = [
-      { detector: this.hasSpeechSynthesis, aClass: 'body--has-speech-synthesis' }
-    ];
-
-    var bodyClasses = [];
-
-    for(var i = 0; i < features.length; i++) {
-      if (features[i].detector()) {
-        bodyClasses.push(features[i].aClass);
-      }
-    }
-
-    document.body.className += ' ' + bodyClasses.join(' ');
-  };
-
-  return new FeatureDetection();
-})();
-
 var Console = (function () {
   function Console() {
     this.element = document.querySelector('.console');

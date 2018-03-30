@@ -15,23 +15,11 @@
       return true;
     }
 
-    if (isLocalStorageSupported() && localStorage.getItem('debugMode') === 'true') {
+    if (FeatureDetection.hasLocalStorage() && localStorage.getItem('debugMode') === 'true') {
       console.log('Entering debug mode because of `debugMode` localStorage item.');
       return true;
     }
 
     return false;
-  }
-
-  // From https://github.com/Modernizr/Modernizr/blob/master/feature-detects/storage/localstorage.js#L40
-  function isLocalStorageSupported() {
-    var mod = 'modernizr';
-    try {
-        localStorage.setItem(mod, mod);
-        localStorage.removeItem(mod);
-        return true;
-    } catch(e) {
-        return false;
-    }
   }
 </script>
