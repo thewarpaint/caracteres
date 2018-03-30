@@ -24,7 +24,10 @@ var Console = (function () {
 
   Console.prototype.log = function log(string) {
     console.log(string);
-    this.element.innerHTML += '\n⇒ ' + string;
+
+    if (this.element) {
+      this.element.innerHTML += '\n⇒ ' + string;
+    }
   };
 
   return new Console();
