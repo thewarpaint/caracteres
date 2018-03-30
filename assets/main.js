@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function (event) {
   FeatureDetection.init();
+  DebugMode.init();
 
   switch (document.body.id) {
     case 'caracteres':
@@ -89,6 +90,23 @@ var Synth = (function () {
   };
 
   return new Synth();
+})();
+
+var DebugMode = (function () {
+  function DebugMode() {}
+
+  DebugMode.prototype.init = function () {
+    // Primitive query string parameter check, but enough for our needs.
+    if (FeatureDetection.hasLocalStorage()) {
+      if (window.location.search.indexOf('debugMode=true') !== -1) {
+        localStorage.setItem('debugMode', 'true');
+      } else if (window.location.search.indexOf('debugMode=false') !== -1) {
+        localStorage.removeItem('debugMode');
+      }
+    }
+  }
+
+  return new DebugMode();
 })();
 
 var Caracteres = (function () {
