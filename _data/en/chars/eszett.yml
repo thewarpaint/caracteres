@@ -17,6 +17,13 @@ explanationItems:
     replaced with "SS" when capital letters are used.
 
 examples:
+  - word: Maß
+    translation: >
+      Noun: the amount of beer in a regulation mug (1 Lt). Often used as an abbreviation for
+      <a class="link link--listenable">Maßkrug</a>,
+      the handled glass vessel containing that amount of beer, known mainly because of the
+      <a class="link link--listenable">Oktoberfest</a>.
+
   - word: groß
     translation: >
       Adjective: big, large.
@@ -28,13 +35,6 @@ examples:
   - word: Süßkartoffel
     translation: >
       Noun: sweet potato.
-
-  - word: Maß
-    translation: >
-      Noun: the amount of beer in a regulation mug (1 Lt). Often used as an abbreviation for
-      <a class="link link--listenable">Maßkrug</a>,
-      the handled glass vessel containing that amount of beer, known mainly because of the
-      <a class="link link--listenable">Oktoberfest</a>.
 
   - word: außerplanmäßig
     translation: >

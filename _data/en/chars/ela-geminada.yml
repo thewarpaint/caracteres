@@ -16,6 +16,10 @@ explanationItems:
     and most of the words ending with "el·la" or "il·la".
 
 examples:
+  - word: putxinel·li
+    translation: >
+      Noun: marionette.
+
   - word: novel·la
     translation: >
       Noun: novel.
@@ -31,7 +35,3 @@ examples:
   - word: pel·lícula
     translation: >
       Noun: film, movie.
-
-  - word: putxinel·li
-    translation: >
-      Noun: marionette.

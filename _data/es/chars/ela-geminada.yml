@@ -16,6 +16,10 @@ explanationItems:
     y a la mayoría de las palabras que acaban en "el·la" o "il·la".
 
 examples:
+  - word: putxinel·li
+    translation: >
+      Sustantivo: marioneta.
+
   - word: novel·la
     translation: >
       Sustantivo: novela.
@@ -31,7 +35,3 @@ examples:
   - word: pel·lícula
     translation: >
       Sustantivo: película.
-
-  - word: putxinel·li
-    translation: >
-      Sustantivo: marioneta.

@@ -17,6 +17,11 @@ explanationItems:
     "ny" in Catalan (<a class="link link--listenable" data-lang="ca">Catalunya</a>).
 
 examples:
+  - word: ñáñaras
+    translation: >
+      Noun: the free falling sensation in the stomach caused by an unpleasant situation, fear, anxiety,
+      insecurity, or any intense emotion.
+
   - word: otoño
     translation: >
       Noun: autumn.
@@ -39,11 +44,6 @@ examples:
         Noun: the Spanish language.
       - >
         Adjective: of Spanish origin.
-
-  - word: ñáñaras
-    translation: >
-      Noun: the free falling sensation in the stomach caused by an unpleasant situation, fear, anxiety,
-      insecurity, or any intense emotion.
 
 shortcuts:
   - >

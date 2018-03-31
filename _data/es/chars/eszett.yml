@@ -19,6 +19,13 @@ explanationItems:
     letras mayúsculas.
 
 examples:
+  - word: Maß
+    translation: >
+      Sustantivo: la cantidad de cerveza en un tarro regulatorio (1 Lt). Frecuentemente se usa como
+      abreviación de <a class="link link--listenable">Maßkrug</a>,
+      el recipiente de vidrio que contiene tal cantidad de cerveza, conocido principalmente debido al
+      <a class="link link--listenable">Oktoberfest</a>.
+
   - word: groß
     translation: >
       Adjetivo: grande.
@@ -30,13 +37,6 @@ examples:
   - word: Süßkartoffel
     translation: >
       Sustantivo: camote, papa dulce.
-
-  - word: Maß
-    translation: >
-      Sustantivo: la cantidad de cerveza en un tarro regulatorio (1 Lt). Frecuentemente se usa como
-      abreviación de <a class="link link--listenable">Maßkrug</a>,
-      el recipiente de vidrio que contiene tal cantidad de cerveza, conocido principalmente debido al
-      <a class="link link--listenable">Oktoberfest</a>.
 
   - word: außerplanmäßig
     translation: >

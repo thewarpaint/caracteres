@@ -17,6 +17,11 @@ explanationItems:
     "ny" en catalán (<a class="link link--listenable" data-lang="ca">Catalunya</a>).
 
 examples:
+  - word: ñáñaras
+    translation: >
+      Sustantivo: la sensación de caída libre en el estómago al experimentar angustia, miedo, inseguridad,
+      desagrado, u otra emoción intensa.
+
   - word: otoño
     translation: >
       Sustantivo: la estación del año que sucede al verano y antecede al invierno.
@@ -40,11 +45,6 @@ examples:
         Sustantivo: el idioma hablado principalmente en España y Latinoamérica.
       - >
         Adjetivo: proveniente de España.
-
-  - word: ñáñaras
-    translation: >
-      Sustantivo: la sensación de caída libre en el estómago al experimentar angustia, miedo, inseguridad,
-      desagrado, u otra emoción intensa.
 
 shortcuts:
   - >
