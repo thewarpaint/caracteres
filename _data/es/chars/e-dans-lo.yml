@@ -15,8 +15,11 @@ explanationItems:
 
 examples:
   - word: bœuf
-    translation: >
-      Sustantivo: res. Sustantivo: carne de res.
+    translations:
+      - >
+        Sustantivo: res.
+      - >
+        Sustantivo: carne de res.
 
   - word: fœtus
     translation: >

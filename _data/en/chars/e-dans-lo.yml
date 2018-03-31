@@ -16,8 +16,11 @@ explanationItems:
 
 examples:
   - word: bœuf
-    translation: >
-      Noun: ox. Noun: beef.
+    translations:
+      - >
+        Noun: ox.
+      - >
+        Noun: beef.
 
   - word: fœtus
     translation: >
