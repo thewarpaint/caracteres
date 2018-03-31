@@ -18,7 +18,7 @@
 }
 
 .home__character--el:hover {
-  @include character($high-contrast-theme-color-tertiary, $high-contrast-theme-color-primary);
+  @include character($high-contrast-theme-color-tertiary, $high-contrast-theme-color-secondary);
 }
 
 .home-nav__item--high-contrast {
