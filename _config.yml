@@ -1,6 +1,6 @@
 # General
 exclude: [README.md, scripts]
-url: "https://thewarpaint.github.io/caracteres"
+url: "http://caracteres.io"
 
 plugins:
   - jekyll-polyglot
