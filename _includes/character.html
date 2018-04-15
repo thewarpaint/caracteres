@@ -77,12 +77,6 @@
         {% endfor %}
       </section>
 
-    {%- if include.character == "enye" -%}
-    </div>
-    {%- include teaser.html -%}
-    <div class="container">
-    {%- endif -%}
-
       {% assign exampleCharacterTemplate = '<b class="example__character">__CHAR__</b>' %}
       {% assign exampleCharacter = exampleCharacterTemplate | replace:'__CHAR__',char.character %}
       {% for example in char.examples %}
