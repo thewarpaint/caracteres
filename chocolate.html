@@ -27,6 +27,8 @@ permalink: /chocolate
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ page.seo.title }} • Caracteres">
     <meta name="twitter:description" content="{{ page.seo.description }}">
+    <!-- Temporary preview image -->
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/enye-thumbnail.png">
 
     <!-- Open Graph (Facebook) meta tags, missing: `og:image` -->
     <meta property="og:title" content="{{ page.seo.title }} • Caracteres">
@@ -36,6 +38,8 @@ permalink: /chocolate
     {%- else -%}
     <meta property="og:url" content="{{ site.url }}/{{ site.active_lang }}/{{ permalink }}">
     {%- endif -%}
+    <!-- Temporary preview image -->
+    <meta property="og:image" content="{{ site.url }}/assets/images/enye-thumbnail.png">
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Serif:400,700|Roboto:300" rel="stylesheet">
     <link href="{{ site.url }}/assets/main.css" rel="stylesheet">
