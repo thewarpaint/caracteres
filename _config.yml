@@ -1,6 +1,6 @@
 # General
 exclude: [README.md, scripts]
-url: "http://caracteres.io"
+url: "https://caracteres.io"
 
 plugins:
   - jekyll-polyglot
