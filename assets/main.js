@@ -36,16 +36,20 @@ var Console = (function () {
 var Synth = (function () {
   function Synth() {
     this.voices = {};
-    this.onVoicesChangedCallback = function () {}; //noop
+    this.onVoicesChangedCallback = function () {}; // noop
   }
 
   Synth.prototype.init = function (onVoicesChangedCallback) {
     if (FeatureDetection.hasSpeechSynthesis()) {
-      speechSynthesis.onvoiceschanged = this.onVoicesChanged;
+      if (typeof speechSynthesis.onvoiceschanged !== 'undefined') {
+        speechSynthesis.onvoiceschanged = this.onVoicesChanged;
+      }
 
       if (typeof onVoicesChangedCallback === 'function') {
         this.onVoicesChangedCallback = onVoicesChangedCallback;
       }
+
+      this.onVoicesChanged();
     }
   };
 
