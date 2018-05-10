@@ -77,6 +77,10 @@
         {% endfor %}
       </section>
 
+      </div>
+      {%- include teaser.html -%}
+      <div class="container">
+
       {% assign exampleCharacterTemplate = '<b class="example__character">__CHAR__</b>' %}
       {% assign exampleCharacter = exampleCharacterTemplate | replace:'__CHAR__',char.character %}
       {% for example in char.examples %}
