@@ -1,0 +1,10 @@
+{
+  "short_name": "Caracteres",
+  "name": "Caracteres",
+  "icons": [],
+  "start_url": "index.html",
+  "display": "browser",
+  "orientation": "portrait-primary",
+  "background_color": "#ce0001",
+  "theme_color": "#ce0001"
+}
