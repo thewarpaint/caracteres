@@ -1,4 +1,3 @@
-@import "styles/teaser";
 @import "styles/character-mixin";
 
 $enye-theme-color-primary: #c70218; // Spanish flag: red
@@ -6,24 +5,10 @@ $enye-theme-color-secondary: #000000;
 $enye-theme-color-tertiary: #ffc501; // Spanish flag: yellow
 $enye-bg: #ffffff;
 
-$teaser-color-fg: #ffffff;
-$teaser-color-bg: #000000;
-$teaser-font-primary: "Abril Fatface", serif;
-$teaser-font-secondary: "Roboto", sans-serif;
-
 .body--enye {
   @include theme($enye-theme-color-primary, $enye-theme-color-secondary, $enye-bg);
   @include tabs($enye-theme-color-tertiary, $enye-theme-color-primary, $enye-bg);
   @include button($enye-theme-color-primary, $enye-bg, $enye-theme-color-secondary);
-
-  .teaser {
-    @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);
-
-    &__h1 {
-      // Override font weight for Abril Fatface.
-      font-weight: 300;
-    }
-  }
 }
 
 .home__character--enye:hover {

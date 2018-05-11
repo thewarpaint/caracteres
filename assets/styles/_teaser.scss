@@ -20,6 +20,8 @@
     margin: 0;
     display: inline;
     font-size: 2.5rem;
+    // Override font weight for Abril Fatface.
+    font-weight: 300;
 
     @media (min-width: $threshold-tablet) {
       display: block;
@@ -28,12 +30,10 @@
 
   &__h1 {
     font-family: $teaser-font-primary;
-    font-weight: 700;
   }
 
   &__h2 {
     font-family: $teaser-font-secondary;
-    font-weight: 300;
   }
 
   &__text {

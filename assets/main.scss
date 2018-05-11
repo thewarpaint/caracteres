@@ -8,6 +8,7 @@
 @import "button";
 @import "styles/list";
 @import "footer";
+@import "styles/teaser";
 
 $key-size: 2.125em;
 
@@ -242,6 +243,10 @@ body {
   }
 }
 
+.teaser {
+  @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);
+}
+
 @import "theme-enye";
 @import "theme-eszett";
 @import "theme-ela-geminada";
@@ -252,5 +257,5 @@ body {
 @import "chocolate";
 @import "styles/tshirt-chocolate";
 @import "styles/tshirt-eñe";
-@import "styles/teaser";
+
 @import "console";
