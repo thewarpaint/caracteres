@@ -243,16 +243,16 @@ body {
   }
 }
 
-.teaser {
-  @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);
-}
-
 @import "theme-enye";
 @import "theme-eszett";
 @import "theme-ela-geminada";
 @import "theme-ce-cedilha";
 @import "theme-e-dans-lo";
 @import "theme-high-contrast";
+
+.teaser {
+  @include teaser($teaser-color-fg, $teaser-color-bg, $teaser-font-primary, $teaser-font-secondary);
+}
 
 @import "chocolate";
 @import "styles/tshirt-chocolate";

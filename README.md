@@ -86,3 +86,36 @@ sass --scss --style compressed --watch assets:assets
 - [Estelada flag for Ela geminada](https://es.wikipedia.org/wiki/Estelada)
 - [Brazil flag for Cê-cedilha](https://en.wikipedia.org/wiki/Flag_of_Brazil)
 - [France flag](https://en.wikipedia.org/wiki/Flag_of_France) for E dans l'o
+
+```
+// Screenshot: 206x206
+html {
+  font-size: 32px;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.home__character-main {
+  margin-top: .5rem;
+}
+
+.character__symbol {
+  font-size: 4.25rem;
+}
+
+.character__name {
+  font-size: .875rem;
+  margin-top: .25rem;
+}
+
+.character__wrapper {
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.home__character--ce-cedilha .character__main {
+  position: relative;
+  top: -.75rem;
+}
+```
